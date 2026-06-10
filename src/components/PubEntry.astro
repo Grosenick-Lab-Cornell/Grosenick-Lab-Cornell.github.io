@@ -1,0 +1,56 @@
+---
+import type { Paper } from "@/lib/papers";
+
+interface Props {
+  paper: Paper;
+}
+
+const { paper } = Astro.props;
+---
+
+<article class="py-5 border-b border-line last:border-b-0">
+  <p class="text-[15px] text-muted leading-[1.55] m-0 mb-1">
+    {
+      paper.authors.map((a, i) => (
+        <>
+          {a.bold ? (
+            <strong class="text-ink font-semibold">{a.name}</strong>
+          ) : (
+            <span>{a.name}</span>
+          )}
+          {i < paper.authors.length - 1 && <span>, </span>}
+        </>
+      ))
+    }
+    <span> ({paper.year}).</span>
+  </p>
+  <p
+    class="font-display text-[17px] text-ink leading-[1.4] m-0 mb-2 font-medium"
+  >
+    {paper.title}
+  </p>
+  {
+    paper.venue && (
+      <p class="text-[14px] text-muted m-0 mb-3 italic">{paper.venue}</p>
+    )
+  }
+  <div class="flex flex-wrap gap-2 items-center">
+    {
+      paper.chips.map((chip) => (
+        <a
+          href={chip.href}
+          class="inline-block font-mono text-[11px] text-signal-ink no-underline px-2.5 py-1 rounded-full border border-line bg-paper hover:bg-wash hover:border-[#dbe1e6] uppercase tracking-wide transition-colors"
+        >
+          {chip.label}
+        </a>
+      ))
+    }
+    {
+      paper.award && (
+        <span class="inline-block font-mono text-[11px] text-signal-ink bg-[#fdebf2] px-2.5 py-1 rounded-full uppercase tracking-wide">
+          ★ {paper.award}
+        </span>
+      )
+    }
+  </div>
+</article>

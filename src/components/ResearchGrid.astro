@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from "astro:content";
+
+const themes = (await getCollection("research")).sort(
+  (a, b) => a.data.order - b.data.order
+);
+
+const rendered = await Promise.all(
+  themes.map(async (t) => {
+    const { Content } = await render(t);
+    return { data: t.data, id: t.id, Content };
+  })
+);
+---
+
+<section id="research" class="bg-wash border-t border-line py-20">
+  <div class="mx-auto max-w-[1120px] px-7">
+    <p
+      class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-3"
+    >
+      Research
+    </p>
+    <h2
+      class="font-display text-[26px] md:text-[30px] font-medium tracking-[-0.015em] m-0 mb-10 max-w-[40ch]"
+    >
+      Four threads, one goal: precision tools for psychiatry.
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {
+        rendered.map(({ data, Content }) => (
+          <article class="border border-line rounded-[14px] p-7 bg-paper">
+            <h3 class="font-display text-[19px] font-semibold text-ink m-0 mb-3">
+              {data.title}
+            </h3>
+            <div class="text-[15.5px] text-muted leading-[1.55] [&_strong]:text-ink [&_strong]:font-semibold [&_em]:italic [&_p]:m-0">
+              <Content />
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <p class="mt-10 m-0">
+      <a
+        href="/research/"
+        class="font-display font-medium text-sm text-signal-ink no-underline hover:underline"
+      >
+        See all research →
+      </a>
+    </p>
+  </div>
+</section>

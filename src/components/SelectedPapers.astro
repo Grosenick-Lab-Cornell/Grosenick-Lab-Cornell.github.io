@@ -1,0 +1,35 @@
+---
+import { getSelectedPapers } from "@/lib/papers";
+import PubEntry from "@/components/PubEntry.astro";
+
+const papers = getSelectedPapers();
+---
+
+<section id="publications" class="py-20 border-t border-line">
+  <div class="mx-auto max-w-[1120px] px-7">
+    <div class="flex items-baseline justify-between mb-7 gap-5 flex-wrap">
+      <div>
+        <p
+          class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-3"
+        >
+          Selected publications
+        </p>
+        <h2
+          class="font-display text-[26px] md:text-[28px] font-medium tracking-[-0.01em] m-0"
+        >
+          Recent work from the lab.
+        </h2>
+      </div>
+      <a
+        href="/publications/"
+        class="text-sm font-display font-medium text-signal-ink no-underline hover:underline"
+      >
+        Full list →
+      </a>
+    </div>
+
+    <div>
+      {papers.map((p) => <PubEntry paper={p} />)}
+    </div>
+  </div>
+</section>

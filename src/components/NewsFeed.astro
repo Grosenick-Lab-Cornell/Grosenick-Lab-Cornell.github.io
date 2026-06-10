@@ -1,0 +1,59 @@
+---
+import newsData from "@/content/news.yaml";
+import { richify, splitEmoji } from "@/lib/text";
+
+type Period = { period: string; items: string[] };
+const periods = newsData as Period[];
+
+const rendered = periods.map((p) => ({
+  period: p.period,
+  items: p.items.map((raw) => {
+    const { icon, rest } = splitEmoji(raw);
+    return { icon, html: richify(rest) };
+  }),
+}));
+---
+
+<section
+  id="news"
+  class="bg-wash border-t border-line py-20"
+>
+  <div class="mx-auto max-w-[1120px] px-7">
+    <p
+      class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-3"
+    >
+      News
+    </p>
+    <h2
+      class="font-display text-[26px] md:text-[30px] font-medium tracking-[-0.015em] m-0 mb-2"
+    >
+      Latest from the lab.
+    </h2>
+    <p class="text-muted m-0 mb-10">Awards, papers, and milestones.</p>
+
+    <div class="space-y-9">
+      {
+        rendered.map(({ period, items }) => (
+          <div>
+            <p class="font-mono text-xs uppercase tracking-[0.12em] text-signal-ink m-0 mb-4">
+              {period}
+            </p>
+            <ul class="list-none m-0 p-0 grid gap-4">
+              {items.map(({ icon, html }) => (
+                <li class="grid grid-cols-[26px_1fr] gap-3 text-[16.5px] leading-[1.5] items-start">
+                  <span class="text-[17px] leading-[1.4]" aria-hidden="true">
+                    {icon}
+                  </span>
+                  <div
+                    class="text-ink/90 [&_strong]:text-ink [&_strong]:font-semibold [&_em]:italic"
+                    set:html={html}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

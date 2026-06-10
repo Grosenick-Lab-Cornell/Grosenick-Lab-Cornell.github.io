@@ -1,0 +1,75 @@
+---
+import softwareData from "@/content/software.yaml";
+import siteConfig from "@/content/site.yaml";
+
+type Tile = {
+  name: string;
+  badge?: string;
+  logo?: string;
+  blurb: string;
+  lang?: string;
+  url: string;
+};
+
+const tiles = softwareData as Tile[];
+
+const GRADIENTS = [
+  "linear-gradient(135deg, #EC4D7D, #B23068)",
+  "linear-gradient(135deg, #2E7DB8, #10406b)",
+  "linear-gradient(135deg, #3AAE8C, #1d7d63)",
+  "linear-gradient(135deg, #B07CD8, #6D3FA8)",
+];
+
+const githubOrg = siteConfig.contact?.github;
+---
+
+<section id="software" class="pt-6 pb-20">
+  <div class="mx-auto max-w-[1120px] px-7">
+    <div
+      class="flex items-baseline justify-between mb-9 gap-5 flex-wrap"
+    >
+      <h2
+        class="font-display text-[26px] md:text-[28px] font-medium tracking-[-0.01em] m-0"
+      >
+        Our software
+      </h2>
+      {
+        githubOrg && (
+          <a
+            href={githubOrg}
+            class="text-sm font-display font-medium text-signal-ink no-underline hover:underline"
+          >
+            All projects on GitHub →
+          </a>
+        )
+      }
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {
+        tiles.map((t, idx) => (
+          <a
+            href={t.url}
+            class="block border border-line rounded-[14px] p-7 bg-paper no-underline transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_14px_36px_-22px_rgba(21,32,43,0.4)] hover:border-[#dbe1e6]"
+          >
+            <div
+              class="w-[52px] h-[52px] rounded-full flex items-center justify-center font-display font-bold text-[18px] text-paper mb-4 tracking-wide"
+              style={`background: ${GRADIENTS[idx % GRADIENTS.length]};`}
+            >
+              {t.badge ?? t.name.slice(0, 2).toUpperCase()}
+            </div>
+            <h3 class="font-display font-semibold text-[19px] text-ink m-0 mb-2">
+              {t.name}
+            </h3>
+            <p class="text-[15px] text-muted leading-[1.5] m-0">{t.blurb}</p>
+            {t.lang && (
+              <div class="font-mono text-[11px] text-faint mt-4 uppercase tracking-wide">
+                {t.lang}
+              </div>
+            )}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
