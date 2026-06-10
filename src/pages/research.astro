@@ -1,0 +1,74 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/components/PageHeader.astro";
+import { getCollection, render } from "astro:content";
+import { publicAssetExists } from "@/lib/assets";
+
+const themes = (await getCollection("research")).sort(
+  (a, b) => a.data.order - b.data.order
+);
+
+const rendered = await Promise.all(
+  themes.map(async (t) => {
+    const { Content } = await render(t);
+    return {
+      data: t.data,
+      id: t.id,
+      Content,
+      showFigure: publicAssetExists(t.data.figure),
+    };
+  })
+);
+---
+
+<Layout
+  title="Research — Grosenick Lab"
+  description="Research themes at the Grosenick Lab: biological subtyping, treatment personalization, ML methods for neural and biomedical data, and neuroengineering."
+>
+  <PageHeader
+    eyebrow="Research"
+    title="What we work on."
+    lead="Four threads — biological subtypes, treatment personalization, methods for neural and biomedical data, and the neurotechnology that produces it — all aimed at making the treatment of mental illness more precise."
+  />
+
+  <div class="mx-auto max-w-[1120px] px-7 py-16 space-y-20">
+    {
+      rendered.map(({ data, Content, showFigure }, i) => (
+        <article
+          class={`grid gap-10 md:grid-cols-2 items-center ${i % 2 === 1 ? "md:[&>figure]:order-2" : ""}`}
+        >
+          <figure class="m-0">
+            <div class="aspect-[4/3] rounded-[14px] overflow-hidden bg-wash border border-line flex items-center justify-center">
+              {showFigure ? (
+                <img
+                  src={data.figure}
+                  alt={data.figureCaption ?? data.title}
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              ) : (
+                <span class="font-mono text-xs text-faint uppercase tracking-wider">
+                  Figure
+                </span>
+              )}
+            </div>
+            {data.figureCaption && (
+              <figcaption class="font-mono text-[11px] text-faint mt-3 leading-relaxed max-w-[44ch]">
+                {data.figureCaption}
+              </figcaption>
+            )}
+          </figure>
+
+          <div>
+            <h2 class="font-display text-[28px] md:text-[30px] font-medium tracking-[-0.015em] m-0 mb-4">
+              {data.title}
+            </h2>
+            <div class="text-[16.5px] text-muted leading-[1.65] [&_strong]:text-ink [&_strong]:font-semibold [&_em]:italic [&_p]:m-0">
+              <Content />
+            </div>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</Layout>

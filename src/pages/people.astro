@@ -1,0 +1,81 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/components/PageHeader.astro";
+import PersonCard from "@/components/PersonCard.astro";
+import peopleData from "@/content/people.yaml";
+
+type Person = {
+  name: string;
+  role: string;
+  status: "current" | "alumni";
+  photo?: string;
+  url?: string;
+  coadvisor?: string;
+  note?: string;
+  bio?: string;
+  alumniNote?: string;
+  order?: number;
+};
+
+const people = peopleData as Person[];
+const byOrder = (a: Person, b: Person) => (a.order ?? 999) - (b.order ?? 999);
+const current = people.filter((p) => p.status === "current").sort(byOrder);
+const alumni = people.filter((p) => p.status === "alumni").sort(byOrder);
+---
+
+<Layout
+  title="People — Grosenick Lab"
+  description="Current members and alumni of the Grosenick Lab at Weill Cornell Medicine."
+>
+  <PageHeader
+    eyebrow="People"
+    title="The team."
+    lead="A group of machine learners, neuroscientists, engineers, and clinicians working at the intersection of computation and psychiatry."
+  />
+
+  <section class="mx-auto max-w-[1120px] px-7 py-16">
+    <h2
+      class="font-display text-[22px] font-medium tracking-[-0.01em] m-0 mb-8"
+    >
+      Current members
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-10">
+      {current.map((p) => <PersonCard person={p} />)}
+    </div>
+  </section>
+
+  <section
+    class="bg-wash border-t border-line py-16"
+  >
+    <div class="mx-auto max-w-[1120px] px-7">
+      <h2
+        class="font-display text-[22px] font-medium tracking-[-0.01em] m-0 mb-2"
+      >
+        Alumni
+      </h2>
+      <p class="text-muted text-[15px] m-0 mb-8 max-w-[60ch]">
+        Where lab members have gone — from faculty positions and PhD programs
+        to leading roles in industry and research.
+      </p>
+      <ul class="list-none m-0 p-0">
+        {
+          alumni.map((p) => (
+            <li class="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-1 sm:gap-8 py-4 border-b border-line items-baseline">
+              <div>
+                <span class="font-display font-medium text-[16px] text-ink">
+                  {p.name}
+                </span>
+                <span class="text-[14px] text-muted ml-2">{p.role}</span>
+              </div>
+              {p.alumniNote && (
+                <p class="text-[14px] text-signal-ink font-medium m-0 sm:text-right">
+                  {p.alumniNote}
+                </p>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</Layout>

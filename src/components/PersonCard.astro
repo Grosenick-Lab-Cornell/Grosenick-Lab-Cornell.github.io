@@ -1,0 +1,75 @@
+---
+import { publicAssetExists } from "@/lib/assets";
+
+interface Person {
+  name: string;
+  role: string;
+  photo?: string;
+  url?: string;
+  coadvisor?: string;
+  note?: string;
+}
+
+interface Props {
+  person: Person;
+}
+
+const { person } = Astro.props;
+
+const initials = person.name
+  .replace(/,\s*(PhD|MD-PhD|MD).*$/i, "")
+  .replace(/"[^"]*"/g, "")
+  .split(/\s+/)
+  .filter(Boolean)
+  .slice(0, 2)
+  .map((t) => t.charAt(0).toUpperCase())
+  .join("");
+
+const hasUrl = Boolean(person.url);
+const Wrapper = hasUrl ? "a" : "div";
+const showPhoto = publicAssetExists(person.photo);
+---
+
+<Wrapper
+  href={hasUrl ? person.url : undefined}
+  class="group block no-underline"
+>
+  <div
+    class="aspect-square rounded-[14px] overflow-hidden bg-wash border border-line mb-4 flex items-center justify-center"
+  >
+    {
+      showPhoto ? (
+        <img
+          src={person.photo}
+          alt={person.name}
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      ) : (
+        <span class="font-display font-bold text-[44px] text-faint">
+          {initials}
+        </span>
+      )
+    }
+  </div>
+  <h3
+    class={`font-display font-medium text-[16px] text-ink m-0 mb-1 ${hasUrl ? "group-hover:text-signal-ink" : ""}`}
+  >
+    {person.name}
+  </h3>
+  <p class="text-[14px] text-muted m-0 leading-snug">{person.role}</p>
+  {
+    person.coadvisor && (
+      <p class="text-[12px] text-faint m-0 mt-1">
+        Co-advised by {person.coadvisor}
+      </p>
+    )
+  }
+  {
+    person.note && (
+      <p class="text-[12.5px] text-muted m-0 mt-2 leading-snug">
+        {person.note}
+      </p>
+    )
+  }
+</Wrapper>

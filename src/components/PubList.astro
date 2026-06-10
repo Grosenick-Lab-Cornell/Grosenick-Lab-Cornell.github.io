@@ -1,0 +1,23 @@
+---
+import { getPapersByYear } from "@/lib/papers";
+import PubEntry from "@/components/PubEntry.astro";
+
+const groups = getPapersByYear();
+---
+
+<div>
+  {
+    groups.map((g) => (
+      <section class="mb-14">
+        <h2 class="font-display text-[28px] md:text-[32px] font-medium m-0 mb-2 tracking-[-0.015em] sticky top-[66px] bg-paper/95 backdrop-blur-md py-3 border-b border-line z-10">
+          {g.year}
+        </h2>
+        <div>
+          {g.papers.map((p) => (
+            <PubEntry paper={p} />
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</div>

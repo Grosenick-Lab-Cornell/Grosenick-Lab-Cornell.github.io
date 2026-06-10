@@ -1,0 +1,127 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/components/PageHeader.astro";
+import siteConfig from "@/content/site.yaml";
+
+const email = siteConfig.contact?.email;
+---
+
+<Layout
+  title="Join the lab — Grosenick Lab"
+  description="The Grosenick Lab at Weill Cornell Medicine is recruiting postdocs, students, and research associates in machine learning, neuroscience, and engineering."
+>
+  <PageHeader
+    eyebrow="Join us"
+    title="Build the next generation of precision psychiatry."
+    lead="We're hiring across machine learning, neuroengineering, and clinical neuroscience. If you want to do work that matters for patients — and to be trained by mentors who care about your career — we'd love to hear from you."
+  />
+
+  <div class="mx-auto max-w-[1120px] px-7 py-16">
+    <div class="grid gap-12 md:grid-cols-2">
+      <div>
+        <p
+          class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-3"
+        >
+          Who we look for
+        </p>
+        <h2 class="font-display text-[24px] font-medium tracking-[-0.01em] m-0 mb-4">
+          Curiosity across disciplines.
+        </h2>
+        <p class="text-muted text-[17px] leading-[1.65] m-0 mb-4">
+          You don't need to be expert in everything — but you do need to be
+          willing to learn outside your home field. The lab works best when
+          methods people get curious about clinical questions and clinicians
+          get curious about how the methods actually work under the hood.
+        </p>
+        <ul
+          class="text-muted text-[16.5px] leading-[1.65] list-disc pl-5 m-0 space-y-2"
+        >
+          <li>
+            <strong class="text-ink font-semibold">Postdocs</strong> with
+            strong methodological backgrounds in ML, statistics, or systems
+            neuroscience and a genuine interest in psychiatric application.
+          </li>
+          <li>
+            <strong class="text-ink font-semibold">PhD students</strong>
+            (Neuroscience, Tri-I MD-PhD, BCMB, Biostatistics, applied math)
+            looking for ML-heavy thesis work grounded in real clinical data.
+          </li>
+          <li>
+            <strong class="text-ink font-semibold">Research associates</strong>
+            and MD-PhD trainees interested in TMS-EEG, multimodal clinical
+            data, and computational psychiatry.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p
+          class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-3"
+        >
+          What we offer
+        </p>
+        <h2 class="font-display text-[24px] font-medium tracking-[-0.01em] m-0 mb-4">
+          Real problems, mentorship, and room to lead.
+        </h2>
+        <ul
+          class="text-muted text-[16.5px] leading-[1.65] list-disc pl-5 m-0 space-y-2"
+        >
+          <li>
+            Active collaborations across <strong class="text-ink font-semibold"
+              >Weill Cornell Psychiatry, Neuroscience, and Engineering</strong
+            >, with access to clinical cohorts and TMS-EEG infrastructure.
+          </li>
+          <li>
+            A track record of trainees moving on to faculty positions and to
+            leading roles in industry — see <a
+              href="/people/#alumni"
+              class="text-signal-ink hover:underline">where alumni land</a
+            >.
+          </li>
+          <li>
+            Funded environment (NIMH, NIH ORIP, Simons, Whitehall, Wellcome
+            Leap, and others) — see <a
+              href="/#software"
+              class="text-signal-ink hover:underline">our software</a
+            > and <a
+              href="/publications/"
+              class="text-signal-ink hover:underline">publications</a
+            > for the kind of work you'd be joining.
+          </li>
+          <li>
+            Mentorship oriented around <em>your</em> career trajectory — first-author
+            papers, conference attendance, and grant-writing support.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="mt-20 pt-14 border-t border-line">
+      <p
+        class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-3"
+      >
+        How to apply
+      </p>
+      <h2
+        class="font-display text-[26px] md:text-[28px] font-medium tracking-[-0.015em] m-0 mb-4 max-w-[40ch]"
+      >
+        Reach out — the lab handles each application individually.
+      </h2>
+      <p class="text-muted text-[17px] leading-[1.65] max-w-[62ch] m-0 mb-7">
+        Email <a
+          href={`mailto:${email}`}
+          class="text-signal-ink font-medium hover:underline">{email}</a
+        > with a short note about what you're interested in working on, your CV,
+        and (for postdocs) one or two representative papers. PhD applicants should
+        apply through the relevant graduate program at Weill Cornell or Cornell;
+        feel free to also email directly so we know to look out for the application.
+      </p>
+      <a
+        href={`mailto:${email}`}
+        class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-ink text-paper font-display font-medium text-sm no-underline hover:bg-signal-ink transition-colors"
+      >
+        Email the PI
+      </a>
+    </section>
+  </div>
+</Layout>
