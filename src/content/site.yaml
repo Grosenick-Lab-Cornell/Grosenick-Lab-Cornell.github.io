@@ -1,0 +1,32 @@
+# Global site configuration. Edit copy here; components read from this file.
+
+name: Grosenick Lab
+shortName: Grosenick Lab
+# Hero headline — key terms wrapped in **bold** render emphasized/accented.
+headline: "AI and neuroengineering to **improve mental health**"
+# Significance-first mission (see MISSION.md for the longer draft + alternates).
+tagline: >-
+  We build artificial intelligence and neuroengineering tools to understand
+  psychiatric illness and match each patient to the treatment most likely to
+  help them.
+affiliationLine: "A lab led by Logan Grosenick at Weill Cornell Medicine, Cornell University."
+
+institution: Weill Cornell Medicine
+university: Cornell University
+
+contact:
+  email: log4002@med.cornell.edu
+  office: "1300 York Ave, Rm F-1338, New York, NY"
+  github: https://github.com/Grosenick-Lab-Cornell
+  githubOrg: Grosenick-Lab-Cornell
+  bluesky: https://bsky.app/profile/logangrosenick.bsky.social
+  twitter: https://x.com/logangrosenick
+  scholar: ""   # add Google Scholar profile URL
+
+nav:
+  - { label: Research,     href: "/research/" }
+  - { label: Software,     href: "/#software" }
+  - { label: Publications, href: "/publications/" }
+  - { label: People,       href: "/people/" }
+  - { label: News,         href: "/#news" }
+  - { label: Join,         href: "/join/" }

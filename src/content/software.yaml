@@ -1,0 +1,20 @@
+# Software projects shown as homepage tiles (Mathis-style circular badges).
+# badge = 2-letter initials for the gradient badge; or set `logo:` to an image path.
+
+- name: QuantNets
+  badge: QN
+  blurb: Generalizing CNNs to graphs with learnable neighborhood quantization (NeurIPS 2024).
+  lang: Python
+  url: https://github.com/Grosenick-Lab-Cornell/QuantNets
+
+- name: EpiCare
+  badge: EC
+  blurb: A reinforcement-learning benchmark for dynamic treatment regimes (NeurIPS 2024).
+  lang: Jupyter Notebook
+  url: https://github.com/Grosenick-Lab-Cornell/EpiCare
+
+- name: CLEAN
+  badge: CL
+  blurb: Tooling for cleaning and structuring large-scale neural datasets.
+  lang: Jupyter Notebook
+  url: https://github.com/Grosenick-Lab-Cornell/CLEAN

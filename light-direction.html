@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grosenick Lab — light direction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --wash:#F6F8F9;
+    --ink:#15202B;
+    --muted:#5A6B79;
+    --faint:#8A98A4;
+    --line:#E8ECEF;
+    --signal:#EC4D7D;
+    --signal-ink:#CC356C;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.brand,nav a,.eyebrow,.tile h3,.btn{font-family:"Space Grotesk",sans-serif;}
+  .mono,.eyebrow{font-family:"Space Mono",monospace;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal-ink);margin:0 0 16px;}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;}
+  .brand{font-weight:600;font-size:18px;display:flex;align-items:center;gap:11px;text-decoration:none;letter-spacing:-.01em;}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 4px rgba(236,77,125,.12);}
+  nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;}
+  nav a{font-size:14px;font-weight:500;color:var(--muted);text-decoration:none;}
+  nav a:hover{color:var(--ink);}
+
+  /* hero */
+  .hero{padding:78px 0 64px;}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  .hero h1{font-weight:500;font-size:clamp(34px,4.3vw,54px);line-height:1.06;letter-spacing:-.02em;margin:0 0 24px;}
+  .hero h1 b{font-weight:700;}
+  .hero h1 .accent{color:var(--signal-ink);font-weight:700;}
+  .hero p{font-size:19px;color:var(--muted);max-width:44ch;margin:0 0 22px;}
+  .affil{font-size:15px;color:var(--faint);}
+  .affil a{color:var(--signal-ink);text-decoration:none;font-weight:500;}
+  .herofig{aspect-ratio:4/3.2;border-radius:14px;border:1px solid var(--line);
+    background:var(--wash);position:relative;overflow:hidden;}
+  #net{position:absolute;inset:0;width:100%;height:100%;}
+  .herofig .cap{position:absolute;left:16px;bottom:14px;font-family:"Space Mono";
+    font-size:11px;color:var(--faint);letter-spacing:.02em;}
+
+  /* tools/tiles */
+  .tools{padding:24px 0 70px;}
+  .tools .lead{display:flex;align-items:baseline;justify-content:space-between;margin:0 0 26px;gap:20px;flex-wrap:wrap;}
+  .tools h2{font-weight:500;font-size:24px;letter-spacing:-.01em;margin:0;}
+  .tools .all{font-size:14px;color:var(--signal-ink);text-decoration:none;font-weight:500;font-family:"Space Grotesk";}
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .tile{border:1px solid var(--line);border-radius:14px;padding:26px 24px;text-decoration:none;
+    display:block;transition:.18s;background:var(--paper);}
+  .tile:hover{box-shadow:0 14px 36px -22px rgba(21,32,43,.4);transform:translateY(-3px);border-color:#dbe1e6;}
+  .badge{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-family:"Space Grotesk";font-weight:700;font-size:18px;color:#fff;margin-bottom:16px;letter-spacing:.02em;}
+  .b1{background:linear-gradient(135deg,#EC4D7D,#B23068);}
+  .b2{background:linear-gradient(135deg,#2E7DB8,#10406b);}
+  .b3{background:linear-gradient(135deg,#3AAE8C,#1d7d63);}
+  .tile h3{font-family:"Space Grotesk";font-weight:600;font-size:19px;margin:0 0 8px;}
+  .tile p{margin:0;font-size:15px;color:var(--muted);line-height:1.5;}
+  .tile .lang{font-family:"Space Mono";font-size:11px;color:var(--faint);margin-top:14px;}
+
+  /* news */
+  .news{background:var(--wash);border-top:1px solid var(--line);padding:64px 0;}
+  .news h2{font-weight:500;font-size:26px;letter-spacing:-.015em;margin:0 0 6px;}
+  .news .sub{color:var(--muted);margin:0 0 38px;}
+  .period{margin:0 0 34px;}
+  .period .when{font-family:"Space Mono";font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--signal-ink);margin:0 0 16px;}
+  .period ul{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
+  .period li{display:grid;grid-template-columns:26px 1fr;gap:12px;font-size:16.5px;line-height:1.5;align-items:start;}
+  .period li .ic{font-size:17px;line-height:1.4;}
+  .period li a{color:var(--signal-ink);text-decoration:none;font-weight:500;}
+  .period li a:hover{text-decoration:underline;}
+  .period b{font-weight:600;}
+
+  footer{padding:30px 0;border-top:1px solid var(--line);}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-family:"Space Mono";font-size:12px;color:var(--faint);}
+
+  @media(max-width:840px){
+    .hero-grid{grid-template-columns:1fr;gap:32px;}
+    .tiles{grid-template-columns:1fr;}
+    nav ul{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span class="dot"></span>Grosenick Lab</a>
+  <nav><ul>
+    <li><a href="#">Research</a></li>
+    <li><a href="#">Software</a></li>
+    <li><a href="#">Publications</a></li>
+    <li><a href="#">People</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Join</a></li>
+  </ul></nav>
+</div></header>
+
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="eyebrow">Weill Cornell Medicine · Cornell University</p>
+    <h1>Machine learning &amp; neurotechnology for <span class="accent">precision psychiatry</span></h1>
+    <p>We build computational and engineering tools to decode brain function, model mental illness, and move new treatments from the bench to the clinic.</p>
+    <p class="affil">A team led by <a href="#">Prof. Logan Grosenick</a> at Weill Cornell Medicine.</p>
+  </div>
+  <div class="herofig">
+    <canvas id="net"></canvas>
+    <span class="cap">Learning over the structure of brain networks</span>
+  </div>
+</div></section>
+
+<section class="tools"><div class="wrap">
+  <div class="lead">
+    <h2>Our software</h2>
+    <a class="all" href="#">All projects on GitHub →</a>
+  </div>
+  <div class="tiles">
+    <a class="tile" href="#">
+      <div class="badge b1">QN</div>
+      <h3>QuantNets</h3>
+      <p>Generalizing CNNs to graphs with learnable neighborhood quantization.</p>
+      <div class="lang">PYTHON</div>
+    </a>
+    <a class="tile" href="#">
+      <div class="badge b2">EC</div>
+      <h3>EpiCare</h3>
+      <p>Methods and analysis for modeling care and clinical decision-making.</p>
+      <div class="lang">JUPYTER NOTEBOOK</div>
+    </a>
+    <a class="tile" href="#">
+      <div class="badge b3">CL</div>
+      <h3>CLEAN</h3>
+      <p>Tooling for cleaning and structuring large-scale neural datasets.</p>
+      <div class="lang">JUPYTER NOTEBOOK</div>
+    </a>
+  </div>
+</div></section>
+
+<section class="news"><div class="wrap">
+  <h2>Latest from the lab</h2>
+  <p class="sub">Awards, papers, and milestones.</p>
+
+  <div class="period">
+    <p class="when">Winter / Spring 2025</p>
+    <ul>
+      <li><span class="ic">🏆</span><div>Congratulations to <b>Dr. Amanda Buch</b> on winning a <b>SFARI Bridge to Independence Fellowship</b>! <a href="#">Read more</a></div></li>
+      <li><span class="ic">🎉</span><div><b>Dr. Amanda Buch</b> is also awarded a <b>Burroughs Wellcome Fund / Revson Scholarship</b>.</div></li>
+      <li><span class="ic">🧠</span><div>New methods work from the lab on graph neural networks for connectomic data — <a href="#">preprint</a>.</div></li>
+    </ul>
+  </div>
+
+  <div class="period">
+    <p class="when">2024</p>
+    <ul>
+      <li><span class="ic">🌟</span><div><b>Dr. Amanda Buch</b> wins a <b>2024 Leading Edge Fellowship</b>.</div></li>
+      <li><span class="ic">📊</span><div>Congratulations to <b>Isabella Karabinas</b> on a Best Poster Award at the ML Summer School, Okinawa (OIST)!</div></li>
+    </ul>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© 2026 Grosenick Lab · Weill Cornell Medicine</span>
+  <span>grosenicklab.org</span>
+</div></footer>
+
+<script>
+(function(){
+  var c=document.getElementById('net');if(!c)return;var x=c.getContext('2d');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;var w,h,dpr,N,raf;
+  function size(){dpr=Math.min(devicePixelRatio||1,2);w=c.clientWidth;h=c.clientHeight;
+    c.width=w*dpr;c.height=h*dpr;x.setTransform(dpr,0,0,dpr,0,0);}
+  function init(){size();var n=Math.max(20,Math.round(w*h/14000));N=[];for(var i=0;i<n;i++)
+    N.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.16,vy:(Math.random()-.5)*.16,
+      r:Math.random()<.14?2.6:1.5,hot:Math.random()<.14});}
+  function f(){x.clearRect(0,0,w,h);for(var i=0;i<N.length;i++){var a=N[i];a.x+=a.vx;a.y+=a.vy;
+    if(a.x<0||a.x>w)a.vx*=-1;if(a.y<0||a.y>h)a.vy*=-1;
+    for(var j=i+1;j<N.length;j++){var b=N[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.sqrt(dx*dx+dy*dy);
+      if(d<120){x.strokeStyle='rgba(120,150,170,'+(1-d/120)*.5+')';x.lineWidth=.7;
+        x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();}}}
+    for(var k=0;k<N.length;k++){var p=N[k];x.beginPath();x.arc(p.x,p.y,p.r,0,6.2832);
+      x.fillStyle=p.hot?'#EC4D7D':'rgba(120,150,170,.8)';x.fill();}
+    raf=requestAnimationFrame(f);}
+  function s(){init();cancelAnimationFrame(raf);f();if(reduce)cancelAnimationFrame(raf);}
+  addEventListener('resize',function(){cancelAnimationFrame(raf);s();});s();
+})();
+</script>
+</body>
+</html>

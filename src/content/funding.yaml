@@ -1,0 +1,45 @@
+# Funders / sponsors for the support strip + /funding page.
+# Source official logos from each funder's press/brand kit and drop into
+# public/images/funders/. List only awarded funding — no pending/under-review.
+
+research:
+  - name: National Institute of Mental Health (NIMH)
+    note: "R01MH131534 · R01MH118388"
+    logo: /images/funders/nimh.svg
+    url: https://www.nimh.nih.gov/
+  - name: NIH Office of Research Infrastructure Programs (ORIP)
+    note: "R01OD039830"
+    logo: /images/funders/nih.svg
+    url: https://orip.nih.gov/
+  - name: National Institute on Aging (NIA) · PennAITech
+    note: "A2 Collective Pilot Award"
+    logo: /images/funders/nia.svg
+    url: https://www.nia.nih.gov/
+  - name: Simons Foundation
+    note: "Society of Fellows"
+    logo: /images/funders/simons.svg
+    url: https://www.simonsfoundation.org/
+  - name: Whitehall Foundation
+    note: "Research Grant"
+    logo: /images/funders/whitehall.svg
+    url: https://www.whitehall.org/
+  - name: Feldstein Medical Foundation
+    note: "Research Grant"
+    logo: /images/funders/feldstein.svg
+    url: ""
+  - name: Wellcome Leap
+    note: "Modeling & Model Integration"
+    logo: /images/funders/wellcome-leap.svg
+    url: https://wellcomeleap.org/
+
+# Fellowships that have supported lab trainees (good for a /funding page;
+# also reinforces the People section's outcomes).
+trainee:
+  - name: SFARI (Simons Foundation Autism Research Initiative)
+    note: "Bridge to Independence Award — A. Buch"
+  - name: Burroughs Wellcome Fund
+    note: "Scholar — A. Buch"
+  - name: Ford Foundation / NASEM
+    note: "Postdoctoral Fellowship — A. Buch"
+  - name: Life Sciences Research Foundation (LSRF)
+    note: "Postdoctoral Fellowship — I. Kauvar"

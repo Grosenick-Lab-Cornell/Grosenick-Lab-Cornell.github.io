@@ -1,0 +1,23 @@
+# Lively, grouped news feed (Mathis-style). Keep it warm; emoji welcome.
+# Grouped by period, newest first. Verify dates/links before publishing — these
+# are assembled from the CV and may need exact dates.
+
+- period: "2026"
+  items:
+    - "🎉 New work on treatment personalization — *Contrastive Diffusion Alignment* — accepted at **ICML 2026**! Congratulations to **Ruchi Sandilya** and the team."
+
+- period: "2025"
+  items:
+    - "🧠 **Marzieh Ajirak**'s work on adaptive routing for multimodal clinical prediction is accepted at **NeurIPS 2025**!"
+    - "🔬 Our collaborative work on the emergence of emotion across humans and mice is published in **Science**!"
+    - "🎓 Congratulations to **Dr. Amanda Buch**, who joins **Duke University** as Assistant Professor of Psychiatry & Bioengineering!"
+    - "🍎 Congratulations to **Dr. Isaac Kauvar**, now an AI Scientist at **Anthropic**!"
+
+- period: "2024"
+  items:
+    - "📄 Lab work on a frontostriatal salience network in depression is published in **Nature**."
+    - "✨ Two lab papers accepted at **NeurIPS 2024**: **QuantNets** (graph CNNs) and **EpiCare** (an RL benchmark for treatment regimes)."
+
+- period: "2022"
+  items:
+    - "🏆 **Logan Grosenick** receives the **Stephen I. Katz Early-Stage Investigator Award** (R01) from NIMH."
