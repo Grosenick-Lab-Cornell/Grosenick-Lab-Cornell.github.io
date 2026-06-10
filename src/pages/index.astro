@@ -1,26 +1,10 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/Hero.astro";
+import ContactBand from "@/components/ContactBand.astro";
 ---
 
 <Layout>
-  <main class="mx-auto max-w-[1120px] px-7 py-24">
-    <p
-      class="font-mono text-signal-ink text-xs uppercase tracking-[0.16em] mb-4"
-    >
-      Weill Cornell Medicine · Cornell University
-    </p>
-    <h1
-      class="font-display text-5xl md:text-6xl font-medium leading-[1.06] tracking-tight mb-6"
-    >
-      AI and neuroengineering to
-      <span class="text-signal-ink font-bold">improve mental health</span>
-    </h1>
-    <p class="text-muted text-lg max-w-prose mb-6">
-      Scaffold online. Brand tokens (<span class="font-mono text-signal-ink"
-        >--signal</span
-      >, paper/wash/ink) and Space Grotesk + Inter + Space Mono are wired up.
-      Hero canvas and the rest of the site arrive in Phase 1.
-    </p>
-    <p class="text-faint text-sm font-mono">grosenicklab.org · Phase 0</p>
-  </main>
+  <Hero />
+  <ContactBand />
 </Layout>

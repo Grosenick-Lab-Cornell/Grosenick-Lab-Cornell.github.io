@@ -1,0 +1,149 @@
+---
+import siteConfig from "@/content/site.yaml";
+
+const eyebrow = `${siteConfig.institution} · ${siteConfig.university}`;
+const headlineParts = siteConfig.headline
+  .split(/(\*\*[^*]+\*\*)/g)
+  .filter((s: string) => s.length > 0)
+  .map((seg: string) =>
+    seg.startsWith("**") && seg.endsWith("**")
+      ? { text: seg.slice(2, -2), accent: true }
+      : { text: seg, accent: false }
+  );
+---
+
+<section class="pt-[78px] pb-16">
+  <div
+    class="mx-auto max-w-[1120px] px-7 grid gap-10 md:gap-14 md:grid-cols-[1.05fr_.95fr] items-center"
+  >
+    <div>
+      <p
+        class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-4"
+      >
+        {eyebrow}
+      </p>
+      <h1
+        class="font-display font-medium text-[clamp(34px,4.3vw,54px)] leading-[1.06] tracking-[-0.02em] m-0 mb-6"
+      >
+        {
+          headlineParts.map((p: { text: string; accent: boolean }) =>
+            p.accent ? (
+              <span class="text-signal-ink font-bold">{p.text}</span>
+            ) : (
+              <span>{p.text}</span>
+            )
+          )
+        }
+      </h1>
+      <p class="text-[19px] text-muted max-w-[44ch] m-0 mb-6">
+        {siteConfig.tagline}
+      </p>
+      <p class="text-[15px] text-faint m-0">
+        A lab led by <a
+          href="/pi/"
+          class="text-signal-ink font-medium no-underline hover:underline"
+          >Logan Grosenick</a
+        > at Weill Cornell Medicine, Cornell University.
+      </p>
+    </div>
+
+    <div
+      class="aspect-[4/3.2] rounded-[14px] border border-line bg-wash relative overflow-hidden"
+    >
+      <canvas id="heroNet" class="absolute inset-0 w-full h-full block"></canvas>
+      <span
+        class="absolute left-4 bottom-3.5 font-mono text-[11px] text-faint tracking-wide"
+      >
+        Learning over the structure of brain networks
+      </span>
+    </div>
+  </div>
+</section>
+
+<script>
+  (() => {
+    const c = document.getElementById("heroNet") as HTMLCanvasElement | null;
+    if (!c) return;
+    const ctx = c.getContext("2d");
+    if (!ctx) return;
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    type Node = {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      r: number;
+      hot: boolean;
+    };
+    let w = 0,
+      h = 0,
+      dpr = 1,
+      nodes: Node[] = [],
+      raf = 0;
+
+    function size() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = c!.clientWidth;
+      h = c!.clientHeight;
+      c!.width = w * dpr;
+      c!.height = h * dpr;
+      ctx!.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function init() {
+      size();
+      const n = Math.max(20, Math.round((w * h) / 14000));
+      nodes = [];
+      for (let i = 0; i < n; i++) {
+        nodes.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.16,
+          vy: (Math.random() - 0.5) * 0.16,
+          r: Math.random() < 0.14 ? 2.6 : 1.5,
+          hot: Math.random() < 0.14,
+        });
+      }
+    }
+    function draw(animate: boolean) {
+      ctx!.clearRect(0, 0, w, h);
+      for (let i = 0; i < nodes.length; i++) {
+        const a = nodes[i];
+        if (animate) {
+          a.x += a.vx;
+          a.y += a.vy;
+          if (a.x < 0 || a.x > w) a.vx *= -1;
+          if (a.y < 0 || a.y > h) a.vy *= -1;
+        }
+        for (let j = i + 1; j < nodes.length; j++) {
+          const b = nodes[j];
+          const dx = a.x - b.x,
+            dy = a.y - b.y;
+          const d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 120) {
+            ctx!.strokeStyle = "rgba(120,150,170," + (1 - d / 120) * 0.5 + ")";
+            ctx!.lineWidth = 0.7;
+            ctx!.beginPath();
+            ctx!.moveTo(a.x, a.y);
+            ctx!.lineTo(b.x, b.y);
+            ctx!.stroke();
+          }
+        }
+      }
+      for (let k = 0; k < nodes.length; k++) {
+        const p = nodes[k];
+        ctx!.beginPath();
+        ctx!.arc(p.x, p.y, p.r, 0, 6.2832);
+        ctx!.fillStyle = p.hot ? "#EC4D7D" : "rgba(120,150,170,.8)";
+        ctx!.fill();
+      }
+      if (animate) raf = requestAnimationFrame(() => draw(true));
+    }
+    function start() {
+      cancelAnimationFrame(raf);
+      init();
+      draw(!reduce);
+    }
+    window.addEventListener("resize", start);
+    start();
+  })();
+</script>
