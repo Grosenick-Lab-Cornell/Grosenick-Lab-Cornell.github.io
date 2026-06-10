@@ -1,10 +1,10 @@
 # Lively, grouped news feed (Mathis-style). Keep it warm; emoji welcome.
-# Grouped by period, newest first. Verify dates/links before publishing — these
+# Grouped by period, newest first. Verify dates/links before publishing; these
 # are assembled from the CV and may need exact dates.
 
 - period: "2026"
   items:
-    - "🎉 New work on treatment personalization — *Contrastive Diffusion Alignment* — accepted at **ICML 2026**! Congratulations to **Ruchi Sandilya** and the team."
+    - "🎉 New work on treatment personalization, *Contrastive Diffusion Alignment*, accepted at **ICML 2026**! Congratulations to **Ruchi Sandilya** and the team."
 
 - period: "2025"
   items:

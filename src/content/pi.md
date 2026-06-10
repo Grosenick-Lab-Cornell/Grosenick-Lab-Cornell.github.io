@@ -14,9 +14,9 @@ links:
   bluesky: https://bsky.app/profile/logangrosenick.bsky.social
   twitter: https://x.com/logangrosenick
 training:
-  - "PhD, Neurosciences — Stanford University (advisor: Karl Deisseroth)"
-  - "Postdoc & Simons Junior Fellow, Statistics — Columbia University (advisor: Liam Paninski)"
-  - "MSc, Statistics; BS, Biology; BA, Psychology — Stanford University"
+  - "PhD, Neurosciences, Stanford University (advisor: Karl Deisseroth)"
+  - "Postdoc & Simons Junior Fellow, Statistics, Columbia University (advisor: Liam Paninski)"
+  - "MSc, Statistics; BS, Biology; BA, Psychology, Stanford University"
 ---
 
 ## About
@@ -26,7 +26,7 @@ treatment of mental illness more precise. Trained as both a neuroscientist and a
 statistician, he leads a lab that develops machine-learning methods to define
 biological subtypes of psychiatric disorders, predict who will respond to which
 treatment, and design the neurotechnology that produces the data those models
-learn from — work that spans depression, treatment-resistant depression, and
+learn from. The work spans depression, treatment-resistant depression, and
 autism, and that runs from algorithms to the clinic.
 
 Before founding his lab, Logan helped build several tools now common in
@@ -35,7 +35,7 @@ activity of genetically- and connectivity-defined neural projections that is now
 commercialized and used worldwide, and he pioneered the use of **light-field
 imaging** in biology for fast, volumetric recording of neural activity. His
 group's work established some of the first evidence that data-driven
-**neurophysiological subtypes** — rather than symptom categories alone — can
+**neurophysiological subtypes**, rather than symptom categories alone, can
 identify which patients benefit from targeted therapies such as TMS.
 
 He is an Assistant Professor of Neuroscience in Psychiatry at Weill Cornell
@@ -56,8 +56,8 @@ neuroscience, and engineering.
 
 > Logan Grosenick is an Assistant Professor of Neuroscience in Psychiatry at
 > Weill Cornell Medicine, where he directs the Grosenick Lab. Trained as both a
-> neuroscientist and a statistician — with a PhD from Stanford and a Simons
-> fellowship at Columbia — he builds artificial intelligence and neurotechnology
+> neuroscientist and a statistician, with a PhD from Stanford and a Simons
+> fellowship at Columbia, he builds artificial intelligence and neurotechnology
 > to make psychiatric treatment more precise. His lab develops machine-learning
 > methods to define biological subtypes of depression and autism and to predict
 > who will respond to which therapy. Earlier in his career he invented fiber
@@ -69,7 +69,7 @@ neuroscience, and engineering.
 > is an Assistant Professor of Neuroscience in Psychiatry. A neuroscientist and
 > statistician by training (PhD, Stanford; Simons Junior Fellow, Columbia), he
 > develops machine learning and neurotechnology to understand psychiatric illness
-> and personalize its treatment — from data-driven biological subtypes of
+> and personalize its treatment, from data-driven biological subtypes of
 > depression and autism to generative models that predict individual treatment
 > response. His earlier work includes inventing fiber photometry and pioneering
 > light-field imaging in neuroscience. His research is supported by the NIMH, the
@@ -83,7 +83,7 @@ neuroscience, and engineering.
 
 <!--
   Maintenance note: keep these three in sync with the mission. They are written to
-  satisfy two readers at once — a funder skimming for credibility (training,
+  satisfy two readers at once: a funder skimming for credibility (training,
   invention of fiber photometry, NIMH support, subtype work) and a prospective
   postdoc looking for a mentor (active lab, interdisciplinary, strong outcomes).
 -->

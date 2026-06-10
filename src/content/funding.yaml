@@ -1,6 +1,6 @@
 # Funders / sponsors for the support strip + /funding page.
 # Source official logos from each funder's press/brand kit and drop into
-# public/images/funders/. List only awarded funding — no pending/under-review.
+# public/images/funders/. List only awarded funding. No pending/under-review.
 
 research:
   - name: National Institute of Mental Health (NIMH)
@@ -36,10 +36,10 @@ research:
 # also reinforces the People section's outcomes).
 trainee:
   - name: SFARI (Simons Foundation Autism Research Initiative)
-    note: "Bridge to Independence Award — A. Buch"
+    note: "Bridge to Independence Award (A. Buch)"
   - name: Burroughs Wellcome Fund
-    note: "Scholar — A. Buch"
+    note: "Scholar (A. Buch)"
   - name: Ford Foundation / NASEM
-    note: "Postdoctoral Fellowship — A. Buch"
+    note: "Postdoctoral Fellowship (A. Buch)"
   - name: Life Sciences Research Foundation (LSRF)
-    note: "Postdoctoral Fellowship — I. Kauvar"
+    note: "Postdoctoral Fellowship (I. Kauvar)"
