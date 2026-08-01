@@ -70,7 +70,7 @@
   note: Comparing learned manifolds across animals and patients.
 
 - name: Michelle Junyi He
-  photo: ""   # /images/people/michelle-he.jpg  (save from LinkedIn by hand; LinkedIn blocks automated download)
+  photo: /images/people/michelle-he.jpg
   role: MD-PhD Student
   status: current
   order: 22
@@ -78,7 +78,7 @@
   note: Incoming MD-PhD student.
 
 - name: Michelle Jae Lee
-  photo: ""   # /images/people/michelle-jae-lee.jpg
+  photo: /images/people/michelle-jae-lee.jpg
   role: Research Associate
   status: current
   order: 23
