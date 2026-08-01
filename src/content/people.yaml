@@ -63,7 +63,7 @@
   note: Neural-circuit mechanisms of treatment-resistant depression with TMS-EEG.
 
 - name: Jiarui "Olivia" Ao
-  photo: ""   # /images/people/jiarui-olivia-ao.jpg
+  photo: /images/people/jiarui-olivia-ao.jpg
   role: PhD Candidate, Neuroscience
   status: current
   order: 21
@@ -93,7 +93,7 @@
 
 # ---- Alumni (with outcomes) ----
 - name: Tim Spellman, PhD
-  photo: ""   # /images/people/tim-spellman.jpg
+  photo: /images/people/tim-spellman.jpg
   role: Postdoctoral mentee (K99/R00)
   status: alumni
   order: 100
