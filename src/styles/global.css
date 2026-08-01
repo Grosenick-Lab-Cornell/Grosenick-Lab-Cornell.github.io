@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #FFFFFF;
-  --color-wash: #F6F8F9;
-  --color-ink: #15202B;
-  --color-muted: #5A6B79;
-  --color-faint: #8A98A4;
-  --color-line: #E8ECEF;
+  /* Dark palette — near-black page, teal/rose accents (matches the hero artwork) */
+  --color-paper: #06080C;
+  --color-wash: #0E131A;
+  --color-ink: #E8EEF2;
+  --color-muted: #9CAEBB;
+  --color-faint: #64757F;
+  --color-line: #1B242E;
   --color-signal: #EC4D7D;
-  --color-signal-ink: #CC356C;
+  --color-signal-ink: #FF6E9C;
+  --color-teal: #8FE9DC;
 
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;

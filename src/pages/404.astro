@@ -1,0 +1,64 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/components/PageHeader.astro";
+
+const suggestions: Array<{ label: string; href: string; blurb: string }> = [
+  {
+    label: "Research",
+    href: "/research/",
+    blurb: "Four themes: subtyping, personalization, ML methods, neuroengineering.",
+  },
+  {
+    label: "Publications",
+    href: "/publications/",
+    blurb: "All papers, grouped by year, with paper / preprint / code links.",
+  },
+  {
+    label: "Team",
+    href: "/people/",
+    blurb: "Current members and alumni outcomes.",
+  },
+  {
+    label: "Open positions",
+    href: "/join/",
+    blurb: "Two specific postdoc openings.",
+  },
+];
+---
+
+<Layout
+  title="Page not found | Grosenick Lab"
+  description="The page you were looking for does not exist on grosenicklab.org."
+>
+  <PageHeader
+    eyebrow="404"
+    title="That page isn't here."
+    lead="The link may be old, or we may have moved things. A few places to try:"
+  />
+
+  <div class="mx-auto max-w-[1120px] px-7 py-16">
+    <ul class="grid gap-5 md:grid-cols-2 list-none m-0 p-0">
+      {
+        suggestions.map((s) => (
+          <li class="border border-line rounded-[14px] p-6 bg-paper hover:border-signal-ink/40 transition-colors">
+            <a
+              href={s.href}
+              class="block no-underline text-ink"
+            >
+              <p class="font-display text-[20px] font-medium m-0 mb-2">
+                {s.label}
+                <span aria-hidden="true" class="text-signal-ink ml-1">→</span>
+              </p>
+              <p class="text-[15px] text-muted m-0 leading-[1.55]">{s.blurb}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="mt-12 text-[15px] text-muted">
+      Or head back to the
+      <a href="/" class="text-signal-ink underline-offset-4 hover:underline">homepage</a>.
+    </p>
+  </div>
+</Layout>

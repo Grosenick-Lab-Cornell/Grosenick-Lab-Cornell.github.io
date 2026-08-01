@@ -1,7 +1,7 @@
 ---
 import siteConfig from "@/content/site.yaml";
 
-const { email, github, bluesky, twitter } = siteConfig.contact;
+const { linkedin, coordinatorName, coordinatorEmail } = siteConfig.contact;
 ---
 
 <section class="border-t border-line py-20">
@@ -17,47 +17,37 @@ const { email, github, bluesky, twitter } = siteConfig.contact;
       Want to work with us?
     </h2>
     <p class="text-[19px] text-muted max-w-[58ch] m-0 mb-8">
-      Postdocs, PhD students, and collaborators welcome. Email the PI directly.
+      Postdocs, PhD students, and collaborators are welcome. See the open
+      positions and how to apply. For other inquiries, contact the lab
+      coordinator{coordinatorName ? `, ${coordinatorName}` : ""}.
     </p>
     <div class="flex flex-wrap items-center gap-x-7 gap-y-4">
       <a
-        href={`mailto:${email}`}
+        href="/join/"
         class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-ink text-paper font-display font-medium text-sm no-underline hover:bg-signal-ink transition-colors"
       >
-        {email}
+        View open positions →
       </a>
-      <div class="flex gap-6">
-        {
-          github && (
-            <a
-              href={github}
-              class="text-sm font-display font-medium text-muted hover:text-ink no-underline"
-            >
-              GitHub
-            </a>
-          )
-        }
-        {
-          bluesky && (
-            <a
-              href={bluesky}
-              class="text-sm font-display font-medium text-muted hover:text-ink no-underline"
-            >
-              Bluesky
-            </a>
-          )
-        }
-        {
-          twitter && (
-            <a
-              href={twitter}
-              class="text-sm font-display font-medium text-muted hover:text-ink no-underline"
-            >
-              X
-            </a>
-          )
-        }
-      </div>
+      {
+        coordinatorEmail && (
+          <a
+            href={`mailto:${coordinatorEmail}`}
+            class="text-sm font-display font-medium text-muted hover:text-ink no-underline"
+          >
+            {coordinatorEmail}
+          </a>
+        )
+      }
+      {
+        linkedin && (
+          <a
+            href={linkedin}
+            class="text-sm font-display font-medium text-muted hover:text-ink no-underline"
+          >
+            LinkedIn
+          </a>
+        )
+      }
     </div>
   </div>
 </section>

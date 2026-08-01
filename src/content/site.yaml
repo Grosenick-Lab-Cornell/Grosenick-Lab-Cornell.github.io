@@ -15,12 +15,15 @@ institution: Weill Cornell Medicine
 university: Cornell University
 
 contact:
-  email: log4002@med.cornell.edu
+  email: log4002@med.cornell.edu   # PI — not surfaced publicly; inquiries route to the coordinator
+  coordinatorName: Jordan Serrano-Guedea
+  coordinatorEmail: jas4060@med.cornell.edu
   office: "1300 York Ave, Rm F-1338, New York, NY"
   github: https://github.com/Grosenick-Lab-Cornell
   githubOrg: Grosenick-Lab-Cornell
   bluesky: https://bsky.app/profile/logangrosenick.bsky.social
   twitter: https://x.com/logangrosenick
+  linkedin: https://www.linkedin.com/in/logan-grosenick-8235771/
   scholar: ""   # add Google Scholar profile URL
 
 nav:

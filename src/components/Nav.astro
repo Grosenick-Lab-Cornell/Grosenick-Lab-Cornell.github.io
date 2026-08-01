@@ -1,18 +1,25 @@
 ---
 import siteConfig from "@/content/site.yaml";
 
+interface Props {
+  overlay?: boolean;
+}
+
+const { overlay = false } = Astro.props;
 const { nav, shortName } = siteConfig;
 ---
 
 <header
-  class="sticky top-0 z-50 bg-paper/85 backdrop-blur-md border-b border-line"
+  id="siteNav"
+  data-overlay={overlay ? "true" : "false"}
+  class="sticky top-0 z-50"
 >
   <div
     class="mx-auto max-w-[1120px] px-7 h-[66px] flex items-center justify-between"
   >
     <a
       href="/"
-      class="flex items-center gap-3 font-display font-semibold text-lg tracking-tight text-ink no-underline"
+      class="brand flex items-center gap-3 font-display font-semibold text-lg tracking-tight no-underline"
     >
       <span class="w-[9px] h-[9px] rounded-full bg-signal ring-4 ring-signal/15"
       ></span>
@@ -26,7 +33,7 @@ const { nav, shortName } = siteConfig;
             <li>
               <a
                 href={item.href}
-                class="text-sm font-display font-medium text-muted hover:text-ink no-underline"
+                class="nav-link text-sm font-display font-medium no-underline"
               >
                 {item.label}
               </a>
@@ -42,7 +49,7 @@ const { nav, shortName } = siteConfig;
       aria-label="Toggle navigation"
       aria-expanded="false"
       aria-controls="navMenu"
-      class="md:hidden p-2 -mr-2 text-ink"
+      class="nav-toggle md:hidden p-2 -mr-2"
     >
       <svg
         viewBox="0 0 24 24"
@@ -80,17 +87,77 @@ const { nav, shortName } = siteConfig;
   </div>
 </header>
 
+<style>
+  #siteNav {
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease;
+    border-bottom: 1px solid transparent;
+  }
+  .brand {
+    color: var(--color-ink);
+  }
+  .nav-link {
+    color: var(--color-muted);
+  }
+  .nav-link:hover {
+    color: var(--color-ink);
+  }
+  .nav-toggle {
+    color: var(--color-ink);
+  }
+
+  /* Solid chrome: scrolled overlay pages + all non-overlay pages */
+  #siteNav.is-solid,
+  #siteNav[data-overlay="false"] {
+    background: color-mix(in srgb, var(--color-paper) 88%, transparent);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom-color: var(--color-line);
+  }
+
+  /* Transparent overlay over the dark hero (homepage, at the top) */
+  #siteNav[data-overlay="true"]:not(.is-solid) .brand {
+    color: #fff;
+  }
+  #siteNav[data-overlay="true"]:not(.is-solid) .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #siteNav[data-overlay="true"]:not(.is-solid) .nav-link:hover {
+    color: #fff;
+  }
+  #siteNav[data-overlay="true"]:not(.is-solid) .nav-toggle {
+    color: #fff;
+  }
+</style>
+
 <script>
+  const header = document.getElementById("siteNav");
   const btn = document.getElementById("navToggle");
   const menu = document.getElementById("navMenu");
+  const isOverlay = header?.dataset.overlay === "true";
+
+  // Overlay nav: transparent at the top, solid once scrolled (or menu open).
+  if (isOverlay && header) {
+    const sync = () => {
+      const menuOpen = menu ? !menu.classList.contains("hidden") : false;
+      header.classList.toggle("is-solid", window.scrollY > 24 || menuOpen);
+    };
+    sync();
+    window.addEventListener("scroll", sync, { passive: true });
+    header.addEventListener("nav:menu", sync);
+  }
+
   btn?.addEventListener("click", () => {
     const nowHidden = menu?.classList.toggle("hidden");
     btn.setAttribute("aria-expanded", nowHidden ? "false" : "true");
+    header?.dispatchEvent(new CustomEvent("nav:menu"));
   });
   menu?.querySelectorAll("a").forEach((a) => {
     a.addEventListener("click", () => {
       menu.classList.add("hidden");
       btn?.setAttribute("aria-expanded", "false");
+      header?.dispatchEvent(new CustomEvent("nav:menu"));
     });
   });
 </script>

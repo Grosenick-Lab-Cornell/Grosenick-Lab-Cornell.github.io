@@ -1,16 +1,13 @@
 ---
 import newsData from "@/content/news.yaml";
-import { richify, splitEmoji } from "@/lib/text";
+import { richify } from "@/lib/text";
 
 type Period = { period: string; items: string[] };
 const periods = newsData as Period[];
 
 const rendered = periods.map((p) => ({
   period: p.period,
-  items: p.items.map((raw) => {
-    const { icon, rest } = splitEmoji(raw);
-    return { icon, html: richify(rest) };
-  }),
+  items: p.items.map((raw) => ({ html: richify(raw) })),
 }));
 ---
 
@@ -38,11 +35,12 @@ const rendered = periods.map((p) => ({
               {period}
             </p>
             <ul class="list-none m-0 p-0 grid gap-4">
-              {items.map(({ icon, html }) => (
-                <li class="grid grid-cols-[26px_1fr] gap-3 text-[16.5px] leading-[1.5] items-start">
-                  <span class="text-[17px] leading-[1.4]" aria-hidden="true">
-                    {icon}
-                  </span>
+              {items.map(({ html }) => (
+                <li class="grid grid-cols-[14px_1fr] gap-3 text-[16.5px] leading-[1.5] items-baseline">
+                  <span
+                    class="mt-[2px] h-[6px] w-[6px] rounded-full bg-signal/70"
+                    aria-hidden="true"
+                  />
                   <div
                     class="text-ink/90 [&_strong]:text-ink [&_strong]:font-semibold [&_em]:italic"
                     set:html={html}

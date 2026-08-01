@@ -39,7 +39,7 @@ const { paper } = Astro.props;
       paper.chips.map((chip) => (
         <a
           href={chip.href}
-          class="inline-block font-mono text-[11px] text-signal-ink no-underline px-2.5 py-1 rounded-full border border-line bg-paper hover:bg-wash hover:border-[#dbe1e6] uppercase tracking-wide transition-colors"
+          class="inline-block font-mono text-[11px] text-signal-ink no-underline px-2.5 py-1 rounded-full border border-line bg-wash hover:bg-signal/10 hover:border-signal-ink/40 uppercase tracking-wide transition-colors"
         >
           {chip.label}
         </a>
@@ -47,7 +47,7 @@ const { paper } = Astro.props;
     }
     {
       paper.award && (
-        <span class="inline-block font-mono text-[11px] text-signal-ink bg-[#fdebf2] px-2.5 py-1 rounded-full uppercase tracking-wide">
+        <span class="inline-block font-mono text-[11px] text-signal-ink bg-signal/15 px-2.5 py-1 rounded-full uppercase tracking-wide">
           ★ {paper.award}
         </span>
       )
