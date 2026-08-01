@@ -10,7 +10,7 @@
   status: current
   order: 0
   url: ""
-  photo: ""   # /images/people/logan-grosenick.jpg
+  photo: /images/people/logan-grosenick.jpg
   bio: >-
     Logan leads the lab's work at the intersection of machine learning,
     statistics, and neuroengineering, developing methods to understand
@@ -18,7 +18,7 @@
 
 # ---- Current members ----
 - name: Marzieh Ajirak, PhD
-  photo: ""   # /images/people/marzieh-ajirak.jpg
+  photo: /images/people/marzieh-ajirak.jpg
   role: Postdoctoral Fellow
   status: current
   order: 10
@@ -26,14 +26,14 @@
   note: Multimodal AI for treatment-response prediction from clinical video, audio, and notes.
 
 - name: Karsten Gimre, PhD
-  photo: ""   # /images/people/karsten-gimre.jpg
+  photo: /images/people/karsten-gimre.jpg
   role: Postdoctoral Fellow
   status: current
   order: 11
   note: Robust, reproducible estimators for neural connectivity and multi-omics networks.
 
 - name: Ruchi Sandilya, PhD
-  photo: ""   # /images/people/ruchi-sandilya.jpg
+  photo: /images/people/ruchi-sandilya.jpg
   role: Postdoctoral Fellow
   status: current
   order: 12
@@ -41,14 +41,14 @@
   note: Treatment personalization via controllable counterfactuals and generative digital twins.
 
 - name: Nathaniel Tse, PhD
-  photo: ""   # /images/people/nathaniel-tse.jpg
+  photo: /images/people/nathaniel-tse.jpg
   role: Postdoctoral Fellow
   status: current
   order: 13
   note: Label-free 3D body-mesh models of animal behavior from video.
 
 - name: Neil Gallagher, PhD
-  photo: ""   # /images/people/neil-gallagher.jpg
+  photo: /images/people/neil-gallagher.jpg
   role: Postdoctoral Fellow
   status: current
   order: 14
@@ -56,7 +56,7 @@
   note: Graph-based and causal ML for TMS+EEG in treatment-resistant depression.
 
 - name: Isabella Karabinas
-  photo: ""   # /images/people/isabella-karabinas.jpg
+  photo: /images/people/isabella-karabinas.jpg
   role: MD-PhD Candidate
   status: current
   order: 20
@@ -69,8 +69,22 @@
   order: 21
   note: Comparing learned manifolds across animals and patients.
 
+- name: Michelle Junyi He
+  photo: ""   # /images/people/michelle-he.jpg  (save from LinkedIn by hand; LinkedIn blocks automated download)
+  role: MD-PhD Student
+  status: current
+  order: 22
+  joined: "2026"
+  note: Incoming MD-PhD student.
+
+- name: Michelle Jae Lee
+  photo: ""   # /images/people/michelle-jae-lee.jpg
+  role: Research Associate
+  status: current
+  order: 23
+
 - name: Jordan Serrano-Guedea
-  photo: ""   # /images/people/jordan-serrano-guedea.jpg
+  photo: /images/people/jordan-serrano-guedea.jpg
   role: Research Associate
   status: current
   order: 30
@@ -93,28 +107,28 @@
   alumniNote: now Assistant Professor of Psychiatry & Bioengineering, Duke University
 
 - name: Isaac Kauvar, PhD
-  photo: ""   # /images/people/isaac-kauvar.jpg
+  photo: /images/people/isaac-kauvar.jpg
   role: Postdoctoral Fellow (LSRF)
   status: alumni
   order: 102
   alumniNote: now AI Scientist, Anthropic
 
 - name: Isaac Osafo Nkansah
-  photo: ""   # /images/people/isaac-osafo-nkansah.jpg
+  photo: /images/people/isaac-osafo-nkansah.jpg
   role: Senior Research Associate
   status: alumni
   order: 103
   alumniNote: now Senior Applied Power Architect, Nvidia Research
 
 - name: Mason Hargrave, PhD
-  photo: ""   # /images/people/mason-hargrave.jpg
+  photo: /images/people/mason-hargrave.jpg
   role: Researcher (Rockefeller, NSF GRF)
   status: alumni
   order: 104
   alumniNote: now Data Scientist, BCG
 
 - name: Catherine Parkin
-  photo: ""   # /images/people/catherine-parkin.jpg
+  photo: /images/people/catherine-parkin.jpg
   role: Research Associate
   status: alumni
   order: 110
@@ -149,7 +163,7 @@
   alumniNote: now MD candidate, New York Medical College
 
 - name: Alisha Dua
-  photo: ""   # /images/people/alisha-dua.jpg
+  photo: /images/people/alisha-dua.jpg
   role: MD-PhD student
   status: alumni
   order: 115
