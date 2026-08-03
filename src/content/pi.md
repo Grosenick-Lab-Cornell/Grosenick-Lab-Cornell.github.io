@@ -5,7 +5,7 @@ affiliations:
   - Feil Family Brain & Mind Research Institute
   - Tri-Institutional MD-PhD Program
   - Weill Cornell Medicine, Cornell University
-photo: /images/people/grosenick.jpg
+photo: /images/people/logan-grosenick.jpg
 email: log4002@med.cornell.edu
 links:
   scholar: ""            # Google Scholar URL

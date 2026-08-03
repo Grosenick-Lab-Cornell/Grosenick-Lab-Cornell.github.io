@@ -1,0 +1,47 @@
+---
+import funding from "@/content/funding.yaml";
+
+type Funder = { name: string; note?: string; url?: string };
+const research = (funding.research ?? []) as Funder[];
+---
+
+<section class="border-t border-line py-16">
+  <div class="mx-auto max-w-[1120px] px-7">
+    <p
+      class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-2"
+    >
+      Support
+    </p>
+    <h2
+      class="font-display text-[22px] md:text-[24px] font-medium tracking-[-0.015em] m-0 mb-9"
+    >
+      Funded by
+    </h2>
+    <ul
+      class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-7 list-none m-0 p-0"
+    >
+      {
+        research.map((f) => {
+          const Tag = f.url ? "a" : "div";
+          return (
+            <li>
+              <Tag
+                href={f.url || undefined}
+                class={`group block no-underline ${f.url ? "" : "cursor-default"}`}
+              >
+                <p class="font-display font-medium text-[15.5px] text-ink leading-snug m-0 transition-colors group-hover:text-signal-ink">
+                  {f.name}
+                </p>
+                {f.note && (
+                  <p class="font-mono text-[11px] text-faint mt-1.5 m-0">
+                    {f.note}
+                  </p>
+                )}
+              </Tag>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</section>

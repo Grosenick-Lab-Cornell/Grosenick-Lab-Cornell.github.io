@@ -12,8 +12,10 @@ const initials = frontmatter.name
   .map((t: string) => t.charAt(0).toUpperCase())
   .join("");
 
+const hasCv = frontmatter.links?.cv && publicAssetExists(frontmatter.links.cv);
+
 const linkRows: Array<{ label: string; href: string }> = [
-  frontmatter.links?.cv ? { label: "CV (PDF)", href: frontmatter.links.cv } : null,
+  hasCv ? { label: "CV (PDF)", href: frontmatter.links.cv } : null,
   frontmatter.links?.scholar ? { label: "Google Scholar", href: frontmatter.links.scholar } : null,
   frontmatter.links?.ncbi ? { label: "NCBI Bibliography", href: frontmatter.links.ncbi } : null,
   frontmatter.links?.bluesky ? { label: "Bluesky", href: frontmatter.links.bluesky } : null,

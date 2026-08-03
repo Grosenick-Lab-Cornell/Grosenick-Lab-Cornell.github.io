@@ -38,7 +38,7 @@ const rendered = await Promise.all(
           class={`grid gap-10 md:grid-cols-2 items-center ${i % 2 === 1 ? "md:[&>figure]:order-2" : ""}`}
         >
           <figure class="m-0">
-            <div class="aspect-[4/3] rounded-[14px] overflow-hidden bg-wash border border-line flex items-center justify-center">
+            <div class="aspect-[4/3] rounded-[14px] overflow-hidden bg-wash border border-line flex items-center justify-center relative">
               {showFigure ? (
                 <img
                   src={data.figure}
@@ -47,9 +47,14 @@ const rendered = await Promise.all(
                   loading="lazy"
                 />
               ) : (
-                <span class="font-mono text-xs text-faint uppercase tracking-wider">
-                  Figure
-                </span>
+                <div
+                  class="absolute inset-0 flex items-center justify-center"
+                  style="background:radial-gradient(130% 130% at 28% 22%, rgba(236,77,125,0.07), transparent 62%)"
+                >
+                  <span
+                    class="w-2.5 h-2.5 rounded-full bg-signal/55 ring-4 ring-signal/10"
+                  />
+                </div>
               )}
             </div>
             {data.figureCaption && (
