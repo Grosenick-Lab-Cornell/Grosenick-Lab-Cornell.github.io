@@ -8,6 +8,7 @@ interface Person {
   url?: string;
   coadvisor?: string;
   note?: string;
+  placeholder?: string;
 }
 
 interface Props {
@@ -45,6 +46,15 @@ const showPhoto = publicAssetExists(person.photo);
           class="w-full h-full object-cover"
           loading="lazy"
         />
+      ) : person.placeholder === "wcm" ? (
+        <div class="flex flex-col items-center justify-center gap-1.5 px-3 text-center">
+          <span class="font-display font-bold text-[34px] leading-none text-muted">
+            WCM
+          </span>
+          <span class="font-mono text-[9px] uppercase tracking-[0.16em] text-faint">
+            Weill Cornell Medicine
+          </span>
+        </div>
       ) : (
         <span class="font-display font-bold text-[44px] text-faint">
           {initials}

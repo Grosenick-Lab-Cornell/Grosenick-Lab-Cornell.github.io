@@ -83,6 +83,13 @@
   status: current
   order: 23
 
+- name: Kenneth Johnson
+  photo: ""   # /images/people/kenneth-johnson.jpg
+  placeholder: wcm   # temporary WCM affiliation tile until a headshot is provided
+  role: PhD Candidate
+  status: current
+  order: 24
+
 - name: Jordan Serrano-Guedea
   photo: /images/people/jordan-serrano-guedea.jpg
   role: Research Associate
