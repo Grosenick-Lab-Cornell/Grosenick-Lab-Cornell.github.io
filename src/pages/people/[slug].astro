@@ -1,0 +1,94 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/components/PageHeader.astro";
+import { publicAssetExists } from "@/lib/assets";
+import { slugifyName } from "@/lib/text";
+import peopleData from "@/content/people.yaml";
+
+type Person = {
+  name: string;
+  role: string;
+  status: "current" | "alumni";
+  photo?: string;
+  url?: string;
+  coadvisor?: string;
+  note?: string;
+  bio?: string;
+  order?: number;
+};
+
+export function getStaticPaths() {
+  const people = (peopleData as Person[]).filter((p) => p.bio && !p.url);
+  return people.map((person) => ({
+    params: { slug: slugifyName(person.name) },
+    props: { person },
+  }));
+}
+
+const { person } = Astro.props as { person: Person };
+
+const showPhoto = publicAssetExists(person.photo);
+const initials = person.name
+  .replace(/,\s*(MD-PhD|Ph\.?D\.?|MD)\.?$/i, "")
+  .replace(/"[^"]*"/g, "")
+  .split(/\s+/)
+  .filter(Boolean)
+  .slice(0, 2)
+  .map((t) => t.charAt(0).toUpperCase())
+  .join("");
+---
+
+<Layout
+  title={`${person.name} | Grosenick Lab`}
+  description={`${person.name}, ${person.role} in the Grosenick Lab at Weill Cornell Medicine.`}
+>
+  <PageHeader eyebrow="Team" title={person.name} lead={person.role} />
+
+  <div class="mx-auto max-w-[1120px] px-7 py-16">
+    <a
+      href="/people"
+      class="inline-block font-mono text-[12px] uppercase tracking-wide text-signal-ink no-underline hover:underline mb-10"
+    >
+      &larr; Back to team
+    </a>
+
+    <div class="grid gap-12 md:grid-cols-[280px_1fr]">
+      <aside class="space-y-7">
+        <div
+          class="aspect-square rounded-[14px] overflow-hidden bg-wash border border-line flex items-center justify-center"
+        >
+          {
+            showPhoto ? (
+              <img
+                src={person.photo}
+                alt={person.name}
+                class="w-full h-full object-cover"
+              />
+            ) : (
+              <span class="font-display font-bold text-[56px] text-faint">
+                {initials}
+              </span>
+            )
+          }
+        </div>
+
+        {
+          person.coadvisor && (
+            <div>
+              <p class="font-mono text-[11px] uppercase tracking-wide text-faint m-0 mb-2">
+                Co-advisor
+              </p>
+              <p class="text-[13.5px] text-muted leading-relaxed m-0">
+                {person.coadvisor}
+              </p>
+            </div>
+          )
+        }
+      </aside>
+
+      <article class="prose-page">
+        <p>{person.bio}</p>
+      </article>
+    </div>
+  </div>
+</Layout>

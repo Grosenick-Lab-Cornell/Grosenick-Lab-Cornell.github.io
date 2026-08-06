@@ -8,6 +8,16 @@ export function richify(s: string): string {
     );
 }
 
+export function slugifyName(name: string): string {
+  return name
+    .replace(/,\s*(MD-PhD|Ph\.?D\.?|MD)\.?$/i, "")
+    .replace(/["'.]/g, "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 export function splitEmoji(s: string): { icon: string; rest: string } {
   const trimmed = s.trimStart();
   const chars = Array.from(trimmed);

@@ -1,5 +1,6 @@
 ---
 import { publicAssetExists } from "@/lib/assets";
+import { slugifyName } from "@/lib/text";
 
 interface Person {
   name: string;
@@ -8,6 +9,7 @@ interface Person {
   url?: string;
   coadvisor?: string;
   note?: string;
+  bio?: string;
   placeholder?: string;
 }
 
@@ -16,6 +18,12 @@ interface Props {
 }
 
 const { person } = Astro.props;
+
+// A member with a full bio (and no explicit external url) links to their own
+// /people/<slug> page; the PI carries url: "/pi" so keeps that link instead.
+const bioHref =
+  person.bio && !person.url ? `/people/${slugifyName(person.name)}` : undefined;
+const href = bioHref ?? person.url;
 
 const initials = person.name
   .replace(/,\s*(PhD|MD-PhD|MD).*$/i, "")
@@ -26,13 +34,13 @@ const initials = person.name
   .map((t) => t.charAt(0).toUpperCase())
   .join("");
 
-const hasUrl = Boolean(person.url);
+const hasUrl = Boolean(href);
 const Wrapper = hasUrl ? "a" : "div";
 const showPhoto = publicAssetExists(person.photo);
 ---
 
 <Wrapper
-  href={hasUrl ? person.url : undefined}
+  href={hasUrl ? href : undefined}
   class="group block no-underline"
 >
   <div

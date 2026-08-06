@@ -9,7 +9,7 @@
   role: Principal Investigator
   status: current
   order: 0
-  url: ""
+  url: "/pi"
   photo: /images/people/logan-grosenick.jpg
   bio: >-
     Logan leads the lab's work at the intersection of machine learning,
@@ -24,6 +24,13 @@
   order: 10
   coadvisor: Nili Solomonov
   note: Multimodal AI for treatment-response prediction from clinical video, audio, and notes.
+  bio: >-
+    Marzieh Ajirak is a recent graduate in Electrical and Computer Engineering,
+    specializing in Machine Learning from Stony Brook University, where she
+    earned her PhD. Currently, she holds the position of Postdoctoral Fellow at
+    Weill Cornell Medicine. Throughout her doctoral studies, Marzieh focused on
+    the critical areas of uncertainty quantification in deep learning models and
+    Bayesian statistics.
 
 - name: Karsten Gimre, PhD
   photo: /images/people/karsten-gimre.jpg
@@ -31,6 +38,19 @@
   status: current
   order: 11
   note: Robust, reproducible estimators for neural connectivity and multi-omics networks.
+  bio: >-
+    Karsten received his B.S. in mathematics and physics from Pacific
+    University. Moving to New York in 2011, he received his Ph.D. in mathematics
+    from Columbia University, where he studied differential geometry, partial
+    differential equations, and general relativity with Mu-Tao Wang. After an
+    NSF postdoctoral research fellowship with Shing-Tung Yau in the mathematics
+    department at Harvard University, he began his current postdoctoral position
+    at Weill Cornell Medicine. He is interested in any mathematical aspects of
+    neuroscience and applied science, including in particular
+    electroencephalography, brain networks, and machine learning approaches to
+    data analysis. The best book he read in the last year is the first volume of
+    Robert Caro's "The Years of Lyndon Johnson," and he is learning to play the
+    clarinet.
 
 - name: Ruchi Sandilya, PhD
   photo: /images/people/ruchi-sandilya.jpg
@@ -39,6 +59,18 @@
   order: 12
   coadvisor: Conor Liston
   note: Treatment personalization via controllable counterfactuals and generative digital twins.
+  bio: >-
+    Ruchi is currently a postdoctoral associate at the Grosenick and Liston labs
+    at Weill Cornell Medicine, where she has worked since 2021. Previously, she
+    was a postdoctoral researcher at the Weierstrass Institute, Berlin, Germany
+    (2019-2020), and at the TIFR Centre for Applicable Mathematics, Bangalore,
+    India (2017-2019). She received her Ph.D. in Applied Mathematics from the
+    Indian Institute of Space Science and Technology, India in 2017. Her area of
+    expertise is finite element methods, control theory, complex dynamical
+    systems, and machine learning. In her current research, she is applying the
+    ideas of control theory with artificial intelligence to develop personalized
+    neurostimulation for treatment-resistant depression. Outside of academic
+    activities, she likes hiking and glass painting.
 
 - name: Nathaniel Tse, PhD
   photo: /images/people/nathaniel-tse.jpg
@@ -46,6 +78,14 @@
   status: current
   order: 13
   note: Label-free 3D body-mesh models of animal behavior from video.
+  bio: >-
+    Nate received his B.S. in pharmacology from Stony Brook University and then
+    in 2024 completed his Ph.D. in pharmacology at Weill Cornell. His graduate
+    work studied the protective effects of ketamine on fear behavior before
+    pivoting to study the effects of stress on social behavior and
+    neurodevelopment. In his postdoctoral work, he is applying machine learning
+    concepts to better analyze the rich time-series data characteristic of
+    complex ethology and neuronal activity.
 
 - name: Neil Gallagher, PhD
   photo: /images/people/neil-gallagher.jpg
@@ -61,6 +101,13 @@
   status: current
   order: 20
   note: Neural-circuit mechanisms of treatment-resistant depression with TMS-EEG.
+  bio: >-
+    Bella is an MD-PhD candidate in the Tri-Institutional Weill
+    Cornell/Rockefeller/Sloan-Kettering MD-PhD program, and joined the lab in
+    the fall of 2023. She graduated from Oregon State University in 2020 with
+    bachelor's degrees in Biochemistry & Molecular Biology and Psychology. Her
+    research interests include neural oscillations, brain networks, and emotion
+    regulation. Outside of the lab, Bella likes cooking, reading, and music.
 
 - name: Jiarui "Olivia" Ao
   photo: /images/people/jiarui-olivia-ao.jpg
@@ -82,6 +129,7 @@
   role: Research Associate
   status: current
   order: 23
+  note: MS in Data Science and MPH at Columbia. Develops ML models for biological subtyping.
 
 - name: Kenneth Johnson
   photo: ""   # /images/people/kenneth-johnson.jpg
@@ -97,6 +145,12 @@
   order: 30
   coadvisor: Nili Solomonov
   note: High-density EEG across accelerated TMS-iTBS treatment in MDD.
+  bio: >-
+    Jordan graduated from the University of California, Berkeley, with a double
+    B.A. in Psychology and Social Welfare. Jordan's research interests include
+    developing community-specific psychotherapy interventions for individuals
+    with anxiety and mood disorders and expanding access to high-quality mental
+    health treatment for underrepresented communities.
 
 # ---- Alumni (with outcomes) ----
 - name: Tim Spellman, PhD
