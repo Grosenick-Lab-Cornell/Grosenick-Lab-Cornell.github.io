@@ -115,6 +115,12 @@
   status: current
   order: 21
   note: Comparing learned manifolds across animals and patients.
+  bio: >-
+    Olivia received her B.Sc. and M.Sc. in Neuroscience from McGill University,
+    and is now a Ph.D. candidate of Neuroscience at Weill Cornell Graduate
+    School. Her research interests include neural representation, cross-animal
+    comparison and functional cell typing. Outside of the lab, you can find her
+    at Reptile Expo, Broadway musicals, or at home with her paw companion.
 
 - name: Michelle Junyi He
   photo: /images/people/michelle-he.jpg
@@ -122,7 +128,18 @@
   status: current
   order: 22
   joined: "2026"
-  note: Incoming MD-PhD student.
+  note: ML and neuroimaging for biologically informed patient subtypes and personalized treatment response.
+  bio: >-
+    Michelle went to MIT for undergraduate, where she majored in Molecular
+    Biology and Brain and Cognitive Sciences. After graduation, she worked in
+    Dr. Francis Lee's lab at Weill Cornell Medicine, investigating the role of
+    BDNF signaling in obsessive-compulsive disorder and exploring how gut-brain
+    interactions contribute to the development of repetitive behaviors. Now as a
+    Tri-Institutional MD-PhD student, Michelle aims to broaden her knowledge in
+    computational neuroscience and the clinical applications of her research. She
+    is particularly interested in the use of machine learning and neuroimaging to
+    identify biologically informed patient subtypes and develop personalized
+    representations of treatment response in individuals undergoing psychotherapy.
 
 - name: Michelle Jae Lee
   photo: /images/people/michelle-jae-lee.jpg
