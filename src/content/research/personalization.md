@@ -2,7 +2,7 @@
 title: Personalized treatment & digital twins
 order: 2
 figure: /images/research/digital-twins.jpg
-figureCaption: Controllable counterfactuals for treatment personalization via diffusion world models.
+figureCaption: Controllable counterfactuals for treatment personalization via diffusion world models (Sandilya et al., ICML 2026).
 ---
 Choosing a treatment means reasoning about a counterfactual: what would happen to
 *this* patient under *that* therapy. We build **generative digital twins** and
