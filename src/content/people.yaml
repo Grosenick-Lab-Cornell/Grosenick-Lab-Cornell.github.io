@@ -155,6 +155,23 @@
   status: current
   order: 24
 
+- name: Jupinder Parmar
+  photo: ""   # headshot pending
+  role: PhD Candidate
+  status: current
+  order: 25
+
+- name: Isaac Osafo Nkansah
+  photo: /images/people/isaac-osafo-nkansah.jpg
+  role: PhD Candidate
+  status: current
+  order: 26
+  bio: >-
+    Isaac graduated from Stanford University, where he majored in Electrical
+    Engineering with a focus on Machine Learning, AI, Information Systems, and
+    Wireless Systems. In his free time he loves practicing the piano, which he
+    is learning to play by ear, hiking, and listening to instrumentals.
+
 - name: Jordan Serrano-Guedea
   photo: /images/people/jordan-serrano-guedea.jpg
   role: Research Associate
@@ -190,13 +207,6 @@
   status: alumni
   order: 102
   alumniNote: now AI Scientist, Anthropic
-
-- name: Isaac Osafo Nkansah
-  photo: /images/people/isaac-osafo-nkansah.jpg
-  role: Senior Research Associate
-  status: alumni
-  order: 103
-  alumniNote: now Senior Applied Power Architect, Nvidia Research
 
 - name: Mason Hargrave, PhD
   photo: /images/people/mason-hargrave.jpg
