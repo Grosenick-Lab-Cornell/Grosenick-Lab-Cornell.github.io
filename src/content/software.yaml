@@ -13,8 +13,8 @@
   lang: Jupyter Notebook
   url: https://github.com/Grosenick-Lab-Cornell/EpiCare
 
-- name: CLEAN
-  badge: CL
-  blurb: Tooling for cleaning and structuring large-scale neural datasets.
-  lang: Jupyter Notebook
-  url: https://github.com/Grosenick-Lab-Cornell/CLEAN
+- name: ConDA
+  badge: CD
+  blurb: "Contrastive Diffusion Alignment: structured latents for controllable generation (ICML 2026)."
+  lang: Python
+  url: https://github.com/Grosenick-Lab-Cornell/ConDA
