@@ -2,7 +2,7 @@
 title: Biological subtyping & biomarkers
 order: 1
 figure: /images/research/subtyping.jpg
-figureCaption: Data-driven subtypes of depression from resting-state connectivity (Drysdale et al., Nature Medicine 2017).
+figureCaption: Data-driven biological subtypes from neuroimaging and multi-omics.
 ---
 Psychiatric diagnoses group together patients whose brains and treatment responses
 differ enormously, which is part of why finding an effective therapy is so often
