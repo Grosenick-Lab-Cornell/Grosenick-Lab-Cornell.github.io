@@ -113,7 +113,7 @@
   photo: /images/people/jiarui-olivia-ao.jpg
   role: PhD Candidate, Neuroscience
   status: current
-  order: 21
+  order: 22
   note: Comparing learned manifolds across animals and patients.
   bio: >-
     Olivia received her B.Sc. and M.Sc. in Neuroscience from McGill University,
@@ -126,7 +126,7 @@
   photo: /images/people/michelle-he.jpg
   role: MD-PhD Student
   status: current
-  order: 22
+  order: 21
   joined: "2026"
   note: ML and neuroimaging for biologically informed patient subtypes and personalized treatment response.
   bio: >-
@@ -145,7 +145,7 @@
   photo: /images/people/michelle-jae-lee.jpg
   role: Research Associate
   status: current
-  order: 23
+  order: 26
   note: MS in Data Science and MPH at Columbia. Develops ML models for biological subtyping.
 
 - name: Kenneth Johnson
@@ -153,19 +153,19 @@
   placeholder: wcm   # temporary WCM affiliation tile until a headshot is provided
   role: PhD Candidate
   status: current
-  order: 24
+  order: 23
 
 - name: Jupinder Parmar
   photo: ""   # headshot pending
   role: PhD Candidate
   status: current
-  order: 25
+  order: 24
 
 - name: Isaac Osafo Nkansah
   photo: /images/people/isaac-osafo-nkansah.jpg
   role: PhD Candidate
   status: current
-  order: 26
+  order: 25
   bio: >-
     Isaac graduated from Stanford University, where he majored in Electrical
     Engineering with a focus on Machine Learning, AI, Information Systems, and
@@ -176,7 +176,7 @@
   photo: /images/people/jordan-serrano-guedea.jpg
   role: Research Associate
   status: current
-  order: 30
+  order: 27
   coadvisor: Nili Solomonov
   note: High-density EEG across accelerated TMS-iTBS treatment in MDD.
   bio: >-
