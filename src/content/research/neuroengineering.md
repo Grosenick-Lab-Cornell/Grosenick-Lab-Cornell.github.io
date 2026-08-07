@@ -1,7 +1,7 @@
 ---
 title: Neuroengineering & neurostimulation
 order: 4
-figure: /images/research/tms-eeg.jpg
+figure: /images/research/neuroengineering.jpg
 ---
 Better models need better measurements. We build and apply **neurotechnology** to
 read and perturb brain activity: TMS combined with high-density EEG in patients
