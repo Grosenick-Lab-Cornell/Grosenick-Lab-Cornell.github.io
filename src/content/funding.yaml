@@ -31,6 +31,10 @@ research:
     note: "Modeling & Model Integration"
     logo: /images/funders/wellcome-leap.svg
     url: https://wellcomeleap.org/
+  - name: New Venture Fund
+    note: "Research Grant"
+    logo: /images/funders/new-venture-fund.svg
+    url: https://newventurefund.org/
 
 # Fellowships that have supported lab trainees (good for a /funding page;
 # also reinforces the People section's outcomes).
