@@ -2,7 +2,6 @@
 title: Machine learning for neural & biomedical data
 order: 3
 figure: /images/research/quantnets.jpg
-figureCaption: Generalizing CNNs to graph-structured neural data (QuantNets, NeurIPS 2024).
 ---
 Brain and biomedical data are noisy, high-dimensional, and irregularly structured.
 We develop new **machine-learning methods** built for them: graph neural networks

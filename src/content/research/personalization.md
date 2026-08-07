@@ -2,7 +2,6 @@
 title: Personalized treatment & digital twins
 order: 2
 figure: /images/research/personalization.jpg
-figureCaption: Counterfactual treatment trajectories for individualized care.
 ---
 Choosing a treatment means reasoning about a counterfactual: what would happen to
 *this* patient under *that* therapy. We build **generative digital twins** and
