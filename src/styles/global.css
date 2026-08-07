@@ -38,6 +38,17 @@
   }
 }
 
+/* Inline code chips for project names (e.g. ConDA, QuantNets) in the news feed. */
+code.code-chip {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  padding: 0.1em 0.42em;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--color-signal) 16%, transparent);
+  color: var(--color-signal-ink);
+  white-space: nowrap;
+}
+
 /* Prose container for rendered markdown bodies (e.g., /pi/, /research/). */
 .prose-page h2 {
   font-family: var(--font-display);

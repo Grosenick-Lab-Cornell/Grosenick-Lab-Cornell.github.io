@@ -3,7 +3,7 @@
 
 - period: "2026"
   items:
-    - "New work on controlling diffusion models for dynamic systems, *Contrastive Diffusion Alignment*, accepted at **ICML 2026**. Congratulations to **Ruchi Sandilya** and the team."
+    - "New work on controlling diffusion models for dynamic systems, *Contrastive Diffusion Alignment* (`ConDA`), accepted at **ICML 2026**. Congratulations to **Ruchi Sandilya** and the team."
 
 - period: "2025"
   items:
@@ -16,8 +16,8 @@
 
 - period: "2024"
   items:
-    - "**QuantNets** (generalizing CNNs to graphs) accepted at **NeurIPS 2024**. Congratulations to **Isaac Osafo Nkansah**, **Neil Gallagher**, and **Ruchi Sandilya**."
-    - "**EpiCare** (an RL benchmark for dynamic treatment regimes) accepted at **NeurIPS 2024**. Congratulations to **Mason Hargrave**."
+    - "`QuantNets` (generalizing CNNs to graphs) accepted at **NeurIPS 2024**. Congratulations to **Isaac Osafo Nkansah**, **Neil Gallagher**, and **Ruchi Sandilya**."
+    - "`EpiCare` (an RL benchmark for dynamic treatment regimes) accepted at **NeurIPS 2024**. Congratulations to **Mason Hargrave**."
     - "**Marzieh Ajirak**'s work is accepted at **EUSIPCO 2024**."
     - "**Amanda Buch**'s work on simple and scalable algorithms for cluster-aware precision medicine and subtyping is published at **AISTATS 2024**."
     - "Congratulations to **Dr. Amanda Buch** on a **SFARI Bridge to Independence** award, a **Burroughs Wellcome Fund / Revson** scholarship, and a **2024 Leading Edge Fellowship**."

@@ -1,5 +1,6 @@
 export function richify(s: string): string {
   return s
+    .replace(/`([^`]+)`/g, '<code class="code-chip">$1</code>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-ink">$1</strong>')
     .replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>')
     .replace(

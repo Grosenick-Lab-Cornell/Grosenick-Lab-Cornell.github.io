@@ -36,19 +36,23 @@ function decodeLatex(s: string): string {
     .normalize("NFC");
 }
 
-function labLastNameSet(): Set<string> {
+// Keys of the form "lastname|firstinitial" so we only bold the actual lab
+// member, not any author who happens to share a surname (e.g. "V. Buch"
+// should not match Amanda M. Buch).
+function labAuthorKeys(): Set<string> {
   const set = new Set<string>();
   const people = peopleData as Array<{ name: string }>;
   for (const p of people) {
     const cleaned = p.name
-      .replace(/,\s*(PhD|MD-PhD|MD).*$/i, "")
-      .replace(/"[^"]*"/g, "")
+      .replace(/,.*$/, "") // drop ", PhD" / ", MS" / etc.
+      .replace(/"[^"]*"/g, " ") // drop "nickname"
       .trim();
     const tokens = cleaned.split(/\s+/).filter(Boolean);
-    if (!tokens.length) continue;
-    set.add(tokens[tokens.length - 1].toLowerCase());
+    if (tokens.length < 2) continue;
+    const initial = tokens[0].charAt(0).toLowerCase();
+    set.add(`${tokens[tokens.length - 1].toLowerCase()}|${initial}`);
     if (tokens.length >= 3) {
-      set.add(tokens.slice(-2).join(" ").toLowerCase());
+      set.add(`${tokens.slice(-2).join(" ").toLowerCase()}|${initial}`);
     }
   }
   return set;
@@ -185,14 +189,15 @@ function buildChips(fields: Record<string, string>): Chip[] {
 function loadAll(): Paper[] {
   const bibPath = path.resolve(process.cwd(), "src/content/papers.bib");
   const source = readFileSync(bibPath, "utf-8");
-  const lab = labLastNameSet();
+  const lab = labAuthorKeys();
   return parseEntries(source).map(({ key, fields }) => {
     const split = splitAuthors(fields.author ?? "");
     const authors: Author[] = split.map((a) => {
       if (a.isOthers) return { name: "…", bold: false };
+      const initial = a.first.replace(/[^a-zA-Z]/g, "").charAt(0).toLowerCase();
       return {
         name: formatAuthor(a),
-        bold: lab.has(a.last.toLowerCase()),
+        bold: lab.has(`${a.last.toLowerCase()}|${initial}`),
       };
     });
     return {
