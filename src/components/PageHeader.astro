@@ -1,7 +1,7 @@
 ---
 interface Props {
   eyebrow?: string;
-  title: string;
+  title?: string;
   lead?: string;
 }
 
@@ -17,11 +17,13 @@ const { eyebrow, title, lead } = Astro.props;
         </p>
       )
     }
-    <h1
-      class="font-display text-4xl md:text-5xl font-medium tracking-[-0.015em] m-0 mb-5 max-w-[32ch]"
-    >
-      {title}
-    </h1>
+    {
+      title && (
+        <h1 class="font-display text-4xl md:text-5xl font-medium tracking-[-0.015em] m-0 mb-5 max-w-[32ch]">
+          {title}
+        </h1>
+      )
+    }
     {
       lead && (
         <p class="text-[19px] text-muted max-w-[62ch] m-0 leading-[1.55]">
