@@ -157,6 +157,7 @@
 
 - name: Jupinder Parmar
   photo: ""   # headshot pending
+  placeholder: wcm   # official WCM logo tile until a headshot is provided
   role: PhD Candidate
   status: current
   order: 24
