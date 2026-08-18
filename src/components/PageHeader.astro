@@ -3,9 +3,10 @@ interface Props {
   eyebrow?: string;
   title?: string;
   lead?: string;
+  leadClass?: string;
 }
 
-const { eyebrow, title, lead } = Astro.props;
+const { eyebrow, title, lead, leadClass } = Astro.props;
 ---
 
 <header class="pt-16 pb-12 border-b border-line">
@@ -26,7 +27,10 @@ const { eyebrow, title, lead } = Astro.props;
     }
     {
       lead && (
-        <p class="text-[19px] text-muted max-w-[62ch] m-0 leading-[1.55]">
+        <p
+          class={leadClass ??
+            "text-[19px] text-muted max-w-[62ch] m-0 leading-[1.55]"}
+        >
           {lead}
         </p>
       )
