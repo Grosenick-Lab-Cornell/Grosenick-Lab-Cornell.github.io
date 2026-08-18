@@ -1,5 +1,5 @@
 ---
-title: Personalized treatment & digital twins
+title: Personalized treatment & generative digital twins
 order: 2
 figure: /images/research/personalization.jpg
 ---
