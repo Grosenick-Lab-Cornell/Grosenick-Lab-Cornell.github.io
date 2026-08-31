@@ -3,6 +3,7 @@ import "@/styles/global.css";
 import siteConfig from "@/content/site.yaml";
 import Nav from "@/components/Nav.astro";
 import Footer from "@/components/Footer.astro";
+import Analytics from "@/components/Analytics.astro";
 
 interface Props {
   title?: string;
@@ -52,6 +53,11 @@ const orgJsonLd = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {
+      siteConfig.verification?.google && (
+        <meta name="google-site-verification" content={siteConfig.verification.google} />
+      )
+    }
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="/favicon.ico" />
@@ -86,6 +92,8 @@ const orgJsonLd = {
     />
 
     <script is:inline type="application/ld+json" set:html={JSON.stringify(orgJsonLd)} />
+
+    <Analytics />
   </head>
   <body>
     <a

@@ -77,7 +77,9 @@ What each section must do for each audience:
   or a small `@citation-js/core` build step — pick the simplest that yields
   grouped, link-annotated entries).
 - Deployed to **GitHub Pages via GitHub Actions** (`withastro/action`).
-- No client JS except the hero canvas + the mobile nav toggle. Keep it light.
+- No client JS except the hero canvas, the mobile nav toggle, and the GoatCounter
+  analytics beacon (~3.5KB, async, cookie-free; configured in `site.yaml` →
+  `analytics`). Keep it light.
 
 > Alternative considered: **al-folio** (Jekyll) gives publications/people/news
 > out of the box with less code, but it's "adopt a big theme and configure"

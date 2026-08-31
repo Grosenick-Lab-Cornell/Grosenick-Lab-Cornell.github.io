@@ -1,0 +1,16 @@
+---
+// Privacy-friendly traffic counting. No cookies, no consent banner required.
+// Configure in site.yaml → analytics; leave `id` empty to disable entirely.
+import siteConfig from "@/content/site.yaml";
+
+const analytics = siteConfig.analytics ?? {};
+const enabled =
+  import.meta.env.PROD && analytics.provider === "goatcounter" && Boolean(analytics.id);
+const endpoint = `https://${analytics.id}.goatcounter.com/count`;
+---
+
+{
+  enabled && (
+    <script is:inline async data-goatcounter={endpoint} src="https://gc.zgo.at/count.js" />
+  )
+}

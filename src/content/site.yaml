@@ -33,3 +33,16 @@ nav:
   - { label: People,       href: "/people/" }
   - { label: News,         href: "/#news" }
   - { label: Join,         href: "/join/" }
+
+# Traffic analytics. GoatCounter: free for reasonable public usage, cookie-free, no
+# consent banner needed. Sign up at goatcounter.com and put your site code (the
+# subdomain in your-code.goatcounter.com) in `id`. Empty id = analytics off.
+# Only loads in production builds, so `astro dev` never sends hits.
+analytics:
+  provider: goatcounter
+  id: "grosenicklab"   # dashboard: https://grosenicklab.goatcounter.com
+
+# Search engine verification. Google Search Console → Add property →
+# grosenicklab.org → HTML tag method; paste the content="..." value here.
+verification:
+  google: ""
