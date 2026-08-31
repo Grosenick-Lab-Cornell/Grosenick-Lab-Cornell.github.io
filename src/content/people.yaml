@@ -156,11 +156,20 @@
   order: 23
 
 - name: Jupinder Parmar
-  photo: ""   # headshot pending
-  placeholder: wcm   # official WCM logo tile until a headshot is provided
-  role: PhD Candidate
+  photo: /images/people/jupinder-parmar.jpg
+  role: PhD Candidate, Computational Biology
   status: current
   order: 24
+  bio: >-
+    Jupinder received his B.S in mathematics and M.S. in computer science from
+    Stanford University. After a stint at NVIDIA on the foundation model team
+    where he contributed to the development, training, and release of open
+    source LLMs, he started as a Ph.D. student in the Tri-Institutional
+    Computational Biology program between Weill Cornell Medicine, Memorial Sloan
+    Kettering, and Rockefeller. He is interested in the intersection of
+    mathematics and neuroscience, especially in the context of subtyping
+    psychiatric conditions. He is an avid runner, tennis player, and mountaineer
+    (when he can escape the city).
 
 - name: Isaac Osafo Nkansah
   photo: /images/people/isaac-osafo-nkansah.jpg
