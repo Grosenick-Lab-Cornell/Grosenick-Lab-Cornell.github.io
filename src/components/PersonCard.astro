@@ -54,15 +54,13 @@ const showPhoto = publicAssetExists(person.photo);
           class="w-full h-full object-cover"
           loading="lazy"
         />
-      ) : person.placeholder === "wcm" ? (
-        <div class="w-full h-full bg-white flex items-center justify-center p-6">
-          <img
-            src="/images/people/wcm-logo.png"
-            alt="Weill Cornell Medicine"
-            class="max-w-full max-h-full object-contain"
-            loading="lazy"
-          />
-        </div>
+      ) : person.placeholder === "cornell" ? (
+        <img
+          src="/images/people/cornell-shield.svg"
+          alt="Cornell University shield"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
       ) : (
         <span class="font-display font-bold text-[44px] text-faint">
           {initials}

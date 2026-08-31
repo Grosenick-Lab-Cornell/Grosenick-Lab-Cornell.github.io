@@ -150,7 +150,7 @@
 
 - name: Kenneth Johnson
   photo: ""   # /images/people/kenneth-johnson.jpg
-  placeholder: wcm   # temporary WCM affiliation tile until a headshot is provided
+  placeholder: cornell   # Cornell shield tile until a headshot is provided
   role: PhD Candidate
   status: current
   order: 23
