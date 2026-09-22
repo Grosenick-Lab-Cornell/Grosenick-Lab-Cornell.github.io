@@ -9,147 +9,137 @@ const roles = [
   {
     eyebrow: "Postdoc 1",
     title: "Multimodal world models for personalized psychiatry",
-    problem: [
-      "Treatment selection in psychiatry is fundamentally a counterfactual problem: what would happen to this patient under a different treatment?",
-      "We want to build generative world models that learn how brain activity, behavior, facial expression, language, symptoms, and treatment evolve together, and use those models to estimate individualized treatment trajectories and counterfactuals.",
+    sections: [
+      {
+        label: "The problem",
+        paragraphs: [
+          "Treatment selection in psychiatry is fundamentally a counterfactual problem: what would happen to this patient under a different treatment?",
+          "We want to build generative world models that learn how brain activity, behavior, facial expression, language, symptoms, and treatment evolve together, and use those models to estimate individualized treatment trajectories and counterfactuals.",
+        ],
+      },
+      {
+        label: "What you could work on",
+        paragraphs: [
+          "Develop new methods for multimodal generative modeling, diffusion and flow models, causal and counterfactual inference, representation learning, and behavioral modeling; train them on longitudinal clinical datasets spanning brain imaging and multimodal behavioral data; and develop methods for testing when patient-specific counterfactual predictions are identifiable, reliable, and clinically useful.",
+          "We are also particularly interested in candidates working on cross-species pose estimation and behavioral representation learning, including methods that identify shared and species-specific structure in movement, behavior, and latent neural or affective states across humans and animal models.",
+          "This is a methods-development position, not simply an application of existing models to clinical data. The exact direction can be shaped around the fellow's interests.",
+        ],
+      },
+      {
+        label: "We are looking for",
+        paragraphs: [
+          "A PhD in computer science, machine learning, applied mathematics, computational neuroscience, or a related quantitative field, with strong Python and PyTorch skills and experience in generative models, sequence models, representation learning, multimodal learning, or pose and behavior modeling.",
+          "Experience with diffusion and flow models, world models, causal inference, pose estimation, behavioral representation learning, or large multimodal datasets is especially useful. Prior psychiatric research is not required; interest in using methodological advances to answer consequential clinical questions is.",
+        ],
+      },
     ],
   },
   {
     eyebrow: "Postdoc 2",
     title: "Generative digital twins and closed-loop neurostimulation",
-    problem: [
-      "Can we learn a patient-specific dynamical model of the brain well enough to predict, and ultimately control, its response to stimulation?",
-      "We are developing generative digital twins of neural dynamics from TMS and high-density EEG, with the long-term goal of moving from prediction to individualized, closed-loop neurostimulation.",
+    sections: [
+      {
+        label: "The problem",
+        paragraphs: [
+          "Can we learn a patient-specific dynamical model of the brain well enough to predict, and ultimately control, its response to stimulation?",
+          "We are developing generative digital twins of neural dynamics from TMS and high-density EEG, with the long-term goal of moving from prediction to individualized, closed-loop neurostimulation.",
+        ],
+      },
+      {
+        label: "What you could work on",
+        paragraphs: [
+          "Develop models of patient-specific neural dynamics and intervention response; solve forward and inverse problems linking stimulation to distributed brain activity; develop methods for system identification, causal dynamics, generative modeling, and model-based control; and test these models using clinical TMS-EEG data from patients undergoing treatment.",
+          "The goal is both methodological and translational: new approaches to learning controllable neural dynamics, tested in a setting where the intervention can actually be delivered.",
+        ],
+      },
+      {
+        label: "We are looking for",
+        paragraphs: [
+          "A PhD in computational neuroscience, machine learning, electrical or biomedical engineering, applied mathematics, or a related field, with strong Python and PyTorch skills.",
+          "Experience with neural time series, dynamical systems, generative modeling, control, EEG and electrophysiology, inverse problems, or system identification would all be relevant. Previous TMS experience is helpful but not required.",
+        ],
+      },
+    ],
+  },
+  {
+    eyebrow: "Postdoc 3",
+    title:
+      "Neural operators and large-scale inverse problems in computational imaging and neuroengineering",
+    sections: [
+      {
+        label: "The problem",
+        paragraphs: [
+          "Many of the hardest measurement problems in neuroscience share the same computational structure: we observe high-dimensional, indirect measurements and want to infer the underlying biological sources.",
+          "We are interested in whether neural operators, differentiable physical models, and modern inverse methods can make previously intractable inverse problems fast enough, scalable enough, and accurate enough to solve at experimental scale.",
+        ],
+      },
+      {
+        label: "What you could work on",
+        paragraphs: [
+          "Develop new methods for large-scale inverse problems and operator learning, with projects spanning computational microscopy, multi-camera imaging, neural source localization, and TMS-EEG.",
+          "Potential directions include learning mappings between optical measurements and three-dimensional neural activity; computational imaging through complex or scattering optical systems; fast reconstruction for volumetric microscopy; multi-view and multi-camera reconstruction; EEG source localization; estimating distributed neural responses to TMS; and learning reusable forward and inverse operators that generalize across subjects, geometries, acquisition systems, or experimental conditions.",
+          "Methodologically, this could involve neural operators, physics-informed and physics-constrained learning, differentiable simulation, learned iterative reconstruction, inverse-problem regularization, uncertainty quantification, and hybrid approaches that combine mechanistic forward models with learned components.",
+          "The fellow could focus primarily on computational imaging, on electromagnetic and source-localization problems, or develop methods that span both. The common goal is to develop general computational approaches for recovering latent biological structure from large, ill-posed measurement systems.",
+        ],
+      },
+      {
+        label: "We are looking for",
+        paragraphs: [
+          "A PhD in machine learning, applied mathematics, computational imaging, electrical engineering, biomedical engineering, computational neuroscience, physics, or a related field, with strong quantitative and computational skills.",
+          "Experience with neural operators, inverse problems, PDEs, computational imaging, differentiable physics, numerical optimization, multi-view reconstruction, EEG and MEG source localization, electromagnetic modeling, or modern deep-learning approaches to scientific computing would be especially relevant. Prior experience in microscopy, imaging, EEG, or TMS is useful but not required.",
+        ],
+      },
     ],
   },
 ];
 
-const labelClass =
-  "font-display text-ink font-medium text-[17px] m-0 mb-2";
+const labelClass = "font-display text-ink font-medium text-[17px] m-0 mb-2";
 const proseClass = "text-muted text-[16.5px] leading-[1.65] m-0";
 ---
 
 <Layout
   title="Open positions | Grosenick Lab"
-  description="Two open postdoctoral positions at the Grosenick Lab: multimodal world models for personalized psychiatry, and generative digital twins for closed-loop neurostimulation."
+  description="Three open postdoctoral positions at the Grosenick Lab: multimodal world models for personalized psychiatry, generative digital twins for closed-loop neurostimulation, and neural operators for large-scale inverse problems."
 >
   <PageHeader
     eyebrow="Open positions"
-    title="Two postdoctoral positions in generative AI, computational psychiatry, and neuroengineering."
-    lead="We are recruiting two postdoctoral fellows to develop new machine-learning methods for understanding and treating psychiatric illness. Both positions combine fundamental methods development with unusually rich clinical and neural data, with opportunities to lead first-author work in machine learning, computational neuroscience, and psychiatry."
+    title="Three postdoctoral positions in generative AI, computational neuroscience, and neuroengineering."
+    lead="We are recruiting three postdoctoral fellows to develop new machine-learning methods for understanding and treating psychiatric illness and for measuring and modeling neural systems. All three positions combine fundamental methods development with unusually rich experimental or clinical data, with opportunities to lead first-author work in machine learning, computational neuroscience, neuroengineering, and psychiatry."
   />
 
   <div class="mx-auto max-w-[1120px] px-7 py-16 space-y-16">
-    <article
-      class="grid gap-8 md:grid-cols-[260px_1fr] items-start border border-line rounded-[14px] p-8 bg-paper"
-    >
-      <div>
-        <p
-          class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-2"
-        >
-          {roles[0].eyebrow}
-        </p>
-        <h2
-          class="font-display text-[24px] md:text-[26px] font-medium tracking-[-0.01em] m-0"
-        >
-          {roles[0].title}
-        </h2>
-      </div>
-      <div>
-        <p class={labelClass}>The problem</p>
-        <p class={`${proseClass} mb-3`}>{roles[0].problem[0]}</p>
-        <p class={`${proseClass} mb-6`}>{roles[0].problem[1]}</p>
-
-        <p class={labelClass}>What you could work on</p>
-        <p class={`${proseClass} mb-3`}>
-          Develop new methods for multimodal generative modeling, diffusion
-          and flow models, causal and counterfactual inference,
-          representation learning, and behavioral modeling; train them on
-          longitudinal clinical datasets spanning brain imaging and
-          multimodal behavioral data; and develop methods for testing when
-          patient-specific counterfactual predictions are identifiable,
-          reliable, and clinically useful.
-        </p>
-        <p class={`${proseClass} mb-3`}>
-          We are also particularly interested in candidates working on
-          cross-species pose estimation and behavioral representation
-          learning, including methods that identify shared and species-specific
-          structure in movement, behavior, and latent neural or affective
-          states across humans and animal models.
-        </p>
-        <p class={`${proseClass} mb-6`}>
-          This is a methods-development position, not simply an application
-          of existing models to clinical data. The exact direction can be
-          shaped around the fellow's interests.
-        </p>
-
-        <p class={labelClass}>We are looking for</p>
-        <p class={`${proseClass} mb-3`}>
-          A PhD in computer science, machine learning, applied mathematics,
-          computational neuroscience, or a related quantitative field, with
-          strong Python and PyTorch skills and experience in generative
-          models, sequence models, representation learning, multimodal
-          learning, or pose and behavior modeling.
-        </p>
-        <p class={proseClass}>
-          Experience with diffusion and flow models, world models, causal
-          inference, pose estimation, behavioral representation learning, or
-          large multimodal datasets is especially useful. Prior psychiatric
-          research is not required; interest in using methodological
-          advances to answer consequential clinical questions is.
-        </p>
-      </div>
-    </article>
-
-    <article
-      class="grid gap-8 md:grid-cols-[260px_1fr] items-start border border-line rounded-[14px] p-8 bg-paper"
-    >
-      <div>
-        <p
-          class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-2"
-        >
-          {roles[1].eyebrow}
-        </p>
-        <h2
-          class="font-display text-[24px] md:text-[26px] font-medium tracking-[-0.01em] m-0"
-        >
-          {roles[1].title}
-        </h2>
-      </div>
-      <div>
-        <p class={labelClass}>The problem</p>
-        <p class={`${proseClass} mb-3`}>{roles[1].problem[0]}</p>
-        <p class={`${proseClass} mb-6`}>{roles[1].problem[1]}</p>
-
-        <p class={labelClass}>What you could work on</p>
-        <p class={`${proseClass} mb-3`}>
-          Develop models of patient-specific neural dynamics and
-          intervention response; solve forward and inverse problems linking
-          stimulation to distributed brain activity; develop methods for
-          system identification, neural operators, causal dynamics, and
-          model-based control; and test these models using clinical TMS-EEG
-          data from patients undergoing treatment.
-        </p>
-        <p class={`${proseClass} mb-6`}>
-          The goal is both methodological and translational: new approaches
-          to learning controllable neural dynamics, tested in a setting
-          where the intervention can actually be delivered.
-        </p>
-
-        <p class={labelClass}>We are looking for</p>
-        <p class={`${proseClass} mb-3`}>
-          A PhD in computational neuroscience, machine learning, electrical
-          or biomedical engineering, applied mathematics, or a related
-          field, with strong Python and PyTorch skills.
-        </p>
-        <p class={proseClass}>
-          Experience with neural time series, dynamical systems, generative
-          modeling, control, EEG and electrophysiology, inverse problems, or
-          neural operators would all be relevant. Previous TMS experience is
-          helpful but not required.
-        </p>
-      </div>
-    </article>
+    {
+      roles.map((role) => (
+        <article class="grid gap-8 md:grid-cols-[260px_1fr] items-start border border-line rounded-[14px] p-8 bg-paper">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink m-0 mb-2">
+              {role.eyebrow}
+            </p>
+            <h2 class="font-display text-[24px] md:text-[26px] font-medium tracking-[-0.01em] m-0">
+              {role.title}
+            </h2>
+          </div>
+          <div>
+            {role.sections.map((section, si) => (
+              <div class={si === role.sections.length - 1 ? "" : "mb-6"}>
+                <p class={labelClass}>{section.label}</p>
+                {section.paragraphs.map((paragraph, pi) => (
+                  <p
+                    class={
+                      pi === section.paragraphs.length - 1
+                        ? proseClass
+                        : `${proseClass} mb-3`
+                    }
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
+        </article>
+      ))
+    }
 
     <section>
       <p
@@ -175,7 +165,8 @@ const proseClass = "text-muted text-[16.5px] leading-[1.65] m-0";
           research program. We support first-author papers, conference
           travel, open-source software development, fellowship and grant
           applications, and collaborations across machine learning,
-          psychiatry, neuroscience, and engineering.
+          psychiatry, neuroscience, engineering, and experimental
+          neurotechnology.
         </p>
         <p class={`${proseClass} mb-6`}>
           Former lab members have gone on to faculty positions and research
