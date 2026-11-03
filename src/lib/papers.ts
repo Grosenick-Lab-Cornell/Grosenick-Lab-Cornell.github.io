@@ -41,8 +41,9 @@ function decodeLatex(s: string): string {
 // should not match Amanda M. Buch).
 function labAuthorKeys(): Set<string> {
   const set = new Set<string>();
-  const people = peopleData as Array<{ name: string }>;
+  const people = peopleData as Array<{ name: string; boldInPubs?: boolean }>;
   for (const p of people) {
+    if (p.boldInPubs === false) continue; // e.g. alumni now running their own lab
     const cleaned = p.name
       .replace(/,.*$/, "") // drop ", PhD" / ", MS" / etc.
       .replace(/"[^"]*"/g, " ") // drop "nickname"

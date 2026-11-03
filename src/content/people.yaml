@@ -203,6 +203,7 @@
   status: alumni
   order: 100
   alumniNote: now Assistant Professor of Neuroscience, University of Connecticut
+  boldInPubs: false
 
 - name: Amanda M. Buch, PhD
   photo: ""   # /images/people/amanda-m-buch.jpg
