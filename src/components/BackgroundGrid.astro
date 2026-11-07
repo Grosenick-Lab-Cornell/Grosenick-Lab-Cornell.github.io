@@ -1,0 +1,132 @@
+---
+// Fixed dot grid behind all page content. Opaque surfaces (cards, nav, hero,
+// wash bands) cover it, so it only shows in the open page background. Dots
+// near the cursor are pushed gently outward and brighten, then ease back.
+// Static on touch devices and under prefers-reduced-motion.
+---
+
+<canvas class="bg-grid" aria-hidden="true"></canvas>
+
+<style>
+  .bg-grid {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const canvas = document.querySelector<HTMLCanvasElement>(".bg-grid");
+  const ctx = canvas?.getContext("2d");
+
+  if (canvas && ctx) {
+    const SPACING = 24;
+    const RADIUS = 160; // px of cursor influence
+    const PUSH = 7; // max displacement in px
+    const DOT = 1.1;
+
+    const css = getComputedStyle(document.documentElement);
+    const hexToRgb = (hex: string): [number, number, number] => {
+      const h = hex.trim().replace("#", "");
+      return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16)) as [number, number, number];
+    };
+    const base = hexToRgb(css.getPropertyValue("--color-faint") || "#64757F");
+    const glow = hexToRgb(css.getPropertyValue("--color-teal") || "#8FE9DC");
+
+    const interactive =
+      window.matchMedia("(pointer: fine)").matches &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    let w = 0;
+    let h = 0;
+    // Target and eased cursor position, plus eased influence strength (0..1).
+    let tx = -1e4;
+    let ty = -1e4;
+    let cx = -1e4;
+    let cy = -1e4;
+    let target = 0;
+    let strength = 0;
+    let frame = 0;
+
+    const resize = () => {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = window.innerWidth;
+      h = window.innerHeight;
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      draw();
+    };
+
+    const draw = () => {
+      ctx.clearRect(0, 0, w, h);
+      const r2 = RADIUS * RADIUS;
+      for (let gy = SPACING / 2; gy < h + SPACING; gy += SPACING) {
+        for (let gx = SPACING / 2; gx < w + SPACING; gx += SPACING) {
+          let x = gx;
+          let y = gy;
+          let f = 0;
+          if (strength > 0.001) {
+            const dx = gx - cx;
+            const dy = gy - cy;
+            const d2 = dx * dx + dy * dy;
+            if (d2 < r2) {
+              const d = Math.sqrt(d2) || 1;
+              f = (1 - d / RADIUS) ** 2 * strength;
+              x += (dx / d) * f * PUSH;
+              y += (dy / d) * f * PUSH;
+            }
+          }
+          const r = base[0] + (glow[0] - base[0]) * f;
+          const g = base[1] + (glow[1] - base[1]) * f;
+          const b = base[2] + (glow[2] - base[2]) * f;
+          ctx.fillStyle = `rgba(${r | 0},${g | 0},${b | 0},${0.4 + 0.5 * f})`;
+          ctx.beginPath();
+          ctx.arc(x, y, DOT + 0.5 * f, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+    };
+
+    const tick = () => {
+      cx += (tx - cx) * 0.18;
+      cy += (ty - cy) * 0.18;
+      strength += (target - strength) * 0.08;
+      draw();
+      const settled =
+        Math.abs(tx - cx) < 0.3 && Math.abs(ty - cy) < 0.3 && Math.abs(target - strength) < 0.002;
+      frame = settled ? 0 : requestAnimationFrame(tick);
+    };
+    const wake = () => {
+      if (!frame) frame = requestAnimationFrame(tick);
+    };
+
+    window.addEventListener("resize", resize, { passive: true });
+    resize();
+
+    if (interactive) {
+      window.addEventListener(
+        "pointermove",
+        (e) => {
+          if (target === 0) {
+            // Re-entering: jump to the cursor instead of sweeping across the page.
+            cx = e.clientX;
+            cy = e.clientY;
+          }
+          tx = e.clientX;
+          ty = e.clientY;
+          target = 1;
+          wake();
+        },
+        { passive: true }
+      );
+      document.documentElement.addEventListener("pointerleave", () => {
+        target = 0;
+        wake();
+      });
+    }
+  }
+</script>

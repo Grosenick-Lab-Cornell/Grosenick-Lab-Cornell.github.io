@@ -4,6 +4,7 @@ import siteConfig from "@/content/site.yaml";
 import Nav from "@/components/Nav.astro";
 import Footer from "@/components/Footer.astro";
 import Analytics from "@/components/Analytics.astro";
+import BackgroundGrid from "@/components/BackgroundGrid.astro";
 
 interface Props {
   title?: string;
@@ -102,6 +103,7 @@ const orgJsonLd = {
     >
       Skip to content
     </a>
+    <BackgroundGrid />
     <Nav overlay={navOverlay} />
     <main id="main">
       <slot />
