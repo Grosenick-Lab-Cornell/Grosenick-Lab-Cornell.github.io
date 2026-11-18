@@ -9,6 +9,9 @@ photo: /images/people/logan-grosenick.jpg
 email: log4002@med.cornell.edu
 links:
   scholar: ""            # Google Scholar URL
+  orcid: https://orcid.org/0000-0003-3216-0319
+  vivo: https://vivo.weill.cornell.edu/display/n57011
+  linkedin: https://www.linkedin.com/in/logan-grosenick-8235771/
   ncbi: https://www.ncbi.nlm.nih.gov/myncbi/logan.grosenick.1/bibliography/public/
   cv: /grosenick-cv.pdf  # drop the CV PDF in public/
   bluesky: https://bsky.app/profile/logangrosenick.bsky.social

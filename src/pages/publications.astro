@@ -2,12 +2,34 @@
 import Layout from "@/layouts/Layout.astro";
 import PageHeader from "@/components/PageHeader.astro";
 import PubList from "@/components/PubList.astro";
+import { getAllPapers, paperJsonLd } from "@/lib/papers";
+
+const papers = getAllPapers();
+const pageUrl = new URL("/publications/", Astro.site).toString();
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": pageUrl,
+  url: pageUrl,
+  name: "Publications of Logan Grosenick and the Grosenick Lab",
+  about: { "@id": new URL("/pi/#person", Astro.site).toString() },
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: papers.length,
+    itemListElement: papers.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: paperJsonLd(p, Astro.site),
+    })),
+  },
+};
 ---
 
 <Layout
-  title="Publications | Grosenick Lab"
-  description="Lab publications grouped by year, with paper / arXiv / code links and bolded lab authors."
+  title="Publications | Logan Grosenick & the Grosenick Lab"
+  description="Publications by Logan Grosenick and the Grosenick Lab at Weill Cornell Medicine: machine learning for precision psychiatry, depression subtypes, TMS and neurostimulation, graph neural networks, fiber photometry, and light-field microscopy."
 >
+  <script slot="head" is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <PageHeader
     eyebrow="Publications"
     lead="Lab member names are bolded."

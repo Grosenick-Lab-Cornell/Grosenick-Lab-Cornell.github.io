@@ -5,6 +5,7 @@ import Nav from "@/components/Nav.astro";
 import Footer from "@/components/Footer.astro";
 import Analytics from "@/components/Analytics.astro";
 import BackgroundGrid from "@/components/BackgroundGrid.astro";
+import { piPersonJsonLd } from "@/lib/jsonld";
 
 interface Props {
   title?: string;
@@ -33,6 +34,7 @@ const orgJsonLd = {
     name: siteConfig.institution,
   },
   description: siteConfig.tagline,
+  founder: piPersonJsonLd(Astro.site),
   email: siteConfig.contact?.email,
   sameAs: [
     siteConfig.contact?.github,
@@ -93,6 +95,7 @@ const orgJsonLd = {
     />
 
     <script is:inline type="application/ld+json" set:html={JSON.stringify(orgJsonLd)} />
+    <slot name="head" />
 
     <Analytics />
   </head>

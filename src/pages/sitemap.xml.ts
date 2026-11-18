@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { getAllPapers, paperPath } from "@/lib/papers";
 
 const ROUTES = [
   { path: "/", priority: "1.0", changefreq: "monthly" },
@@ -7,6 +8,7 @@ const ROUTES = [
   { path: "/people/", priority: "0.7", changefreq: "monthly" },
   { path: "/pi/", priority: "0.6", changefreq: "yearly" },
   { path: "/join/", priority: "0.7", changefreq: "monthly" },
+  ...getAllPapers().map((p) => ({ path: paperPath(p), priority: "0.5", changefreq: "yearly" })),
 ];
 
 export const GET: APIRoute = ({ site }) => {

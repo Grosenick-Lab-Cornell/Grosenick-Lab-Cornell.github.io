@@ -1,0 +1,2576 @@
+{
+  "aimon2018drosophila": {
+    "abstract": "Whole brain recordings give us a global perspective of the brain in action. In this study, we describe a method using light field microscopy to record near-whole brain calcium and voltage activity, at high speed, in behaving adult flies. We first obtained global activity maps for various stimuli and behaviors. Notably, we found that brain activity increased on a global scale when the fly walked but not when it groomed. This global increase with walking was particularly strong in dopamine neurons. Second, we extracted maps of spatially distinct sources of activity as well as their time series using principal component analysis and independent component analysis. The characteristic shapes in the maps matched the anatomy of sub-neuropil regions and in some cases a specific neuron type. Brain structures that responded to light and odor were consistent with previous reports, confirming the new technique’s validity. We also observed previously uncharacterized behavior-related activity, as well as patterns of spontaneous voltage activity.",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Sophie",
+        "family": "Aimon"
+      },
+      {
+        "given": "Takeo",
+        "family": "Katsuki"
+      },
+      {
+        "given": "Tongqiu",
+        "family": "Jia"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Michael",
+        "family": "Broxton"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "Terrence J.",
+        "family": "Sejnowski"
+      },
+      {
+        "given": "Ralph J.",
+        "family": "Greenspan"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "aimon2019drosophila": {
+    "authors": [
+      {
+        "given": "Sophie",
+        "family": "Aimon",
+        "orcid": "https://orcid.org/0000-0002-0990-0342"
+      },
+      {
+        "given": "Takeo",
+        "family": "Katsuki"
+      },
+      {
+        "given": "Tongqiu",
+        "family": "Jia"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Michael",
+        "family": "Broxton"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "Terrence J.",
+        "family": "Sejnowski"
+      },
+      {
+        "given": "Ralph J.",
+        "family": "Greenspan"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Whole-brain recordings give us a global perspective of the brain in action. In this study, we describe a method using light field microscopy to record near-whole brain calcium and voltage activity at high speed in behaving adult flies. We first obtained global activity maps for various stimuli and behaviors. Notably, we found that brain activity increased on a global scale when the fly walked but not when it groomed. This global increase with walking was particularly strong in dopamine neurons. Second, we extracted maps of spatially distinct sources of activity as well as their time series using principal component analysis and independent component analysis. The characteristic shapes in the maps matched the anatomy of subneuropil regions and, in some cases, a specific neuron type. Brain structures that responded to light and odor were consistent with previous reports, confirming the new technique's validity. We also observed previously uncharacterized behavior-related activity as well as patterns of spontaneous voltage activity.",
+    "abstractSource": "openalex"
+  },
+  "ajirak2024discrete": {
+    "authors": [
+      {
+        "given": "Marzieh",
+        "family": "Ajirak"
+      },
+      {
+        "given": "Immanuel",
+        "family": "Elbau"
+      },
+      {
+        "given": "Nili",
+        "family": "Solomonov"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "This paper focuses on discrete representation learning for multivariate time series with Gaussian processes. To overcome the challenges inherent in incorporating discrete latent variables into deep learning models, our approach uses a Gumbel-softmax reparameterization trick to address non-differentiability, enabling joint clustering and embedding through learnable discretization of the latent space. The proposed architecture thus enhances interpretability both by estimating a low-dimensional embedding for high dimensional time series and by simultaneously discovering discrete latent states. Empirical assessments on synthetic and real-world fMRI data validate the model's efficacy, showing improved classification results using our representation.",
+    "abstractSource": "openalex"
+  },
+  "ajirak2025routing": {
+    "abstract": "We propose a unified framework for adaptive routing in multitask, multimodal prediction settings where data heterogeneity and task interactions vary across samples. Motivated by applications in psychotherapy where structured assessments and unstructured clinician notes coexist with partially missing data and correlated outcomes, we introduce a routing-based architecture that dynamically selects modality processing pathways and task-sharing strategies on a per-sample basis. Our model defines multiple modality paths, including raw and fused representations of text and numeric features and learns to route each input through the most informative expert combination. Task-specific predictions are produced by shared or independent heads depending on the routing decision, and the entire system is trained end-to-end. We evaluate the model on both synthetic data and real-world psychotherapy notes predicting depression and anxiety outcomes. Our experiments show that our method consistently outperforms fixed multitask or single-task baselines, and that the learned routing policy provides interpretable insights into modality relevance and task structure. This addresses critical challenges in personalized healthcare by enabling per-subject adaptive information processing that accounts for data heterogeneity and task correlations. Applied to psychotherapy, this framework could improve mental health outcomes, enhance treatment assignment precision, and increase clinical cost-effectiveness through personalized intervention strategies.",
+    "abstractSource": "arxiv",
+    "authors": [
+      {
+        "given": "Marzieh",
+        "family": "Ajirak"
+      },
+      {
+        "given": "Oded",
+        "family": "Bein"
+      },
+      {
+        "given": "Ellen Rose",
+        "family": "Bowen"
+      },
+      {
+        "given": "Dora",
+        "family": "Kanellopoulos"
+      },
+      {
+        "given": "Avital",
+        "family": "Falk"
+      },
+      {
+        "given": "Faith M.",
+        "family": "Gunning"
+      },
+      {
+        "given": "Nili",
+        "family": "Solomonov"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      }
+    ],
+    "authorsSource": "arxiv"
+  },
+  "ajirak2025synergies": {
+    "authors": [
+      {
+        "given": "Marzieh",
+        "family": "Ajirak",
+        "orcid": "https://orcid.org/0000-0003-4613-5018"
+      },
+      {
+        "given": "Tülay",
+        "family": "Adali"
+      },
+      {
+        "given": "Saeid",
+        "family": "Sanei",
+        "orcid": "https://orcid.org/0000-0002-1446-5744"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick",
+        "orcid": "https://orcid.org/0000-0003-3216-0319"
+      },
+      {
+        "given": "Petar M.",
+        "family": "Djurić",
+        "orcid": "https://orcid.org/0000-0001-7791-3199"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Machine learning (ML) has transformed neuroscience research by providing powerful tools to analyze neural data, uncover brain connectivity, and guide therapeutic interventions. This paper presents core mathematical frameworks in ML that address critical challenges in neuroscience. We introduce state-space models for closed-loop neurostimulation and discrete representation learning methods that improve the interpretability of time-series analysis by extracting meaningful patterns from complex neural recordings. We also describe approaches for revealing inter-regional brain connectivity through high-dimensional time series analysis using Gaussian processes. In the context of multi-subject neuroimaging, we explore independent vector analysis to identify shared patterns that preserve individual differences. Finally, we examine distributed beamforming techniques to localize seizure sources from EEG data, an essential component of surgical planning for epilepsy treatment. These methodological innovations illustrate the growing role of ML in neuroscience via interpretable, adaptive, and personalized tools that analyze brain activity and support data-driven interventions.",
+    "abstractSource": "europepmc"
+  },
+  "allen2014gmd": {
+    "authors": [
+      {
+        "given": "Genevera I.",
+        "family": "Allen"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Taylor"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Variables in many big-data settings are structured, arising, for example, from measurements on a regular grid as in imaging and time series or from spatial-temporal measurements as in climate studies. Classical multivariate techniques ignore these structural relationships often resulting in poor performance. We propose a generalization of principal components analysis (PCA) that is appropriate for massive datasets with structured variables or known two-way dependencies. By finding the best low-rank approximation of the data with respect to a transposable quadratic norm, our decomposition, entitled the generalized least-square matrix decomposition (GMD), directly accounts for structural relationships. As many variables in high-dimensional settings are often irrelevant, we also regularize our matrix decomposition by adding two-way penalties to encourage sparsity or smoothness. We develop fast computational algorithms using our methods to perform generalized PCA (GPCA), sparse GPCA, and functional GPCA on massive datasets. Through simulations and a whole brain functional MRI example, we demonstrate the utility of our methodology for dimension reduction, signal recovery, and feature selection with high-dimensional structured data. Supplementary materials for this article are available online.",
+    "abstractSource": "openalex"
+  },
+  "andalman2019dynamics": {
+    "authors": [
+      {
+        "given": "Aaron S.",
+        "family": "Andalman"
+      },
+      {
+        "given": "Vanessa M.",
+        "family": "Burns"
+      },
+      {
+        "given": "Matthew",
+        "family": "Lovett-Barron"
+      },
+      {
+        "given": "Michael",
+        "family": "Broxton"
+      },
+      {
+        "given": "Ben",
+        "family": "Poole"
+      },
+      {
+        "given": "Samuel J.",
+        "family": "Yang"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Talia N.",
+        "family": "Lerner"
+      },
+      {
+        "given": "Ritchie",
+        "family": "Chen"
+      },
+      {
+        "given": "Tyler",
+        "family": "Benster"
+      },
+      {
+        "given": "Philippe",
+        "family": "Mourrain"
+      },
+      {
+        "given": "Marc",
+        "family": "Levoy"
+      },
+      {
+        "given": "Kanaka",
+        "family": "Rajan"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Prolonged behavioral challenges can cause animals to switch from active to passive coping strategies to manage effort-expenditure during stress; such normally adaptive behavioral state transitions can become maladaptive in psychiatric disorders such as depression. The underlying neuronal dynamics and brainwide interactions important for passive coping have remained unclear. Here, we develop a paradigm to study these behavioral state transitions at cellular-resolution across the entire vertebrate brain. Using brainwide imaging in zebrafish, we observed that the transition to passive coping is manifested by progressive activation of neurons in the ventral (lateral) habenula. Activation of these ventral-habenula neurons suppressed downstream neurons in the serotonergic raphe nucleus and caused behavioral passivity, whereas inhibition of these neurons prevented passivity. Data-driven recurrent neural network modeling pointed to altered intra-habenula interactions as a contributory mechanism. These results demonstrate ongoing encoding of experience features in the habenula, which guides recruitment of downstream networks and imposes a passive coping behavioral strategy.",
+    "abstractSource": "europepmc"
+  },
+  "anikeeva2012optetrode": {
+    "authors": [
+      {
+        "given": "Polina",
+        "family": "Anikeeva"
+      },
+      {
+        "given": "Aaron S",
+        "family": "Andalman"
+      },
+      {
+        "given": "Ilana",
+        "family": "Witten"
+      },
+      {
+        "given": "Melissa",
+        "family": "Warden"
+      },
+      {
+        "given": "Inbal",
+        "family": "Goshen"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Lisa A",
+        "family": "Gunaydin"
+      },
+      {
+        "given": "Loren M",
+        "family": "Frank"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Recent advances in optogenetics have improved the precision with which defined circuit elements can be controlled optically in freely moving mammals; in particular, recombinase-dependent opsin viruses, used with a growing pool of transgenic mice expressing recombinases, allow manipulation of specific cell types. However, although optogenetic control has allowed neural circuits to be manipulated in increasingly powerful ways, combining optogenetic stimulation with simultaneous multichannel electrophysiological readout of isolated units in freely moving mice remains a challenge. We designed and validated the optetrode, a device that allows for colocalized multi-tetrode electrophysiological recording and optical stimulation in freely moving mice. Optetrode manufacture employs a unique optical fiber-centric coaxial design approach that yields a lightweight (2 g), compact and robust device that is suitable for behaving mice. This low-cost device is easy to construct (2.5 h to build without specialized equipment). We found that the drive design produced stable high-quality recordings and continued to do so for at least 6 weeks following implantation. We validated the optetrode by quantifying, for the first time, the response of cells in the medial prefrontal cortex to local optical excitation and inhibition, probing multiple different genetically defined classes of cells in the mouse during open field exploration.",
+    "abstractSource": "europepmc"
+  },
+  "broxton2013waveoptics": {
+    "authors": [
+      {
+        "given": "Michael",
+        "family": "Broxton"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Samuel",
+        "family": "Yang"
+      },
+      {
+        "given": "Noy",
+        "family": "Cohen"
+      },
+      {
+        "given": "Aaron",
+        "family": "Andalman"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "Marc",
+        "family": "Levoy"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Light field microscopy is a new technique for high-speed volumetric imaging of weakly scattering or fluorescent specimens. It employs an array of microlenses to trade off spatial resolution against angular resolution, thereby allowing a 4-D light field to be captured using a single photographic exposure without the need for scanning. The recorded light field can then be used to computationally reconstruct a full volume. In this paper, we present an optical model for light field microscopy based on wave optics, instead of previously reported ray optics models. We also present a 3-D deconvolution method for light field microscopy that is able to reconstruct volumes at higher spatial resolution, and with better optical sectioning, than previously reported. To accomplish this, we take advantage of the dense spatio-angular sampling provided by a microlens array at axial positions away from the native object plane. This dense sampling permits us to decode aliasing present in the light field to reconstruct high-frequency information. We formulate our method as an inverse problem for reconstructing the 3-D volume, which we solve using a GPU-accelerated iterative algorithm. Theoretical limits on the depth-dependent lateral resolution of the reconstructed volumes are derived. We show that these limits are in good agreement with experimental results on a standard USAF 1951 resolution target. Finally, we present 3-D reconstructions of pollen grains that demonstrate the improvements in fidelity made possible by our method.",
+    "abstractSource": "openalex"
+  },
+  "buch2022hierarchically": {
+    "abstract": "We introduce an unsupervised learning approach that combines the truncated singular value decomposition with convex clustering to estimate within-cluster directions of maximum variance/covariance (in the variables) while simultaneously hierarchically clustering (on observations). In contrast to previous work on joint clustering and embedding, our approach has a straightforward formulation, is readily scalable via distributed optimization, and admits a direct interpretation as hierarchically clustered principal component analysis (PCA) or hierarchically clustered canonical correlation analysis (CCA). Through numerical experiments and real-world examples relevant to precision medicine, we show that our approach outperforms traditional and contemporary clustering methods on underdetermined problems ($p \\gg N$ with tens of observations) and scales to large datasets (e.g., $N=100,000$; $p=1,000$) while yielding interpretable dendrograms of hierarchical per-cluster principal components or canonical variates.",
+    "abstractSource": "arxiv",
+    "authors": [
+      {
+        "given": "Amanda M.",
+        "family": "Buch"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      }
+    ],
+    "authorsSource": "arxiv"
+  },
+  "buch2023autism": {
+    "authors": [
+      {
+        "given": "Amanda M.",
+        "family": "Buch",
+        "orcid": "https://orcid.org/0000-0001-5889-3495"
+      },
+      {
+        "given": "Petra E.",
+        "family": "Vértes",
+        "orcid": "https://orcid.org/0000-0002-0992-3210"
+      },
+      {
+        "given": "Jakob",
+        "family": "Seidlitz",
+        "orcid": "https://orcid.org/0000-0002-8164-7476"
+      },
+      {
+        "given": "So Hyun",
+        "family": "Kim"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick",
+        "orcid": "https://orcid.org/0000-0003-3216-0319"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "The mechanisms underlying phenotypic heterogeneity in autism spectrum disorder (ASD) are not well understood. Using a large neuroimaging dataset, we identified three latent dimensions of functional brain network connectivity that predicted individual differences in ASD behaviors and were stable in cross-validation. Clustering along these three dimensions revealed four reproducible ASD subgroups with distinct functional connectivity alterations in ASD-related networks and clinical symptom profiles that were reproducible in an independent sample. By integrating neuroimaging data with normative gene expression data from two independent transcriptomic atlases, we found that within each subgroup, ASD-related functional connectivity was explained by regional differences in the expression of distinct ASD-related gene sets. These gene sets were differentially associated with distinct molecular signaling pathways involving immune and synapse function, G-protein-coupled receptor signaling, protein synthesis and other processes. Collectively, our findings delineate atypical connectivity patterns underlying different forms of ASD that implicate distinct molecular signaling mechanisms.",
+    "abstractSource": "europepmc"
+  },
+  "buch2024cluster": {
+    "abstract": "AI-enabled precision medicine promises a transformational improvement in healthcare outcomes by enabling data-driven personalized diagnosis, prognosis, and treatment. However, the well-known \"curse of dimensionality\" and the clustered structure of biomedical data together interact to present a joint challenge in the high dimensional, limited observation precision medicine regime. To overcome both issues simultaneously we propose a simple and scalable approach to joint clustering and embedding that combines standard embedding methods with a convex clustering penalty in a modular way. This novel, cluster-aware embedding approach overcomes the complexity and limitations of current joint embedding and clustering methods, which we show with straightforward implementations of hierarchically clustered principal component analysis (PCA), locally linear embedding (LLE), and canonical correlation analysis (CCA). Through both numerical experiments and real-world examples, we demonstrate that our approach outperforms traditional and contemporary clustering methods on highly underdetermined problems (e.g., with just tens of observations) as well as on large sample datasets. Importantly, our approach does not require the user to choose the desired number of clusters, but instead yields interpretable dendrograms of hierarchically clustered embeddings. Thus our approach improves significantly on existing methods for identifying patient subgroups in multiomics and neuroimaging data, enabling scalable and interpretable biomarkers for precision medicine.",
+    "abstractSource": "arxiv",
+    "authors": [
+      {
+        "given": "Amanda M.",
+        "family": "Buch"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      }
+    ],
+    "authorsSource": "arxiv"
+  },
+  "chung2013clarity": {
+    "authors": [
+      {
+        "given": "Kwanghun",
+        "family": "Chung"
+      },
+      {
+        "given": "Jenelle",
+        "family": "Wallace"
+      },
+      {
+        "given": "Sung-Yon",
+        "family": "Kim"
+      },
+      {
+        "given": "Sandhiya",
+        "family": "Kalyanasundaram"
+      },
+      {
+        "given": "Aaron S.",
+        "family": "Andalman"
+      },
+      {
+        "given": "Thomas J.",
+        "family": "Davidson"
+      },
+      {
+        "given": "Julie J.",
+        "family": "Mirzabekov"
+      },
+      {
+        "given": "Kelly A.",
+        "family": "Zalocusky"
+      },
+      {
+        "given": "Joanna",
+        "family": "Mattis"
+      },
+      {
+        "given": "Aleksandra K.",
+        "family": "Denisin"
+      },
+      {
+        "given": "Sally",
+        "family": "Pak"
+      },
+      {
+        "given": "Hannah",
+        "family": "Bernstein"
+      },
+      {
+        "given": "Charu",
+        "family": "Ramakrishnan"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Viviana",
+        "family": "Gradinaru"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Obtaining high-resolution information from a complex system, while maintaining the global perspective needed to understand system function, represents a key challenge in biology. Here we address this challenge with a method (termed CLARITY) for the transformation of intact tissue into a nanoporous hydrogel-hybridized form (crosslinked to a three-dimensional network of hydrophilic polymers) that is fully assembled but optically transparent and macromolecule-permeable. Using mouse brains, we show intact-tissue imaging of long-range projections, local circuit wiring, cellular relationships, subcellular structures, protein complexes, nucleic acids and neurotransmitters. CLARITY also enables intact-tissue in situ hybridization, immunohistochemistry with multiple rounds of staining and de-staining in non-sectioned tissue, and antibody labelling throughout the intact adult mouse brain. Finally, we show that CLARITY enables fine structural analysis of clinical samples, including non-sectioned human tissue from a neuropsychiatric-disease setting, establishing a path for the transmutation of human tissue into a stable, intact and accessible form suitable for probing structural and molecular underpinnings of physiological function and disease.",
+    "abstractSource": "europepmc"
+  },
+  "cohen2014wavefront": {
+    "authors": [
+      {
+        "given": "Noy",
+        "family": "Cohen"
+      },
+      {
+        "given": "Samuel",
+        "family": "Yang"
+      },
+      {
+        "given": "Aaron",
+        "family": "Andalman"
+      },
+      {
+        "given": "Michael",
+        "family": "Broxton"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "Mark",
+        "family": "Horowitz"
+      },
+      {
+        "given": "Marc",
+        "family": "Levoy"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Light field microscopy has been proposed as a new high-speed volumetric computational imaging method that enables reconstruction of 3-D volumes from captured projections of the 4-D light field. Recently, a detailed physical optics model of the light field microscope has been derived, which led to the development of a deconvolution algorithm that reconstructs 3-D volumes with high spatial resolution. However, the spatial resolution of the reconstructions has been shown to be non-uniform across depth, with some z planes showing high resolution and others, particularly at the center of the imaged volume, showing very low resolution. In this paper, we enhance the performance of the light field microscope using wavefront coding techniques. By including phase masks in the optical path of the microscope we are able to address this non-uniform resolution limitation. We have also found that superior control over the performance of the light field microscope can be achieved by using two phase masks rather than one, placed at the objective's back focal plane and at the microscope's native image plane. We present an extended optical model for our wavefront coded light field microscope and develop a performance metric based on Fisher information, which we use to choose adequate phase masks parameters. We validate our approach using both simulated data and experimental resolution measurements of a USAF 1951 resolution target; and demonstrate the utility for biological applications with in vivo volumetric calcium imaging of larval zebrafish brain.",
+    "abstractSource": "openalex"
+  },
+  "drysdale2017biotypes": {
+    "authors": [
+      {
+        "given": "Andrew T",
+        "family": "Drysdale"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Downar",
+        "orcid": "https://orcid.org/0000-0002-5140-174X"
+      },
+      {
+        "given": "Katharine",
+        "family": "Dunlop"
+      },
+      {
+        "given": "Farrokh",
+        "family": "Mansouri"
+      },
+      {
+        "given": "Yue",
+        "family": "Meng"
+      },
+      {
+        "given": "Robert N",
+        "family": "Fetcho"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Zebley"
+      },
+      {
+        "given": "Desmond J",
+        "family": "Oathes"
+      },
+      {
+        "given": "Amit",
+        "family": "Etkin"
+      },
+      {
+        "given": "Alan F",
+        "family": "Schatzberg"
+      },
+      {
+        "given": "Keith",
+        "family": "Sudheimer"
+      },
+      {
+        "given": "Jennifer",
+        "family": "Keller"
+      },
+      {
+        "given": "Helen S",
+        "family": "Mayberg"
+      },
+      {
+        "given": "Faith M",
+        "family": "Gunning"
+      },
+      {
+        "given": "George S",
+        "family": "Alexopoulos"
+      },
+      {
+        "given": "Michael D",
+        "family": "Fox"
+      },
+      {
+        "given": "Alvaro",
+        "family": "Pascual-Leone"
+      },
+      {
+        "given": "Henning U",
+        "family": "Voss",
+        "orcid": "https://orcid.org/0000-0003-2811-2074"
+      },
+      {
+        "given": "BJ",
+        "family": "Casey"
+      },
+      {
+        "given": "Marc J",
+        "family": "Dubin"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Biomarkers have transformed modern medicine but remain largely elusive in psychiatry, partly because there is a weak correspondence between diagnostic labels and their neurobiological substrates. Like other neuropsychiatric disorders, depression is not a unitary disease, but rather a heterogeneous syndrome that encompasses varied, co-occurring symptoms and divergent responses to treatment. By using functional magnetic resonance imaging (fMRI) in a large multisite sample (n = 1,188), we show here that patients with depression can be subdivided into four neurophysiological subtypes ('biotypes') defined by distinct patterns of dysfunctional connectivity in limbic and frontostriatal networks. Clustering patients on this basis enabled the development of diagnostic classifiers (biomarkers) with high (82-93%) sensitivity and specificity for depression subtypes in multisite validation (n = 711) and out-of-sample replication (n = 477) data sets. These biotypes cannot be differentiated solely on the basis of clinical features, but they are associated with differing clinical-symptom profiles. They also predict responsiveness to transcranial magnetic stimulation therapy (n = 154). Our results define novel subtypes of depression that transcend current diagnostic boundaries and may be useful for identifying the individuals who are most likely to benefit from targeted neurostimulation therapies.",
+    "abstractSource": "europepmc"
+  },
+  "dunlop2024depression": {
+    "authors": [
+      {
+        "given": "Katharine",
+        "family": "Dunlop"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Downar"
+      },
+      {
+        "given": "Fidel",
+        "family": "Vila-Rodriguez"
+      },
+      {
+        "given": "Faith M.",
+        "family": "Gunning"
+      },
+      {
+        "given": "Zafiris J.",
+        "family": "Daskalakis"
+      },
+      {
+        "given": "Daniel M.",
+        "family": "Blumberger"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Background Recent studies have reported significant advances in modeling the biological basis of heterogeneity in major depressive disorder, but investigators have also identified important technical challenges, including scanner-related artifacts, a propensity for multivariate models to overfit, and a need for larger samples with more extensive clinical phenotyping. The goals of the current study were to evaluate dimensional and categorical solutions to parsing heterogeneity in depression that are stable and generalizable in a large, single-site sample. Methods We used regularized canonical correlation analysis to identify data-driven brain-behavior dimensions that explain individual differences in depression symptom domains in a large, single-site dataset comprising clinical assessments and resting-state functional magnetic resonance imaging data for 328 patients with major depressive disorder and 461 healthy control participants. We examined the stability of clinical loadings and model performance in held-out data. Finally, hierarchical clustering on these dimensions was used to identify categorical depression subtypes. Results The optimal regularized canonical correlation analysis model yielded 3 robust and generalizable brain-behavior dimensions that explained individual differences in depressed mood and anxiety, anhedonia, and insomnia. Hierarchical clustering identified 4 depression subtypes, each with distinct clinical symptom profiles, abnormal resting-state functional connectivity patterns, and antidepressant responsiveness to repetitive transcranial magnetic stimulation. Conclusions Our results define dimensional and categorical solutions to parsing neurobiological heterogeneity in major depressive disorder that are stable, generalizable, and capable of predicting treatment outcomes, each with distinct advantages in different contexts. They also provide additional evidence that regularized canonical correlation analysis and hierarchical clustering are effective tools for investigating associations between functional connectivity and clinical symptoms.",
+    "abstractSource": "europepmc"
+  },
+  "falkner2016hypothalamic": {
+    "authors": [
+      {
+        "given": "Annegret L",
+        "family": "Falkner"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Thomas J",
+        "family": "Davidson"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "Dayu",
+        "family": "Lin"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "In many vertebrate species, certain individuals will seek out opportunities for aggression, even in the absence of threat-provoking cues. Although several brain areas have been implicated in the generation of attack in response to social threat, little is known about the neural mechanisms that promote self-initiated or 'voluntary' aggression-seeking when no threat is present. To explore this directly, we utilized an aggression-seeking task in which male mice self-initiated aggression trials to gain brief and repeated access to a weaker male that they could attack. In males that exhibited rapid task learning, we found that the ventrolateral part of the ventromedial hypothalamus (VMHvl), an area with a known role in attack, was essential for aggression-seeking. Using both single-unit electrophysiology and population optical recording, we found that VMHvl neurons became active during aggression-seeking and that their activity tracked changes in task learning and extinction. Inactivation of the VMHvl reduced aggression-seeking behavior, whereas optogenetic stimulation of the VMHvl accelerated moment-to-moment aggression-seeking and intensified future attack. These data demonstrate that the VMHvl can mediate both acute attack and flexible seeking actions that precede attack.",
+    "abstractSource": "europepmc"
+  },
+  "fenno2014intrsect": {
+    "authors": [
+      {
+        "given": "Lief E",
+        "family": "Fenno"
+      },
+      {
+        "given": "Joanna",
+        "family": "Mattis"
+      },
+      {
+        "given": "Charu",
+        "family": "Ramakrishnan"
+      },
+      {
+        "given": "Minsuk",
+        "family": "Hyun"
+      },
+      {
+        "given": "Soo Yeun",
+        "family": "Lee"
+      },
+      {
+        "given": "Miao",
+        "family": "He"
+      },
+      {
+        "given": "Jason",
+        "family": "Tucciarone"
+      },
+      {
+        "given": "Aslihan",
+        "family": "Selimbeyoglu"
+      },
+      {
+        "given": "Andre",
+        "family": "Berndt"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Kelly A",
+        "family": "Zalocusky"
+      },
+      {
+        "given": "Hannah",
+        "family": "Bernstein"
+      },
+      {
+        "given": "Haley",
+        "family": "Swanson"
+      },
+      {
+        "given": "Chelsey",
+        "family": "Perry"
+      },
+      {
+        "given": "Ilka",
+        "family": "Diester"
+      },
+      {
+        "given": "Frederick M",
+        "family": "Boyce"
+      },
+      {
+        "given": "Caroline E",
+        "family": "Bass"
+      },
+      {
+        "given": "Rachael",
+        "family": "Neve"
+      },
+      {
+        "given": "Z Josh",
+        "family": "Huang"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Precisely defining the roles of specific cell types is an intriguing frontier in the study of intact biological systems and has stimulated the rapid development of genetically encoded tools for observation and control. However, targeting these tools with adequate specificity remains challenging: most cell types are best defined by the intersection of two or more features such as active promoter elements, location and connectivity. Here we have combined engineered introns with specific recombinases to achieve expression of genetically encoded tools that is conditional upon multiple cell-type features, using Boolean logical operations all governed by a single versatile vector. We used this approach to target intersectionally specified populations of inhibitory interneurons in mammalian hippocampus and neurons of the ventral tegmental area defined by both genetic and wiring properties. This flexible and modular approach may expand the application of genetically encoded interventional and observational tools for intact-systems biology.",
+    "abstractSource": "europepmc"
+  },
+  "ferenczi2016prefrontal": {
+    "abstract": "Which brain regions are causally involved in reward-related behavior? Ferenczi et al. combined focal, cell type-specific, optogenetic manipulations with brain imaging, behavioral testing, and in vivo electrophysiology (see the Perspective by Robbins). Stimulation of midbrain dopamine neurons increased activity in a brain region called the striatum and was correlated with reward-seeking across individual animals. However, elevated excitability of an area called the medial prefrontal cortex reduced both striatal responses to the stimulation of dopamine neurons and the behavioral drive to seek the stimulation of dopamine neurons. Finally, modulating the excitability of medial prefrontal cortex pyramidal neurons drove changes in neural circuit synchrony, as well as corresponding anhedonic behavior. These observations resemble imaging and clinical phenotypes observed in human depression, addiction, and schizophrenia. Science , this issue p. 10.1126/science.aac9698 ; see also p. 10.1126/science.aad9698",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Emily A.",
+        "family": "Ferenczi"
+      },
+      {
+        "given": "Kelly A.",
+        "family": "Zalocusky"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Melissa R.",
+        "family": "Warden"
+      },
+      {
+        "given": "Debha",
+        "family": "Amatya"
+      },
+      {
+        "given": "Kiefer",
+        "family": "Katovich"
+      },
+      {
+        "given": "Hershel",
+        "family": "Mehta"
+      },
+      {
+        "given": "Brian",
+        "family": "Patenaude"
+      },
+      {
+        "given": "Charu",
+        "family": "Ramakrishnan"
+      },
+      {
+        "given": "Paul",
+        "family": "Kalanithi"
+      },
+      {
+        "given": "Amit",
+        "family": "Etkin"
+      },
+      {
+        "given": "Brian",
+        "family": "Knutson"
+      },
+      {
+        "given": "Gary H.",
+        "family": "Glover"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "fetcho2023social": {
+    "abstract": "Social hierarchies exert a powerful influence on behavior, but the neurobiological mechanisms that detect and regulate hierarchical interactions are not well understood, especially at the level of neural circuits. Here, we use fiber photometry and chemogenetic tools to record and manipulate the activity of nucleus accumbens-projecting cells in the ventromedial prefrontal cortex (vmPFC-NAcSh) during tube test social competitions. We show that vmPFC-NAcSh projections signal learned hierarchical relationships, and are selectively recruited by subordinate mice when they initiate effortful social dominance behavior during encounters with a dominant competitor from an established hierarchy. After repeated bouts of social defeat stress, this circuit is preferentially activated during social interactions initiated by stress resilient individuals, and plays a necessary role in supporting social approach behavior in subordinated mice. These results define a necessary role for vmPFC-NAcSh cells in the adaptive regulation of social interaction behavior based on prior hierarchical interactions.",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Robert N.",
+        "family": "Fetcho"
+      },
+      {
+        "given": "Baila S.",
+        "family": "Hall",
+        "orcid": "https://orcid.org/0000-0002-1171-2295"
+      },
+      {
+        "given": "David J.",
+        "family": "Estrin"
+      },
+      {
+        "given": "Alexander P.",
+        "family": "Walsh"
+      },
+      {
+        "given": "Peter J.",
+        "family": "Schuette"
+      },
+      {
+        "given": "Jesse",
+        "family": "Kaminsky"
+      },
+      {
+        "given": "Ashna",
+        "family": "Singh"
+      },
+      {
+        "given": "Jacob",
+        "family": "Roshgodal"
+      },
+      {
+        "given": "Charlotte C.",
+        "family": "Bavley",
+        "orcid": "https://orcid.org/0000-0001-7273-7392"
+      },
+      {
+        "given": "Viraj",
+        "family": "Nadkarni",
+        "orcid": "https://orcid.org/0000-0002-2319-4931"
+      },
+      {
+        "given": "Susan",
+        "family": "Antigua",
+        "orcid": "https://orcid.org/0000-0001-5954-5716"
+      },
+      {
+        "given": "Thu N.",
+        "family": "Huynh"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick",
+        "orcid": "https://orcid.org/0000-0003-3216-0319"
+      },
+      {
+        "given": "Camille",
+        "family": "Carthy"
+      },
+      {
+        "given": "Lauren",
+        "family": "Komer",
+        "orcid": "https://orcid.org/0000-0002-6114-8637"
+      },
+      {
+        "given": "Avishek",
+        "family": "Adhikari",
+        "orcid": "https://orcid.org/0000-0002-9187-9211"
+      },
+      {
+        "given": "Francis S.",
+        "family": "Lee",
+        "orcid": "https://orcid.org/0000-0002-7108-9650"
+      },
+      {
+        "given": "Anjali M.",
+        "family": "Rajadhyaksha",
+        "orcid": "https://orcid.org/0000-0002-8399-5466"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "flanagan2007gnrh": {
+    "abstract": "Multiple GnRH receptors are known to exist in nonmammalian species, but it is uncertain which receptor type regulates reproduction via the hypothalamic-pituitary-gonadal axis. The teleost fish, Astatotilapia burtoni, is useful for identifying the GnRH receptor responsible for reproduction, because only territorial males reproduce. We have cloned a second GnRH receptor in A. burtoni, GnRH-R1SHS (SHS is a peptide motif in extracellular loop 3), which is up-regulated in pituitaries of territorial males. We have shown that GnRH-R1SHS is expressed in many tissues and specifically colocalizes with LH in the pituitary. In A. burtoni brain, mRNA levels of both GnRH-R1SHS and a previously identified receptor, GnRH-R2PEY, are highly correlated with mRNA levels of all three GnRH ligands. Despite its likely role in reproduction, we found that GnRH-R1SHS has the highest affinity for GnRH2 in vitro and low responsivity to GnRH1. Our phylogenetic analysis shows that GnRH-R1SHS is less closely related to mammalian reproductive GnRH receptors than GnRH-R2PEY. We correlated vertebrate GnRH receptor amino acid sequences with receptor function and tissue distribution in many species and found that GnRH receptor sequences predict ligand responsiveness but not colocalization with pituitary gonadotropes. Based on sequence analysis, tissue localization, and physiological response we propose that the GnRH-R1SHS receptor controls reproduction in teleosts, including A. burtoni. We propose a GnRH receptor classification based on gene sequence that correlates with ligand selectivity but not with reproductive control. Our results suggest that different duplicated GnRH receptor genes have been selected to regulate reproduction in different vertebrate lineages.",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Colleen A.",
+        "family": "Flanagan"
+      },
+      {
+        "given": "Chun-Chun",
+        "family": "Chen"
+      },
+      {
+        "given": "Marla",
+        "family": "Coetsee"
+      },
+      {
+        "given": "Sipho",
+        "family": "Mamputha"
+      },
+      {
+        "given": "Kathleen E.",
+        "family": "Whitlock"
+      },
+      {
+        "given": "Nicholas",
+        "family": "Bredenkamp"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Russell D.",
+        "family": "Fernald"
+      },
+      {
+        "given": "Nicola",
+        "family": "Illing"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "grosenick2007fish": {
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Tricia S.",
+        "family": "Clement"
+      },
+      {
+        "given": "Russell D.",
+        "family": "Fernald"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Transitive inference (TI) involves using known relationships to deduce unknown ones (for example, using A > B and B > C to infer A > C), and is thus essential to logical reasoning. First described as a developmental milestone in children, TI has since been reported in nonhuman primates, rats and birds. Still, how animals acquire and represent transitive relationships and why such abilities might have evolved remain open problems. Here we show that male fish (Astatotilapia burtoni) can successfully make inferences on a hierarchy implied by pairwise fights between rival males. These fish learned the implied hierarchy vicariously (as 'bystanders'), by watching fights between rivals arranged around them in separate tank units. Our findings show that fish use TI when trained on socially relevant stimuli, and that they can make such inferences by using indirect information alone. Further, these bystanders seem to have both spatial and featural representations related to rival abilities, which they can use to make correct inferences depending on what kind of information is available to them. Beyond extending TI to fish and experimentally demonstrating indirect TI learning in animals, these results indicate that a universal mechanism underlying TI is unlikely. Rather, animals probably use multiple domain-specific representations adapted to different social and ecological pressures that they encounter during the course of their natural lives.",
+    "abstractSource": "europepmc"
+  },
+  "grosenick2013graphnet": {
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Brad",
+        "family": "Klingenberg"
+      },
+      {
+        "given": "Kiefer",
+        "family": "Katovich"
+      },
+      {
+        "given": "Brian",
+        "family": "Knutson"
+      },
+      {
+        "given": "Jonathan E.",
+        "family": "Taylor"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Multivariate machine learning methods are increasingly used to analyze neuroimaging data, often replacing more traditional \"mass univariate\" techniques that fit data one voxel at a time. In the functional magnetic resonance imaging (fMRI) literature, this has led to broad application of \"off-the-shelf\" classification and regression methods. These generic approaches allow investigators to use ready-made algorithms to accurately decode perceptual, cognitive, or behavioral states from distributed patterns of neural activity. However, when applied to correlated whole-brain fMRI data these methods suffer from coefficient instability, are sensitive to outliers, and yield dense solutions that are hard to interpret without arbitrary thresholding. Here, we develop variants of the Graph-constrained Elastic-Net (GraphNet), a fast, whole-brain regression and classification method developed for spatially and temporally correlated data that automatically yields interpretable coefficient maps (Grosenick et al., 2009b). GraphNet methods yield sparse but structured solutions by combining structured graph constraints (based on knowledge about coefficient smoothness or connectivity) with a global sparsity-inducing prior that automatically selects important variables. Because GraphNet methods can efficiently fit regression or classification models to whole-brain, multiple time-point data sets and enhance classification accuracy relative to volume-of-interest (VOI) approaches, they eliminate the need for inherently biased VOI analyses and allow whole-brain fitting without the multiple comparison problems that plague mass univariate and roaming VOI (\"searchlight\") methods. As fMRI data are unlikely to be normally distributed, we (1) extend GraphNet to include robust loss functions that confer insensitivity to outliers, (2) equip them with \"adaptive\" penalties that asymptotically guarantee correct variable selection, and (3) develop a novel sparse structured Support Vector GraphNet classifier (SVGN). When applied to previously published data (Knutson et al., 2007), these efficient whole-brain methods significantly improved classification accuracy over previously reported VOI-based analyses on the same data (Grosenick et al., 2008; Knutson et al., 2007) while discovering task-related regions not documented in the original VOI approach. Critically, GraphNet estimates fit to the Knutson et al. (2007) data generalize well to out-of-sample data collected more than three years later on the same task but with different subjects and stimuli (Karmarkar et al., submitted for publication). By enabling robust and efficient selection of important voxels from whole-brain data taken over multiple time points (>100,000 \"features\"), these methods enable data-driven selection of brain areas that accurately predict single-trial behavior within and across individuals.",
+    "abstractSource": "openalex"
+  },
+  "grosenick2015closedloop": {
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "James H.",
+        "family": "Marshel"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Advances in optical manipulation and observation of neural activity have set the stage for widespread implementation of closed-loop and activity-guided optical control of neural circuit dynamics. Closing the loop optogenetically (i.e., basing optogenetic stimulation on simultaneously observed dynamics in a principled way) is a powerful strategy for causal investigation of neural circuitry. In particular, observing and feeding back the effects of circuit interventions on physiologically relevant timescales is valuable for directly testing whether inferred models of dynamics, connectivity, and causation are accurate in vivo. Here we highlight technical and theoretical foundations as well as recent advances and opportunities in this area, and we review in detail the known caveats and limitations of optogenetic experimentation in the context of addressing these challenges with closed-loop optogenetic control in behaving animals.",
+    "abstractSource": "europepmc"
+  },
+  "grosenick2017lightfield": {
+    "abstract": "Tracking the coordinated activity of cellular events through volumes of intact tissue is a major challenge in biology that has inspired significant technological innovation. Yet scanless measurement of the high-speed activity of individual neurons across three dimensions in scattering mammalian tissue remains an open problem. Here we develop and validate a computational imaging approach (SWIFT) that integrates high-dimensional, structured statistics with light field microscopy to allow the synchronous acquisition of single-neuron resolution activity throughout intact tissue volumes as fast as a camera can capture images (currently up to 100 Hz at full camera resolution), attaining rates needed to keep pace with emerging fast calcium and voltage sensors. We demonstrate that this large field-of-view, single-snapshot volume acquisition method—which requires only a simple and inexpensive modification to a standard fluorescence microscope—enables scanless capture of coordinated activity patterns throughout mammalian neural volumes. Further, the volumetric nature of SWIFT also allows fast in vivo imaging, motion correction, and cell identification throughout curved subcortical structures like the dorsal hippocampus, where cellular-resolution dynamics spanning hippocampal subfields can be simultaneously observed during a virtual context learning task in a behaving animal. SWIFT’s ability to rapidly and easily record from volumes of many cells across layers opens the door to widespread identification of dynamical motifs and timing dependencies among coordinated cell assemblies during adaptive, modulated, or maladaptive physiological processes in neural systems.",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Michael",
+        "family": "Broxton"
+      },
+      {
+        "given": "Christina K.",
+        "family": "Kim"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston"
+      },
+      {
+        "given": "Ben",
+        "family": "Poole"
+      },
+      {
+        "given": "Samuel",
+        "family": "Yang"
+      },
+      {
+        "given": "Aaron",
+        "family": "Andalman"
+      },
+      {
+        "given": "Edward",
+        "family": "Scharff"
+      },
+      {
+        "given": "Noy",
+        "family": "Cohen"
+      },
+      {
+        "given": "Ofer",
+        "family": "Yizhar"
+      },
+      {
+        "given": "Charu",
+        "family": "Ramakrishnan"
+      },
+      {
+        "given": "Surya",
+        "family": "Ganguli"
+      },
+      {
+        "given": "Patrick",
+        "family": "Suppes"
+      },
+      {
+        "given": "Marc",
+        "family": "Levoy"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "grosenick2019subtype": {
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick",
+        "orcid": "https://orcid.org/0000-0003-3216-0319"
+      },
+      {
+        "given": "Tracey C.",
+        "family": "Shi"
+      },
+      {
+        "given": "Faith M.",
+        "family": "Gunning"
+      },
+      {
+        "given": "Marc J.",
+        "family": "Dubin"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Downar"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Background Previously, we identified four depression subtypes defined by distinct functional connectivity alterations in depression-related brain networks, which in turn predicted clinical symptoms and treatment response. Optogenetic functional magnetic resonance imaging offers a promising approach for testing how dysfunction in specific circuits gives rise to subtype-specific, depression-related behaviors. However, this approach assumes that there are robust, reproducible correlations between functional connectivity and depressive symptoms-an assumption that was not extensively tested in previous work. Methods First, we comprehensively reevaluated the stability of canonical correlations between functional connectivity and symptoms (N = 220 subjects) using optimized approaches for large-scale statistical hypothesis testing, and we validated methods for improving estimation of latent variables driving brain-behavior correlations. Having confirmed this necessary condition, we reviewed recent advances in optogenetic functional magnetic resonance imaging and illustrated one approach to formulating hypotheses regarding latent subtype-specific circuit mechanisms and testing them in animal models. Results Correlations between connectivity features and clinical symptoms were robustly significant, and canonical correlation analysis solutions tested repeatedly on held-out data generalized. However, they were sensitive to data quality, preprocessing, and clinical heterogeneity, which can reduce effect sizes. Generalization could be markedly improved by adding L2 regularization, which decreased estimator variance, increased canonical correlations in left-out data, and stabilized feature selection. These improvements were useful for identifying candidate circuits for optogenetic interrogation in animal models. Conclusions Multiview, latent-variable approaches such as canonical correlation analysis offer a conceptually useful framework for discovering stable patient subtypes by synthesizing multiple clinical and functional measures. Optogenetic functional magnetic resonance imaging holds promise for testing hypotheses regarding latent, subtype-specific mechanisms driving depressive symptoms and behaviors.",
+    "abstractSource": "europepmc"
+  },
+  "grosenick2026multimodal": {
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "For decades, psychiatric neuroimaging has searched for biomarkers of depression and other disorders, but they remain elusive in clinical practice. While the last 5 years have seen rapid progress, other large-scale correlative studies have found only small, unreliable links between brain measures and clinical symptoms. Growing evidence suggests that such limitations are not just about sample size but depend critically on how models represent data. This review traces a recent shift away from univariate methods to multivariate/multiview approaches that learn more effective representations of biological and symptom measures by flexibly learning multimodal latent representations. First, we review how linear multiview embedding methods have revealed reproducible biological depression subtypes but do not perform well in small samples or samples enriched for mild symptoms. Then, we consider newer work exploring more sophisticated representations for neuroimaging data, including deep-learning and graph-based representations, and multimodal extensions that uncover complex latent patterns that single-modality studies miss. Then, we review recent developments in foundation models, which, once trained on large corpora, can \"transfer learn\" readily to small clinical cohorts, potentially bringing the advantages of large-scale learning to small, privacy-limited data. Finally, we highlight emerging representation tools that treat the brain as a dynamic, stateful multivariate process. Taken together, these advances point to a future in which the value of neuroimaging will be determined not only by ever-larger sample sizes but also by data quality and by how well our algorithms capture the distributed, multimodal, and evolving nature of psychiatric disorders.",
+    "abstractSource": "europepmc"
+  },
+  "gunaydin2014projection": {
+    "authors": [
+      {
+        "given": "Lisa A.",
+        "family": "Gunaydin"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Joel C.",
+        "family": "Finkelstein"
+      },
+      {
+        "given": "Isaac V.",
+        "family": "Kauvar"
+      },
+      {
+        "given": "Lief E.",
+        "family": "Fenno"
+      },
+      {
+        "given": "Avishek",
+        "family": "Adhikari"
+      },
+      {
+        "given": "Stephan",
+        "family": "Lammel"
+      },
+      {
+        "given": "Julie J.",
+        "family": "Mirzabekov"
+      },
+      {
+        "given": "Raag D.",
+        "family": "Airan"
+      },
+      {
+        "given": "Kelly A.",
+        "family": "Zalocusky"
+      },
+      {
+        "given": "Kay M.",
+        "family": "Tye"
+      },
+      {
+        "given": "Polina",
+        "family": "Anikeeva"
+      },
+      {
+        "given": "Robert C.",
+        "family": "Malenka"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Social interaction is a complex behavior essential for many species and is impaired in major neuropsychiatric disorders. Pharmacological studies have implicated certain neurotransmitter systems in social behavior, but circuit-level understanding of endogenous neural activity during social interaction is lacking. We therefore developed and applied a new methodology, termed fiber photometry, to optically record natural neural activity in genetically and connectivity-defined projections to elucidate the real-time role of specified pathways in mammalian behavior. Fiber photometry revealed that activity dynamics of a ventral tegmental area (VTA)-to-nucleus accumbens (NAc) projection could encode and predict key features of social, but not novel object, interaction. Consistent with this observation, optogenetic control of cells specifically contributing to this projection was sufficient to modulate social behavior, which was mediated by type 1 dopamine receptor signaling downstream in the NAc. Direct observation of deep projection-specific activity in this way captures a fundamental and previously inaccessible dimension of mammalian circuit dynamics.",
+    "abstractSource": "europepmc"
+  },
+  "ho2015selftracking": {
+    "authors": [
+      {
+        "given": "John S.",
+        "family": "Ho"
+      },
+      {
+        "given": "Yuji",
+        "family": "Tanabe"
+      },
+      {
+        "given": "Shrivats Mohan",
+        "family": "Iyer"
+      },
+      {
+        "given": "Amelia J.",
+        "family": "Christensen"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "Scott L.",
+        "family": "Delp"
+      },
+      {
+        "given": "Ada S. Y.",
+        "family": "Poon"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Mice, it turns out, are dielectric. The authors use this property to couple intrinsic resonant modes of a mouse's body to a wireless transmitter, and so power an implanted miniature electronic device with improved efficiency. This approach will enable behavioral and neuroscience experiments without wires, harnesses or tethers.",
+    "abstractSource": "openalex"
+  },
+  "huynh2018acquisition": {
+    "authors": [
+      {
+        "given": "T N",
+        "family": "Huynh"
+      },
+      {
+        "given": "E",
+        "family": "Santini"
+      },
+      {
+        "given": "E",
+        "family": "Mojica"
+      },
+      {
+        "given": "A E",
+        "family": "Fink"
+      },
+      {
+        "given": "B S",
+        "family": "Hall"
+      },
+      {
+        "given": "R N",
+        "family": "Fetcho"
+      },
+      {
+        "given": "L",
+        "family": "Grosenick"
+      },
+      {
+        "given": "K",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "J E",
+        "family": "LeDoux"
+      },
+      {
+        "given": "C",
+        "family": "Liston"
+      },
+      {
+        "given": "E",
+        "family": "Klann"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Repeated presentations of a previously conditioned stimulus lead to a new form of learning known as extinction, which temporarily alters the response to the original stimulus. Previous studies have shown that the consolidation of extinction memory requires de novo protein synthesis. However, the role of specific nodes of translational control in extinction is unknown. Using auditory threat conditioning in mice, we investigated the role of mechanistic target of rapamycin complex 1 (mTORC1) and its effector p70 S6 kinase 1 (S6K1) in the extinction of auditory threat conditioning. We found that rapamycin attenuated the consolidation of extinction memory. In contrast, genetic deletion and pharmacological inhibition of S6K1, a downstream effector of mTORC1, blocked within-session extinction, indicating a role for S6K1 independent of protein synthesis. Indeed, the activation of S6K1 during extinction required extracellular signal-regulated kinase (ERK) activation in the basolateral nucleus of the amygdala (BLA) and was necessary for increased phosphorylation of the GluA1 (Thr840) subunit of the AMPA receptor following extinction training. Mice exposed to brief uncontrollable stress showed impaired within-session extinction as well as a downregulation of ERK and S6K1 signaling in the amygdala. Finally, using fiber photometry we were able to record calcium signals in vivo, and we found that inhibition of S6K1 reduces extinction-induced changes in neuronal activity of the BLA. These results implicate a novel ERK-S6K1-GluA1 signaling cascade critically involved in extinction.",
+    "abstractSource": "europepmc"
+  },
+  "huynh2018extinction": {
+    "authors": [
+      {
+        "given": "T N",
+        "family": "Huynh"
+      },
+      {
+        "given": "E",
+        "family": "Santini"
+      },
+      {
+        "given": "E",
+        "family": "Mojica"
+      },
+      {
+        "given": "A E",
+        "family": "Fink"
+      },
+      {
+        "given": "B S",
+        "family": "Hall"
+      },
+      {
+        "given": "R N",
+        "family": "Fetcho"
+      },
+      {
+        "given": "L",
+        "family": "Grosenick"
+      },
+      {
+        "given": "K",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "J E",
+        "family": "LeDoux"
+      },
+      {
+        "given": "C",
+        "family": "Liston"
+      },
+      {
+        "given": "E",
+        "family": "Klann"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "kauvar2025emotion": {
+    "abstract": "Emotional responses to sensory experience are central to the human condition in health and disease. We hypothesized that principles governing the emergence of emotion from sensation might be discoverable through their conservation across the mammalian lineage. We therefore designed a cross-species neural activity screen, applicable to humans and mice, combining precise affective behavioral measurements, clinical medication administration, and brain-wide intracranial electrophysiology. This screen revealed conserved biphasic dynamics in which emotionally salient sensory signals are swiftly broadcast throughout the brain and followed by a characteristic persistent activity pattern. Medication-based interventions that selectively blocked persistent dynamics while preserving fast broadcast selectively inhibited emotional responses in humans and mice. Mammalian emotion appears to emerge as a specifically distributed neural context, driven by persistent dynamics and shaped by a global intrinsic timescale.",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Isaac",
+        "family": "Kauvar",
+        "orcid": "https://orcid.org/0000-0002-1336-0721"
+      },
+      {
+        "given": "Ethan B.",
+        "family": "Richman",
+        "orcid": "https://orcid.org/0000-0001-8471-266X"
+      },
+      {
+        "given": "Tony X.",
+        "family": "Liu",
+        "orcid": "https://orcid.org/0000-0001-9334-8492"
+      },
+      {
+        "given": "Chelsea",
+        "family": "Li",
+        "orcid": "https://orcid.org/0000-0002-9464-7002"
+      },
+      {
+        "given": "Sam",
+        "family": "Vesuna"
+      },
+      {
+        "given": "Adelaida",
+        "family": "Chibukhchyan",
+        "orcid": "https://orcid.org/0000-0002-1470-8347"
+      },
+      {
+        "given": "Lisa",
+        "family": "Yamada",
+        "orcid": "https://orcid.org/0000-0003-2454-4830"
+      },
+      {
+        "given": "Adam",
+        "family": "Fogarty",
+        "orcid": "https://orcid.org/0009-0007-9124-974X"
+      },
+      {
+        "given": "Ethan",
+        "family": "Solomon",
+        "orcid": "https://orcid.org/0000-0003-0541-7588"
+      },
+      {
+        "given": "Eun Young",
+        "family": "Choi",
+        "orcid": "https://orcid.org/0000-0003-3226-1486"
+      },
+      {
+        "given": "Leili",
+        "family": "Mortazavi",
+        "orcid": "https://orcid.org/0000-0001-9838-4935"
+      },
+      {
+        "given": "Gustavo",
+        "family": "Chau Loo Kung"
+      },
+      {
+        "given": "Pavithra",
+        "family": "Mukunda",
+        "orcid": "https://orcid.org/0009-0003-1020-2650"
+      },
+      {
+        "given": "Cephra",
+        "family": "Raja",
+        "orcid": "https://orcid.org/0000-0003-1758-1246"
+      },
+      {
+        "given": "Dariana",
+        "family": "Gil-Hernández"
+      },
+      {
+        "given": "Kishandra",
+        "family": "Patron"
+      },
+      {
+        "given": "Xue",
+        "family": "Zhang",
+        "orcid": "https://orcid.org/0000-0003-4279-899X"
+      },
+      {
+        "given": "Jacob",
+        "family": "Brawer"
+      },
+      {
+        "given": "Shenandoah",
+        "family": "Wrobel"
+      },
+      {
+        "given": "Zoe",
+        "family": "Lusk",
+        "orcid": "https://orcid.org/0000-0002-4728-2688"
+      },
+      {
+        "given": "Dian",
+        "family": "Lyu",
+        "orcid": "https://orcid.org/0000-0002-9363-7670"
+      },
+      {
+        "given": "Anish",
+        "family": "Mitra",
+        "orcid": "https://orcid.org/0000-0002-3362-2274"
+      },
+      {
+        "given": "Laura",
+        "family": "Hack",
+        "orcid": "https://orcid.org/0000-0002-2647-4293"
+      },
+      {
+        "given": "Liqun",
+        "family": "Luo",
+        "orcid": "https://orcid.org/0000-0001-5467-9264"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick",
+        "orcid": "https://orcid.org/0000-0003-3216-0319"
+      },
+      {
+        "given": "Peter",
+        "family": "van Roessel",
+        "orcid": "https://orcid.org/0000-0002-9477-604X"
+      },
+      {
+        "given": "Leanne M.",
+        "family": "Williams",
+        "orcid": "https://orcid.org/0000-0001-9987-7360"
+      },
+      {
+        "given": "Boris D.",
+        "family": "Heifets",
+        "orcid": "https://orcid.org/0000-0003-1474-0379"
+      },
+      {
+        "given": "Jaimie M.",
+        "family": "Henderson",
+        "orcid": "https://orcid.org/0000-0002-3276-2267"
+      },
+      {
+        "given": "Jennifer A.",
+        "family": "McNab",
+        "orcid": "https://orcid.org/0000-0002-1763-0792"
+      },
+      {
+        "given": "Carolyn I.",
+        "family": "Rodríguez",
+        "orcid": "https://orcid.org/0000-0001-6697-1692"
+      },
+      {
+        "given": "Vivek",
+        "family": "Buch",
+        "orcid": "https://orcid.org/0000-0003-1151-6128"
+      },
+      {
+        "given": "Paul",
+        "family": "Nuyujukian",
+        "orcid": "https://orcid.org/0000-0001-7778-5473"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth",
+        "orcid": "https://orcid.org/0000-0001-9440-3967"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "lynch2024salience": {
+    "authors": [
+      {
+        "given": "Charles J.",
+        "family": "Lynch",
+        "orcid": "https://orcid.org/0000-0003-1936-9740"
+      },
+      {
+        "given": "Immanuel G.",
+        "family": "Elbau"
+      },
+      {
+        "given": "Tommy",
+        "family": "Ng"
+      },
+      {
+        "given": "Aliza",
+        "family": "Ayaz"
+      },
+      {
+        "given": "Shasha",
+        "family": "Zhu"
+      },
+      {
+        "given": "Danielle",
+        "family": "Wolk"
+      },
+      {
+        "given": "Nicola",
+        "family": "Manfredi"
+      },
+      {
+        "given": "Megan",
+        "family": "Johnson",
+        "orcid": "https://orcid.org/0000-0001-9330-4182"
+      },
+      {
+        "given": "Megan",
+        "family": "Chang"
+      },
+      {
+        "given": "Jolin",
+        "family": "Chou"
+      },
+      {
+        "given": "Indira",
+        "family": "Summerville"
+      },
+      {
+        "given": "Claire",
+        "family": "Ho"
+      },
+      {
+        "given": "Maximilian",
+        "family": "Lueckel"
+      },
+      {
+        "given": "Hussain",
+        "family": "Bukhari"
+      },
+      {
+        "given": "Derrick",
+        "family": "Buchanan",
+        "orcid": "https://orcid.org/0000-0003-4478-2844"
+      },
+      {
+        "given": "Lindsay W.",
+        "family": "Victoria"
+      },
+      {
+        "given": "Nili",
+        "family": "Solomonov"
+      },
+      {
+        "given": "Eric",
+        "family": "Goldwaser"
+      },
+      {
+        "given": "Stefano",
+        "family": "Moia",
+        "orcid": "https://orcid.org/0000-0002-2553-3327"
+      },
+      {
+        "given": "Cesar",
+        "family": "Caballero-Gaudes"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Downar"
+      },
+      {
+        "given": "Fidel",
+        "family": "Vila-Rodriguez",
+        "orcid": "https://orcid.org/0000-0002-8273-8820"
+      },
+      {
+        "given": "Zafiris J.",
+        "family": "Daskalakis"
+      },
+      {
+        "given": "Daniel M.",
+        "family": "Blumberger",
+        "orcid": "https://orcid.org/0000-0002-8422-5818"
+      },
+      {
+        "given": "Kendrick",
+        "family": "Kay"
+      },
+      {
+        "given": "Amy",
+        "family": "Aloysi"
+      },
+      {
+        "given": "Evan M.",
+        "family": "Gordon",
+        "orcid": "https://orcid.org/0000-0002-2276-5237"
+      },
+      {
+        "given": "Mahendra T.",
+        "family": "Bhati"
+      },
+      {
+        "given": "Nolan",
+        "family": "Williams"
+      },
+      {
+        "given": "Jonathan D.",
+        "family": "Power"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Zebley"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Faith M.",
+        "family": "Gunning",
+        "orcid": "https://orcid.org/0000-0003-1854-9969"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Decades of neuroimaging studies have shown modest differences in brain structure and connectivity in depression, hindering mechanistic insights or the identification of risk factors for disease onset1. Furthermore, whereas depression is episodic, few longitudinal neuroimaging studies exist, limiting understanding of mechanisms that drive mood-state transitions. The emerging field of precision functional mapping has used densely sampled longitudinal neuroimaging data to show behaviourally meaningful differences in brain network topography and connectivity between and in healthy individuals2–4, but this approach has not been applied in depression. Here, using precision functional mapping and several samples of deeply sampled individuals, we found that the frontostriatal salience network is expanded nearly twofold in the cortex of most individuals with depression. This effect was replicable in several samples and caused primarily by network border shifts, with three distinct modes of encroachment occurring in different individuals. Salience network expansion was stable over time, unaffected by mood state and detectable in children before the onset of depression later in adolescence. Longitudinal analyses of individuals scanned up to 62 times over 1.5 years identified connectivity changes in frontostriatal circuits that tracked fluctuations in specific symptoms and predicted future anhedonia symptoms. Together, these findings identify a trait-like brain network topology that may confer risk for depression and mood-state-dependent connectivity changes in frontostriatal circuits that predict the emergence and remission of depressive symptoms over time. Precision functional mapping shows that the frontostriatal salience network occupies nearly twice as much of the cortex in people with depression, and this was unaffected by mood changes and detected in children before onset of symptoms.",
+    "abstractSource": "openalex"
+  },
+  "lynch2025quality": {
+    "authors": [
+      {
+        "given": "Charles J.",
+        "family": "Lynch"
+      },
+      {
+        "given": "Megan",
+        "family": "Chang"
+      },
+      {
+        "given": "Immanuel",
+        "family": "Elbau"
+      },
+      {
+        "given": "Evan M.",
+        "family": "Gordon"
+      },
+      {
+        "given": "Timothy O.",
+        "family": "Laumann"
+      },
+      {
+        "given": "Jingnan",
+        "family": "Du"
+      },
+      {
+        "given": "Zach",
+        "family": "Ladwig"
+      },
+      {
+        "given": "Maximilian",
+        "family": "Lueckel"
+      },
+      {
+        "given": "Diana C.",
+        "family": "Perez"
+      },
+      {
+        "given": "Indira",
+        "family": "Summerville"
+      },
+      {
+        "given": "Jolene",
+        "family": "Chou"
+      },
+      {
+        "given": "Megan",
+        "family": "Johnson"
+      },
+      {
+        "given": "Claire",
+        "family": "Ho"
+      },
+      {
+        "given": "Nicola",
+        "family": "Manfredi"
+      },
+      {
+        "given": "Parsa",
+        "family": "Nilchian"
+      },
+      {
+        "given": "Nili",
+        "family": "Solomonov"
+      },
+      {
+        "given": "Eric",
+        "family": "Goldwaser"
+      },
+      {
+        "given": "Tommy",
+        "family": "Ng"
+      },
+      {
+        "given": "Stefano",
+        "family": "Moia"
+      },
+      {
+        "given": "Cesar",
+        "family": "Caballero-Gaudes"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Downar"
+      },
+      {
+        "given": "Fidel",
+        "family": "Vila-Rodriguez"
+      },
+      {
+        "given": "Elizabeth",
+        "family": "Gregory"
+      },
+      {
+        "given": "Zafiris J.",
+        "family": "Daskalakis"
+      },
+      {
+        "given": "Daniel M.",
+        "family": "Blumberger"
+      },
+      {
+        "given": "Kendrick",
+        "family": "Kay"
+      },
+      {
+        "given": "Derrick M.",
+        "family": "Buchanan"
+      },
+      {
+        "given": "Nolan",
+        "family": "Williams"
+      },
+      {
+        "given": "Mahendra T.",
+        "family": "Bhati"
+      },
+      {
+        "given": "Jacqueline",
+        "family": "Clauss"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Zebley"
+      },
+      {
+        "given": "Lindsay W.",
+        "family": "Victoria"
+      },
+      {
+        "given": "Jonathan D.",
+        "family": "Power"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Faith M.",
+        "family": "Gunning"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Precision functional mapping (PFM) enables the individual-level characterization of brain network organization but requires substantially more and higher-quality fMRI data than is standard. Despite the growing use of PFM, the objective criteria for data sufficiency and the quality needed to ensure interpretable and replicable individual-level results remain unclear. Here, we introduce the network similarity index (NSI), an objective measure of the extent to which functional connectivity (FC) patterns express the large-scale network structure required for PFM. The NSI captures low-spatial-frequency, coherent network organization and denoising fidelity, and it aligns closely with blinded expert assessments of PFM usability. The NSI also accounts for the variability in the rate at which FC becomes reliable across individuals. This NeuroResource provides an open source framework for NSI-based data quality evaluation and models linking NSI values with expert-judged PFM suitability. This framework can inform expected returns from additional data collection, thus enabling principled decisions about data sufficiency and replication in precision fMRI research.",
+    "abstractSource": "openalex"
+  },
+  "modasava2019spine": {
+    "abstract": "A better understanding of the mechanisms underlying the action of antidepressants is urgently needed. Moda-Sava et al. explored a possible mode of action for the drug ketamine, which has recently been shown to help patients recover from depression (see the Perspective by Beyeler). Ketamine rescued behavior in mice that was associated with depression-like phenotypes by selectively reversing stress-induced spine loss and restoring coordinated multicellular ensemble activity in prefrontal microcircuits. The initial induction of ketamine's antidepressant effect on mouse behavior occurred independently of effects on spine formation. Instead, synaptogenesis in the prefrontal region played a critical role in nourishing these effects over time. Interventions aimed at enhancing the survival of restored synapses may thus be useful for sustaining the behavioral effects of fast-acting antidepressants. Science , this issue p. eaat8078 ; see also p. 129",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "R. N.",
+        "family": "Moda-Sava"
+      },
+      {
+        "given": "M. H.",
+        "family": "Murdock",
+        "orcid": "https://orcid.org/0000-0001-8625-624X"
+      },
+      {
+        "given": "P. K.",
+        "family": "Parekh",
+        "orcid": "https://orcid.org/0000-0002-4158-2305"
+      },
+      {
+        "given": "R. N.",
+        "family": "Fetcho"
+      },
+      {
+        "given": "B. S.",
+        "family": "Huang",
+        "orcid": "https://orcid.org/0000-0003-2838-6315"
+      },
+      {
+        "given": "T. N.",
+        "family": "Huynh",
+        "orcid": "https://orcid.org/0000-0002-7625-5101"
+      },
+      {
+        "given": "J.",
+        "family": "Witztum",
+        "orcid": "https://orcid.org/0000-0003-0092-2366"
+      },
+      {
+        "given": "D. C.",
+        "family": "Shaver"
+      },
+      {
+        "given": "D. L.",
+        "family": "Rosenthal",
+        "orcid": "https://orcid.org/0000-0002-8020-6206"
+      },
+      {
+        "given": "E. J.",
+        "family": "Alway",
+        "orcid": "https://orcid.org/0000-0003-2524-7539"
+      },
+      {
+        "given": "K.",
+        "family": "Lopez",
+        "orcid": "https://orcid.org/0000-0002-7549-8849"
+      },
+      {
+        "given": "Y.",
+        "family": "Meng",
+        "orcid": "https://orcid.org/0000-0001-6453-7809"
+      },
+      {
+        "given": "L.",
+        "family": "Nellissen"
+      },
+      {
+        "given": "L.",
+        "family": "Grosenick",
+        "orcid": "https://orcid.org/0000-0003-3216-0319"
+      },
+      {
+        "given": "T. A.",
+        "family": "Milner",
+        "orcid": "https://orcid.org/0000-0002-0458-6569"
+      },
+      {
+        "given": "K.",
+        "family": "Deisseroth",
+        "orcid": "https://orcid.org/0000-0001-9440-3967"
+      },
+      {
+        "given": "H.",
+        "family": "Bito",
+        "orcid": "https://orcid.org/0000-0001-6315-9594"
+      },
+      {
+        "given": "H.",
+        "family": "Kasai"
+      },
+      {
+        "given": "C.",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "monajemi2012deterministic": {
+    "abstract": "In compressed sensing, one takes samples of an N -dimensional vector using an matrix A , obtaining undersampled measurements . For random matrices with independent standard Gaussian entries, it is known that, when is k -sparse, there is a precisely determined phase transition: for a certain region in the ( , )-phase diagram, convex optimization typically finds the sparsest solution, whereas outside that region, it typically fails. It has been shown empirically that the same property—with the same phase transition location—holds for a wide range of non-Gaussian random matrix ensembles. We report extensive experiments showing that the Gaussian phase transition also describes numerous deterministic matrices, including Spikes and Sines, Spikes and Noiselets, Paley Frames, Delsarte-Goethals Frames, Chirp Sensing Matrices, and Grassmannian Frames. Namely, for each of these deterministic matrices in turn, for a typical k -sparse object, we observe that convex optimization is successful over a region of the phase diagram that coincides with the region known for Gaussian random matrices. Our experiments considered coefficients constrained to for four different sets , and the results establish our finding for each of the four associated phase transitions.",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Hatef",
+        "family": "Monajemi"
+      },
+      {
+        "given": "Sina",
+        "family": "Jafarpour"
+      },
+      {
+        "given": "Matan",
+        "family": "Gavish"
+      },
+      {
+        "given": "",
+        "family": "Stat 330/CME 362 Collaboration"
+      },
+      {
+        "given": "David L.",
+        "family": "Donoho"
+      },
+      {
+        "given": "Sivaram",
+        "family": "Ambikasaran"
+      },
+      {
+        "given": "Sergio",
+        "family": "Bacallado"
+      },
+      {
+        "given": "Dinesh",
+        "family": "Bharadia"
+      },
+      {
+        "given": "Yuxin",
+        "family": "Chen"
+      },
+      {
+        "given": "Young",
+        "family": "Choi"
+      },
+      {
+        "given": "Mainak",
+        "family": "Chowdhury"
+      },
+      {
+        "given": "Soham",
+        "family": "Chowdhury"
+      },
+      {
+        "given": "Anil",
+        "family": "Damle"
+      },
+      {
+        "given": "Will",
+        "family": "Fithian"
+      },
+      {
+        "given": "Georges",
+        "family": "Goetz"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Sam",
+        "family": "Gross"
+      },
+      {
+        "given": "Gage",
+        "family": "Hills"
+      },
+      {
+        "given": "Michael",
+        "family": "Hornstein"
+      },
+      {
+        "given": "Milinda",
+        "family": "Lakkam"
+      },
+      {
+        "given": "Jason",
+        "family": "Lee"
+      },
+      {
+        "given": "Jian",
+        "family": "Li"
+      },
+      {
+        "given": "Linxi",
+        "family": "Liu"
+      },
+      {
+        "given": "Carlos",
+        "family": "Sing-Long"
+      },
+      {
+        "given": "Mike",
+        "family": "Marx"
+      },
+      {
+        "given": "Akshay",
+        "family": "Mittal"
+      },
+      {
+        "given": "Hatef",
+        "family": "Monajemi"
+      },
+      {
+        "given": "Albert",
+        "family": "No"
+      },
+      {
+        "given": "Reza",
+        "family": "Omrani"
+      },
+      {
+        "given": "Leonid",
+        "family": "Pekelis"
+      },
+      {
+        "given": "Junjie",
+        "family": "Qin"
+      },
+      {
+        "given": "Kevin",
+        "family": "Raines"
+      },
+      {
+        "given": "Ernest",
+        "family": "Ryu"
+      },
+      {
+        "given": "Andrew",
+        "family": "Saxe"
+      },
+      {
+        "given": "Dai",
+        "family": "Shi"
+      },
+      {
+        "given": "Keith",
+        "family": "Siilats"
+      },
+      {
+        "given": "David",
+        "family": "Strauss"
+      },
+      {
+        "given": "Gary",
+        "family": "Tang"
+      },
+      {
+        "given": "Chaojun",
+        "family": "Wang"
+      },
+      {
+        "given": "Zoey",
+        "family": "Zhou"
+      },
+      {
+        "given": "Zhen",
+        "family": "Zhu"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "montgomery2015wireless": {
+    "authors": [
+      {
+        "given": "Kate L",
+        "family": "Montgomery"
+      },
+      {
+        "given": "Alexander J",
+        "family": "Yeh"
+      },
+      {
+        "given": "John S",
+        "family": "Ho"
+      },
+      {
+        "given": "Vivien",
+        "family": "Tsao"
+      },
+      {
+        "given": "Shrivats",
+        "family": "Mohan Iyer",
+        "orcid": "https://orcid.org/0000-0003-4648-3637"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Emily A",
+        "family": "Ferenczi"
+      },
+      {
+        "given": "Yuji",
+        "family": "Tanabe"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "Scott L",
+        "family": "Delp"
+      },
+      {
+        "given": "Ada S Y",
+        "family": "Poon"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "To enable sophisticated optogenetic manipulation of neural circuits throughout the nervous system with limited disruption of animal behavior, light-delivery systems beyond fiber optic tethering and large, head-mounted wireless receivers are desirable. We report the development of an easy-to-construct, implantable wireless optogenetic device. Our smallest version (20 mg, 10 mm(3)) is two orders of magnitude smaller than previously reported wireless optogenetic systems, allowing the entire device to be implanted subcutaneously. With a radio-frequency (RF) power source and controller, this implant produces sufficient light power for optogenetic stimulation with minimal tissue heating (<1 °C). We show how three adaptations of the implant allow for untethered optogenetic control throughout the nervous system (brain, spinal cord and peripheral nerve endings) of behaving mice. This technology opens the door for optogenetic experiments in which animals are able to behave naturally with optogenetic manipulation of both central and peripheral targets.",
+    "abstractSource": "europepmc"
+  },
+  "reed2018accumbens": {
+    "authors": [
+      {
+        "given": "Sean J.",
+        "family": "Reed"
+      },
+      {
+        "given": "Christopher K.",
+        "family": "Lafferty"
+      },
+      {
+        "given": "Jesse A.",
+        "family": "Mendoza"
+      },
+      {
+        "given": "Angela K.",
+        "family": "Yang"
+      },
+      {
+        "given": "Thomas J.",
+        "family": "Davidson"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "Jonathan P.",
+        "family": "Britt"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Reward-seeking behavior is regulated by a diverse collection of inputs to the nucleus accumbens (NAc). The information encoded in each excitatory afferent to the NAc is unknown, in part because it is unclear when these pathways are active in relation to behavior. Here we compare the activity profiles of amygdala, hippocampal, and thalamic inputs to the NAc shell in mice performing a cued reward-seeking task using GCaMP-based fiber photometry. We find that the rostral and caudal ends of the NAc shell are innervated by distinct but intermingled populations of forebrain neurons that exhibit divergent feeding-related activity. In the rostral NAc shell, a coordinated network-wide reduction in excitatory drive correlates with feeding, and reduced input from individual pathways is sufficient to promote it. Overall, the data suggest that pathway-specific input activity at a population level may vary more across the NAc than between pathways.",
+    "abstractSource": "europepmc"
+  },
+  "sandilya2026contrastive": {
+    "abstract": "Diffusion models excel at generation, but their latent spaces are high dimensional and not explicitly organized for interpretation or control. We introduce ConDA (Contrastive Diffusion Alignment), a plug-and-play geometry layer that applies contrastive learning to pretrained diffusion latents using auxiliary variables (e.g., time, stimulation parameters, facial action units). ConDA learns a low-dimensional embedding whose directions align with underlying dynamical factors, consistent with recent contrastive learning results on structured and disentangled representations. In this embedding, simple nonlinear trajectories support smooth interpolation, extrapolation, and counterfactual editing while rendering remains in the original diffusion space. ConDA separates editing and rendering by lifting embedding trajectories back to diffusion latents with a neighborhood-preserving kNN decoder and is robust across inversion solvers. Across fluid dynamics, neural calcium imaging, therapeutic neurostimulation, facial expression dynamics, and monkey motor cortex activity, ConDA yields more interpretable and controllable latent structure than linear traversals and conditioning-based baselines, indicating that diffusion latents encode dynamics-relevant structure that can be exploited by an explicit contrastive geometry layer.",
+    "abstractSource": "arxiv",
+    "authors": [
+      {
+        "given": "Ruchi",
+        "family": "Sandilya"
+      },
+      {
+        "given": "Sumaira",
+        "family": "Perez"
+      },
+      {
+        "given": "Charles",
+        "family": "Lynch"
+      },
+      {
+        "given": "Lindsay",
+        "family": "Victoria"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Zebley"
+      },
+      {
+        "given": "Derrick Matthew",
+        "family": "Buchanan"
+      },
+      {
+        "given": "Mahendra T.",
+        "family": "Bhati"
+      },
+      {
+        "given": "Nolan",
+        "family": "Williams"
+      },
+      {
+        "given": "Timothy J.",
+        "family": "Spellman"
+      },
+      {
+        "given": "Faith M.",
+        "family": "Gunning"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      }
+    ],
+    "authorsSource": "arxiv"
+  },
+  "sandilya2026identifiable": {
+    "abstract": "Diffusion-based world models can generate and predict trajectories in high-dimensional dynamical systems, but predictive accuracy does not imply that their latent coordinates recover the underlying state variables or causal interactions. We ask whether a frozen pretrained diffusion model can be equipped with identifiable coordinates without retraining its generative backbone. We show that auxiliary-variable nonlinear ICA guarantees can be transferred to Contrastive Diffusion Alignment (ConDA), which learns only a lightweight alignment map on top of frozen diffusion latents. Under standard TCL/GCL assumptions, the aligned representation identifies latent dynamical states up to permutation and componentwise invertible transformations, preserves the latent dynamic structural causal model, and reduces lagged graph recovery to transition-Jacobian sparsity. We evaluate TCL-, GCL-, and CEBRA-based ConDA against TDRL, CaRiNG, IDOL, temporal SuaVE, and iVAE across physical and robotic video systems. TCL and GCL achieve near-perfect blockwise state recovery and competitive lagged graph recovery, including exact recovery in a simulated falling-body system. In a simulated bipedal robot, learned dynamics recover the sign and temporal structure of responses to held-out control perturbations. These results show that a frozen generative diffusion model can be equipped with coordinates that are identifiable, structurally interpretable, and useful for analyzing intervention-relevant dynamics.",
+    "abstractSource": "arxiv",
+    "authors": [
+      {
+        "given": "Ruchi",
+        "family": "Sandilya"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      }
+    ],
+    "authorsSource": "arxiv"
+  },
+  "solomonov2022copenyp": {
+    "authors": [
+      {
+        "given": "Nili",
+        "family": "Solomonov"
+      },
+      {
+        "given": "Dora",
+        "family": "Kanellopoulos"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Victoria",
+        "family": "Wilkins"
+      },
+      {
+        "given": "Rachel",
+        "family": "Goldman"
+      },
+      {
+        "given": "Shira",
+        "family": "Ritholtz"
+      },
+      {
+        "given": "Avital",
+        "family": "Falk"
+      },
+      {
+        "given": "Faith M.",
+        "family": "Gunning"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "The COVID-19 pandemic has significantly impacted the psychological well-being of health care workers globally1. Meta-analyses indicate that approximately 20-30% of health care workers experience depression, anxiety or symptoms of post-traumatic stress disorder2, 3. There are few data about the efficacy of tailored interventions4. We designed and implemented CopeNYP, an in-house, four-session, telehealth-delivered intervention. Our model incorporated brief skills-focused techniques from evidence-based psychotherapies (e.g., problem-solving therapy, behavioral activation, and supportive therapy), tailored to health care workers' specific needs and circumstances. The first session focused on assessment of mental health needs and available social support, formulation of short-term treatment goals, de-stigmatization of mental health difficulties, and psychoeducation about symptoms of anxiety and depression and exposure to trauma and stress. In each subsequent session, clinicians focused on behavioral activation and stress reduction (i.e., engagement in pleasurable activities, relaxation, mindfulness skills), validation of emotional responses, and problem-solving techniques (i.e., resolving interpersonal conflicts, reducing social isolation, coping with loss and grief). The last session included reinforcement of skills, relapse prevention, and follow-up plans if needed. CopeNYP was developed and launched at Weill Cornell Medicine's Psychiatry Department. We assessed the program's efficacy in reducing depression and anxiety symptoms among health care workers. Interventions were delivered by 67 clinicians (including 41 clinical psychologists, three social workers or pastoral counselors, four psychiatrists, four psychology pre-doctoral interns, and 15 psychology post-doctoral fellows). Clinicians underwent brief training on manualized assessment, triage and skills-based therapeutic techniques and received weekly peer group supervision and on-call supervisory consults from senior clinicians. CopeNYP was introduced to employees in hospital COVID-19 updates and internal communications. All employees were invited if they were experiencing distress and/or wished to speak with a psychotherapist. No exclusion criteria were implemented. Employees contacted administrators for scheduling via email or phone. The study was approved by Weill Cornell's institutional review board. Anxiety and depression were assessed during the first and last sessions using the Patient Health Questionnaire-9 (PHQ-9)5 and the Generalized Anxiety Disorder-7 (GAD-7)6. Suicidality was evaluated at intake using the Columbia-Suicide Severity Rating Scale (C-SSRS)7, repeated if needed. The PHQ-48 was administered in sessions 2 and 3 for symptom monitoring. Employees with severe symptom presentations were referred to longer-term clinical care or emergency services if at imminent risk of harm. If pharmacotherapy was indicated, employees were referred to a psychiatrist for evaluation/treatment and continued to receive CopeNYP sessions until psychiatric treatment started. Employees were referred for additional psychotherapy after the last session as needed. PHQ-9 and GAD-7 scores were converted to PHQ-4 scores to estimate slopes over all time points using linear mixed-effects regression to account for within-subject correlations (random effects: subject slope and intercept; fixed effect: time). Analyses were conducted with a modified intent-to-treat sample (i.e., patients with at least one visit). Partial eta squared effect size was calculated for the fixed effect of time. We evaluated clinical response rates (i.e., 50% reduction in PHQ-9 or GAD-7) among employees who received four sessions of CopeNYP. A total of 534 health care workers participated in the program. The institutional review board did not allow reporting their demographic data. The sample included 35.2% nursing staff (N=188), 24.3% patient support staff (N=130), 22.8% administrative support staff (N=122); 13.8% physicians/doctoral level faculty and trainees (N=74), 2.4% maintenance workers (N=13), and 1.3% employees' family members (seen at the request of an employee receiving services; N=7). Overall, 70% of employees were frontline, employed in-person; 19% worked remotely; 11% did not indicate. A total of 1,423 sessions were delivered between March 27, 2020 and April 16, 2021, with an average of 25.41±13.31 sessions per week and an average of 2.66±1.28 sessions per employee (141 participants completed just one session; 106 two sessions; 103 three sessions; 166 four sessions; 18 over four sessions). At intake, 45% of employees reported at least moderate anxiety (GAD-7 score: ≥10); 42% reported at least moderate depression (PHQ-9 score: ≥10) and 10% reported suicidal ideation (PHQ-9 item 9 score: ≥1). The linear mixed effects regression showed significant reduction in symptoms during the intervention for the entire sample (PHQ-4 mean score: 5.65±2.95 at intake, 3.32±2.46 at last session; F3,823=109.23, p<0.001, eta squared = 0.27). Treatment effects were larger among workers who reported clinically significant symptoms at intake (PHQ-4: ≥6), with an average reduction on the PHQ-4 from 8.09±1.78 to 4.36±2.63 (F3,462=139.99, p<0.001, eta squared = 0.46). These effect sizes remained significant when we controlled for number of hospitalizations and employment format (frontline in person or remote) to account for potential effects of the pandemic on symptoms beyond the intervention (main effects and interaction with time were non-significant). Among participants with both intake and last session rating, 42% exhibited greater than 50% reduction on the GAD-7 (mean change: –4.45, SD=4.22), and 43% showed greater than 50% reduction on the PHQ-9 (mean change: –3.97, SD=4.42). Thus, we found that a brief, in-house, telehealth-delivered, psychotherapy skills-based intervention significantly reduced symptoms of anxiety and depression among health care workers, the majority of whom were frontline workers, likely exposed to acute and chronic stress due to COVID-19. This is among the first reports of efficacy for such a brief, on-demand psychological intervention tailored to health care workers during the pandemic. While direct comparison is difficult, the percentage of treatment responders was similar to that observed in brief evidence-based psychotherapies, and greater than reported effects in psychotherapy control conditions9. Limitations of the study include the lack of a control group and the brief follow-up. Nonetheless, our findings suggest that accessible, high-quality, brief interventions can reduce psychological distress among health care workers and may provide a template for other health systems.",
+    "abstractSource": "openalex"
+  },
+  "tomer2015sped": {
+    "authors": [
+      {
+        "given": "Raju",
+        "family": "Tomer"
+      },
+      {
+        "given": "Matthew",
+        "family": "Lovett-Barron"
+      },
+      {
+        "given": "Isaac",
+        "family": "Kauvar"
+      },
+      {
+        "given": "Aaron",
+        "family": "Andalman"
+      },
+      {
+        "given": "Vanessa M.",
+        "family": "Burns"
+      },
+      {
+        "given": "Sethuraman",
+        "family": "Sankaran"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Michael",
+        "family": "Broxton"
+      },
+      {
+        "given": "Samuel",
+        "family": "Yang"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "The goal of understanding living nervous systems has driven interest in high-speed and large field-of-view volumetric imaging at cellular resolution. Light sheet microscopy approaches have emerged for cellular-resolution functional brain imaging in small organisms such as larval zebrafish, but remain fundamentally limited in speed. Here, we have developed SPED light sheet microscopy, which combines large volumetric field-of-view via an extended depth of field with the optical sectioning of light sheet microscopy, thereby eliminating the need to physically scan detection objectives for volumetric imaging. SPED enables scanning of thousands of volumes-per-second, limited only by camera acquisition rate, through the harnessing of optical mechanisms that normally result in unwanted spherical aberrations. We demonstrate capabilities of SPED microscopy by performing fast sub-cellular resolution imaging of CLARITY mouse brains and cellular-resolution volumetric Ca(2+) imaging of entire zebrafish nervous systems. Together, SPED light sheet methods enable high-speed cellular-resolution volumetric mapping of biological system structure and function.",
+    "abstractSource": "europepmc"
+  },
+  "tye2011amygdala": {
+    "authors": [
+      {
+        "given": "Kay M.",
+        "family": "Tye"
+      },
+      {
+        "given": "Rohit",
+        "family": "Prakash"
+      },
+      {
+        "given": "Sung-Yon",
+        "family": "Kim"
+      },
+      {
+        "given": "Lief E.",
+        "family": "Fenno"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Hosniya",
+        "family": "Zarabi"
+      },
+      {
+        "given": "Kimberly R.",
+        "family": "Thompson"
+      },
+      {
+        "given": "Viviana",
+        "family": "Gradinaru"
+      },
+      {
+        "given": "Charu",
+        "family": "Ramakrishnan"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Anxiety--a sustained state of heightened apprehension in the absence of immediate threat--becomes severely debilitating in disease states. Anxiety disorders represent the most common of psychiatric diseases (28% lifetime prevalence) and contribute to the aetiology of major depression and substance abuse. Although it has been proposed that the amygdala, a brain region important for emotional processing, has a role in anxiety, the neural mechanisms that control anxiety remain unclear. Here we explore the neural circuits underlying anxiety-related behaviours by using optogenetics with two-photon microscopy, anxiety assays in freely moving mice, and electrophysiology. With the capability of optogenetics to control not only cell types but also specific connections between cells, we observed that temporally precise optogenetic stimulation of basolateral amygdala (BLA) terminals in the central nucleus of the amygdala (CeA)--achieved by viral transduction of the BLA with a codon-optimized channelrhodopsin followed by restricted illumination in the downstream CeA--exerted an acute, reversible anxiolytic effect. Conversely, selective optogenetic inhibition of the same projection with a third-generation halorhodopsin (eNpHR3.0) increased anxiety-related behaviours. Importantly, these effects were not observed with direct optogenetic control of BLA somata, possibly owing to recruitment of antagonistic downstream structures. Together, these results implicate specific BLA-CeA projections as critical circuit elements for acute anxiety control in the mammalian brain, and demonstrate the importance of optogenetically targeting defined projections, beyond simply targeting cell types, in the study of circuit function relevant to neuropsychiatric disease.",
+    "abstractSource": "europepmc"
+  },
+  "unda2024magnetogenetic": {
+    "abstract": "Here, we report a magnetogenetic system, based on a single anti-ferritin nanobody-TRPV1 receptor fusion protein, which regulated neuronal activity when exposed to magnetic fields. Adeno-associated virus (AAV)–mediated delivery of a floxed nanobody-TRPV1 into the striatum of adenosine-2a receptor–Cre drivers resulted in motor freezing when placed in a magnetic resonance imaging machine or adjacent to a transcranial magnetic stimulation device. Functional imaging and fiber photometry confirmed activation in response to magnetic fields. Expression of the same construct in the striatum of wild-type mice along with a second injection of an AAVretro expressing Cre into the globus pallidus led to similar circuit specificity and motor responses. Last, a mutation was generated to gate chloride and inhibit neuronal activity. Expression of this variant in the subthalamic nucleus in PitX2-Cre parkinsonian mice resulted in reduced c-fos expression and motor rotational behavior. These data demonstrate that magnetogenetic constructs can bidirectionally regulate activity of specific neuronal circuits noninvasively in vivo using clinically available devices.",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Santiago R.",
+        "family": "Unda",
+        "orcid": "https://orcid.org/0000-0001-7319-6794"
+      },
+      {
+        "given": "Lisa E.",
+        "family": "Pomeranz",
+        "orcid": "https://orcid.org/0000-0002-8117-7355"
+      },
+      {
+        "given": "Roberta",
+        "family": "Marongiu",
+        "orcid": "https://orcid.org/0000-0002-7609-7000"
+      },
+      {
+        "given": "Xiaofei",
+        "family": "Yu",
+        "orcid": "https://orcid.org/0000-0002-1712-331X"
+      },
+      {
+        "given": "Leah",
+        "family": "Kelly"
+      },
+      {
+        "given": "Gholamreza",
+        "family": "Hassanzadeh"
+      },
+      {
+        "given": "Henrik",
+        "family": "Molina",
+        "orcid": "https://orcid.org/0000-0001-8950-4990"
+      },
+      {
+        "given": "George",
+        "family": "Vaisey"
+      },
+      {
+        "given": "Putianqi",
+        "family": "Wang"
+      },
+      {
+        "given": "Jonathan P.",
+        "family": "Dyke",
+        "orcid": "https://orcid.org/0000-0001-7170-488X"
+      },
+      {
+        "given": "Edward K.",
+        "family": "Fung",
+        "orcid": "https://orcid.org/0000-0002-3390-1548"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick",
+        "orcid": "https://orcid.org/0000-0003-3216-0319"
+      },
+      {
+        "given": "Rick",
+        "family": "Zirkel",
+        "orcid": "https://orcid.org/0000-0003-1744-0785"
+      },
+      {
+        "given": "Aldana M.",
+        "family": "Antoniazzi",
+        "orcid": "https://orcid.org/0000-0002-0728-3352"
+      },
+      {
+        "given": "Sofya",
+        "family": "Norman"
+      },
+      {
+        "given": "Conor M.",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      },
+      {
+        "given": "Chris",
+        "family": "Schaffer",
+        "orcid": "https://orcid.org/0000-0002-7800-9596"
+      },
+      {
+        "given": "Nozomi",
+        "family": "Nishimura",
+        "orcid": "https://orcid.org/0000-0003-4342-9416"
+      },
+      {
+        "given": "Sarah A.",
+        "family": "Stanley",
+        "orcid": "https://orcid.org/0000-0002-0253-2663"
+      },
+      {
+        "given": "Jeffrey M.",
+        "family": "Friedman",
+        "orcid": "https://orcid.org/0000-0003-2152-0868"
+      },
+      {
+        "given": "Michael G.",
+        "family": "Kaplitt",
+        "orcid": "https://orcid.org/0000-0002-8979-2459"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "wong2008agreement": {
+    "authors": [
+      {
+        "given": "Dik Kin",
+        "family": "Wong"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "E. Timothy",
+        "family": "Uy"
+      },
+      {
+        "given": "Marcos Perreau",
+        "family": "Guimaraes"
+      },
+      {
+        "given": "Claudio G.",
+        "family": "Carvalhaes"
+      },
+      {
+        "given": "Peter",
+        "family": "Desain"
+      },
+      {
+        "given": "Patrick",
+        "family": "Suppes"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "In brain-imaging research, we are often interested in making quantitative claims about effects across subjects. Given that most imaging data consist of tens to thousands of spatially correlated time series, inter-subject comparisons are typically accomplished with simple combinations of inter-subject data, for example methods relying on group means. Further, these data are frequently taken from reduced channel subsets defined either a priori using anatomical considerations, or functionally using p-value thresholding to choose cluster boundaries. While such methods are effective for data reduction, means are sensitive to outliers, and current methods for subset selection can be somewhat arbitrary. Here, we introduce a novel \"partial-ranking\" approach to test for inter-subject agreement at the channel level. This non-parametric method effectively tests whether channel concordance is present across subjects, how many channels are necessary for maximum concordance, and which channels are responsible for this agreement. We validate the method on two previously published and two simulated EEG data sets.",
+    "abstractSource": "europepmc"
+  },
+  "zhao2025adolescence": {
+    "abstract": "Maturational imbalance between the expression of heightened socioemotional drivers and immature executive control creates a period of vulnerability to risk-taking behaviors during adolescence. Developmental imbalance of the brain functional activity coupled with these behaviors may explain the propensity to develop heavy drinking. To compare the longitudinal trajectories of socioemotion and executive control in non–heavy drinkers with those of heavy drinkers before and after drinking onset. This cohort study was conducted from January 13, 2013, to January 15, 2022, among participants from the National Consortium on Alcohol and Neurodevelopment in Adolescence cohort with resting-state functional magnetic resonance imaging and neuropsychological assessment data. All participants were individuals who abstained from drinking or drank very little at the baseline visit. The statistical analysis was conducted between October 11, 2024, and July 3, 2025. Categorical drinking levels that summarized self-reported alcohol consumption in the past year. Brain-behavioral system z scores that reflected the association of selective brain connectivity patterns with selected behaviors were calculated. Higher scores indicated higher reactivity strength of socioemotion or executive control. A total of 3076 visits among 633 participants (mean [SD] age at baseline, 15.7 [2.6] years; 318 female [50.2%]) were analyzed. A total of 238 participants (37.6%) who initiated heavy drinking during the study showed significantly elevated brain-behavior scores (score increase, 0.18; 95% CI, 0.08-0.28) in the socioemotional system prior to drinking onset, but their developmental trajectories of the executive control system followed those of the control participants. After drinking onset, developmental deviation occurred in both the socioemotional system (score increase, 0.44; 95% CI, 0.33-0.54) and executive control system (score increase, 0.21; 95% CI 0.11-0.32), with a significantly larger effect size in the socioemotional system ( z = 3.51; P &amp;lt; .001) compared with before initiating drinking. These findings suggest that asynchronized maturation of socioemotion- and executive function–coupled brain connectivity in adolescence may be a risk factor for heavy drinking onset in emerging adulthood. In turn, drinking was associated with deficits in the executive control system and exacerbated alteration in the socioemotional system. Recognition of these early-age developmental discrepancies could aid in averting alcohol use disorder in adulthood.",
+    "abstractSource": "crossref",
+    "authors": [
+      {
+        "given": "Qingyu",
+        "family": "Zhao"
+      },
+      {
+        "given": "Leo",
+        "family": "Milecki"
+      },
+      {
+        "given": "Amy",
+        "family": "Kuceyeski"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Ty",
+        "family": "Brumback"
+      },
+      {
+        "given": "Adolf",
+        "family": "Pfefferbaum"
+      },
+      {
+        "given": "Edith V.",
+        "family": "Sullivan"
+      },
+      {
+        "given": "Kilian M.",
+        "family": "Pohl"
+      }
+    ],
+    "authorsSource": "crossref"
+  }
+}

@@ -29,7 +29,7 @@ const papers = getSelectedPapers();
     </div>
 
     <div>
-      {papers.map((p) => <PubEntry paper={p} />)}
+      {papers.map((p) => <PubEntry paper={p} showAbstract={false} />)}
     </div>
   </div>
 </section>

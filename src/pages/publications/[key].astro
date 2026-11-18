@@ -1,0 +1,75 @@
+---
+// One page per paper. Carries Google Scholar's citation_* meta tags and a
+// ScholarlyArticle JSON-LD block so crawlers (and LLMs) index each paper on
+// its own, with its abstract, rather than as one line in a long list.
+import Layout from "@/layouts/Layout.astro";
+import PubEntry from "@/components/PubEntry.astro";
+import { getAllPapers, paperJsonLd, type Paper } from "@/lib/papers";
+
+export function getStaticPaths() {
+  return getAllPapers().map((paper) => ({ params: { key: paper.key }, props: { paper } }));
+}
+
+const { paper } = Astro.props as { paper: Paper };
+const authors = paper.authors.filter((a) => a.name !== "et al.");
+const isConference = paper.type === "inproceedings";
+const pdfUrl = paper.pdf ? new URL(paper.pdf, Astro.site).toString() : undefined;
+const citation = `${authors.map((a) => a.name).join(", ")} (${paper.year}). ${paper.title}.${
+  paper.venue ? ` ${paper.venue}.` : ""
+}${paper.doi ? ` https://doi.org/${paper.doi}` : ""}`;
+const description = paper.abstract
+  ? paper.abstract.slice(0, 155).replace(/\s+\S*$/, "") + "…"
+  : `${paper.title} (${paper.year}${paper.venue ? `, ${paper.venue}` : ""}). Grosenick Lab, Weill Cornell Medicine.`;
+const jsonLd = { "@context": "https://schema.org", ...paperJsonLd(paper, Astro.site) };
+---
+
+<Layout title={`${paper.title} | Grosenick Lab`} description={description}>
+  <Fragment slot="head">
+    <meta name="citation_title" content={paper.title} />
+    {authors.map((a) => <meta name="citation_author" content={a.name} />)}
+    <meta name="citation_publication_date" content={String(paper.year)} />
+    {
+      paper.venue &&
+        (isConference ? (
+          <meta name="citation_conference_title" content={paper.venue} />
+        ) : (
+          <meta name="citation_journal_title" content={paper.venue} />
+        ))
+    }
+    {paper.doi && <meta name="citation_doi" content={paper.doi} />}
+    {paper.arxiv && <meta name="citation_arxiv_id" content={paper.arxiv} />}
+    {pdfUrl && <meta name="citation_pdf_url" content={pdfUrl} />}
+    {paper.abstract && <meta name="citation_abstract" content={paper.abstract} />}
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <div class="mx-auto max-w-[860px] px-7 pt-28 pb-16">
+    <a
+      href="/publications/"
+      class="font-mono text-xs uppercase tracking-[0.16em] text-signal-ink no-underline hover:underline"
+    >
+      ← All publications
+    </a>
+    <h1 class="font-display text-[28px] md:text-[34px] font-medium tracking-[-0.015em] leading-[1.2] mt-5 mb-6">
+      {paper.title}
+    </h1>
+
+    <PubEntry paper={paper} showTitle={false} showAbstract={false} />
+
+    {
+      paper.abstract && (
+        <section class="mt-10">
+          <h2 class="font-display text-[20px] font-medium m-0 mb-3">Abstract</h2>
+          <p class="text-[16.5px] text-muted leading-[1.7] m-0">{paper.abstract}</p>
+        </section>
+      )
+    }
+
+    <section class="mt-10">
+      <h2 class="font-display text-[20px] font-medium m-0 mb-3">Cite</h2>
+      <p class="font-mono text-[13px] text-muted leading-[1.6] m-0 p-4 rounded-[14px] border border-line bg-wash break-words">
+        {citation}
+      </p>
+    </section>
+  </div>
+</Layout>
