@@ -2,6 +2,11 @@
 title: Personalized treatment & generative digital twins
 order: 2
 figure: /images/research/personalization.jpg
+papers:
+  - sandilya2026contrastive
+  - sandilya2026identifiable
+  - ajirak2025routing
+  - hargrave2024epicare
 ---
 Choosing a treatment means reasoning about a counterfactual: what would happen to
 *this* patient under *that* therapy. We build **generative digital twins** and

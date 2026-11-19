@@ -3,18 +3,26 @@ import Layout from "@/layouts/Layout.astro";
 import PageHeader from "@/components/PageHeader.astro";
 import { getCollection, render } from "astro:content";
 import { publicAssetExists } from "@/lib/assets";
+import { getAllPapers, paperPath } from "@/lib/papers";
 
 const themes = (await getCollection("research")).sort(
   (a, b) => a.data.order - b.data.order
 );
+const papersByKey = new Map(getAllPapers().map((p) => [p.key, p]));
 
 const rendered = await Promise.all(
   themes.map(async (t) => {
     const { Content } = await render(t);
+    const keyPapers = (t.data.papers ?? []).map((key) => {
+      const paper = papersByKey.get(key);
+      if (!paper) throw new Error(`research/${t.id}: unknown paper key "${key}"`);
+      return paper;
+    });
     return {
       data: t.data,
       id: t.id,
       Content,
+      keyPapers,
       showFigure: publicAssetExists(t.data.figure),
     };
   })
@@ -33,7 +41,7 @@ const rendered = await Promise.all(
 
   <div class="mx-auto max-w-[1120px] px-7 py-16 space-y-20">
     {
-      rendered.map(({ data, Content, showFigure }, i) => (
+      rendered.map(({ data, Content, keyPapers, showFigure }, i) => (
         <article
           class={`grid gap-10 md:grid-cols-2 items-center ${i % 2 === 1 ? "md:[&>figure]:order-2" : ""}`}
         >
@@ -71,6 +79,25 @@ const rendered = await Promise.all(
             <div class="text-[16.5px] text-muted leading-[1.65] [&_strong]:text-ink [&_strong]:font-semibold [&_em]:italic [&_p]:m-0">
               <Content />
             </div>
+            {keyPapers.length > 0 && (
+              <div class="mt-6">
+                <p class="font-mono text-[11px] uppercase tracking-[0.16em] text-faint m-0 mb-2">Key papers</p>
+                <ul class="list-none p-0 m-0 space-y-1.5">
+                  {keyPapers.map((p) => (
+                    <li class="text-[14.5px] leading-[1.45]">
+                      <a href={paperPath(p)} class="text-ink no-underline hover:text-signal-ink">
+                        {p.title}
+                      </a>
+                      <span class="text-faint">
+                        {" "}
+                        ({p.venue ? `${p.venue}, ` : ""}
+                        {p.year})
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </article>
       ))

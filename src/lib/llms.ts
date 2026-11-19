@@ -52,11 +52,13 @@ export async function buildLlmsTxt(site: URL, full: boolean): Promise<string> {
     const meta = [String(p.year), p.venue, p.doi && `doi:${p.doi}`, p.arxiv && `arXiv:${p.arxiv}`]
       .filter(Boolean)
       .join(" · ");
+    const summary = p.summary?.replace(/\s+/g, " ");
     if (full) {
       lines.push(`### [${p.title}](${abs(paperPath(p))})`, "", `${authors}. ${meta}.`, "");
+      if (summary) lines.push(`In brief: ${summary}`, "");
       if (p.abstract) lines.push(p.abstract, "");
     } else {
-      lines.push(`- [${p.title}](${abs(paperPath(p))}): ${meta}`);
+      lines.push(`- [${p.title}](${abs(paperPath(p))}): ${meta}${summary ? `. ${summary}` : ""}`);
     }
   }
   if (!full) lines.push("", `Abstracts for every paper: ${abs("/llms-full.txt")}`);

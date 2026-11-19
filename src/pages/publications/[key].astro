@@ -17,8 +17,11 @@ const pdfUrl = paper.pdf ? new URL(paper.pdf, Astro.site).toString() : undefined
 const citation = `${authors.map((a) => a.name).join(", ")} (${paper.year}). ${paper.title}.${
   paper.venue ? ` ${paper.venue}.` : ""
 }${paper.doi ? ` https://doi.org/${paper.doi}` : ""}`;
-const description = paper.abstract
-  ? paper.abstract.slice(0, 155).replace(/\s+\S*$/, "") + "…"
+const lead = paper.summary ?? paper.abstract;
+const description = lead
+  ? lead.length <= 160
+    ? lead
+    : lead.slice(0, 155).replace(/\s+\S*$/, "") + "…"
   : `${paper.title} (${paper.year}${paper.venue ? `, ${paper.venue}` : ""}). Grosenick Lab, Weill Cornell Medicine.`;
 const jsonLd = { "@context": "https://schema.org", ...paperJsonLd(paper, Astro.site) };
 ---
@@ -56,6 +59,14 @@ const jsonLd = { "@context": "https://schema.org", ...paperJsonLd(paper, Astro.s
 
     <PubEntry paper={paper} showTitle={false} showAbstract={false} />
 
+    {
+      paper.summary && (
+        <section class="mt-10">
+          <h2 class="font-display text-[20px] font-medium m-0 mb-3">In brief</h2>
+          <p class="text-[17px] text-ink leading-[1.65] m-0">{paper.summary}</p>
+        </section>
+      )
+    }
     {
       paper.abstract && (
         <section class="mt-10">

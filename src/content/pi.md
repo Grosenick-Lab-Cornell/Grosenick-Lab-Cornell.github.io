@@ -49,6 +49,32 @@ gone on to faculty positions and to leading roles in industry and research. The
 lab is **actively recruiting** curious people across machine learning,
 neuroscience, and engineering.
 
+## Selected contributions
+
+- **Fiber photometry.** Developed fiber photometry, a method for optically
+  recording the natural activity of genetically and connectivity-defined neural
+  projections in behaving animals
+  ([Gunaydin et al., *Cell* 2014](/publications/gunaydin2014projection/)).
+- **Light-field microscopy for neuroscience.** Helped establish light-field
+  microscopy for fast volumetric imaging, including a wave-optics model and 3-D
+  deconvolution method ([Broxton et al., *Optics Express* 2013](/publications/broxton2013waveoptics/))
+  and SWIFT, for scanless single-neuron recording through intact mammalian tissue
+  ([Grosenick et al., *bioRxiv* 2017](/publications/grosenick2017lightfield/)).
+- **Biological subtypes of depression.** Helped define four
+  neurophysiological subtypes of depression from brain connectivity in 1,188
+  patients, subtypes that predict response to TMS
+  ([Drysdale et al., *Nature Medicine* 2017](/publications/drysdale2017biotypes/)),
+  and work showing an expanded salience network in depression
+  ([Lynch et al., *Nature* 2024](/publications/lynch2024salience/)).
+- **Interpretable machine learning for brain imaging.** Developed GraphNet, sparse
+  and spatially structured models for whole-brain fMRI prediction
+  ([Grosenick et al., *NeuroImage* 2013](/publications/grosenick2013graphnet/)).
+- **Machine learning for precision psychiatry.** Leads work on cluster-aware
+  embedding for precision medicine ([AISTATS 2024](/publications/buch2024cluster/)),
+  graph neural networks that generalize CNNs ([NeurIPS 2024](/publications/nkansah2024quantnets/)),
+  a reinforcement-learning benchmark for treatment regimes ([NeurIPS 2024](/publications/hargrave2024epicare/)),
+  and interpretable, controllable diffusion models ([ICML 2026](/publications/sandilya2026contrastive/)).
+
 ---
 
 ## Bios for talks & introductions

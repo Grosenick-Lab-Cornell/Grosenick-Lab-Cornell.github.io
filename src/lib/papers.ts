@@ -3,6 +3,7 @@ import path from "node:path";
 import peopleData from "@/content/people.yaml";
 // Abstracts + full author lists fetched by scripts/enrich-papers.mjs.
 import paperMeta from "@/content/papers-meta.json";
+import paperSummaries from "@/content/paper-summaries.yaml";
 
 export type Author = { name: string; bold: boolean; orcid?: string };
 export type Chip = { label: string; href: string };
@@ -17,6 +18,8 @@ export type Paper = {
   award?: string;
   chips: Chip[];
   abstract?: string;
+  /** Plain-language summary from paper-summaries.yaml. */
+  summary?: string;
   doi?: string;
   arxiv?: string;
   pdf?: string;
@@ -255,6 +258,7 @@ function loadAll(): Paper[] {
       award: fields.award ? decodeLatex(fields.award) : undefined,
       chips,
       abstract: abstract ? tidyAbstract(abstract) : undefined,
+      summary: (paperSummaries as Record<string, string> | null)?.[key]?.trim(),
       doi: fields.doi,
       arxiv: fields.arxiv?.replace(/^arxiv:/i, ""),
       pdf: fields.pdf,
@@ -297,6 +301,7 @@ export function paperJsonLd(p: Paper, site: URL | undefined): Record<string, unk
           : { "@type": "Person", name: a.name, ...(a.orcid ? { sameAs: a.orcid } : {}) },
       ),
     ...(p.venue ? { isPartOf: { "@type": "Periodical", name: p.venue } } : {}),
+    ...(p.summary ? { description: p.summary } : {}),
     ...(p.abstract ? { abstract: p.abstract } : {}),
     ...(p.doi ? { identifier: { "@type": "PropertyValue", propertyID: "DOI", value: p.doi } } : {}),
     ...(sameAs.length ? { sameAs } : {}),

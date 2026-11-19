@@ -331,6 +331,25 @@
     "abstract": "Light field microscopy is a new technique for high-speed volumetric imaging of weakly scattering or fluorescent specimens. It employs an array of microlenses to trade off spatial resolution against angular resolution, thereby allowing a 4-D light field to be captured using a single photographic exposure without the need for scanning. The recorded light field can then be used to computationally reconstruct a full volume. In this paper, we present an optical model for light field microscopy based on wave optics, instead of previously reported ray optics models. We also present a 3-D deconvolution method for light field microscopy that is able to reconstruct volumes at higher spatial resolution, and with better optical sectioning, than previously reported. To accomplish this, we take advantage of the dense spatio-angular sampling provided by a microlens array at axial positions away from the native object plane. This dense sampling permits us to decode aliasing present in the light field to reconstruct high-frequency information. We formulate our method as an inverse problem for reconstructing the 3-D volume, which we solve using a GPU-accelerated iterative algorithm. Theoretical limits on the depth-dependent lateral resolution of the reconstructed volumes are derived. We show that these limits are in good agreement with experimental results on a standard USAF 1951 resolution target. Finally, we present 3-D reconstructions of pollen grains that demonstrate the improvements in fidelity made possible by our method.",
     "abstractSource": "openalex"
   },
+  "buch2022engineering": {
+    "authors": [
+      {
+        "given": "Amanda M.",
+        "family": "Buch"
+      },
+      {
+        "given": "David M.",
+        "family": "Eagleman"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Through collaborations among diplomats, scientists, and engineers, authors envision artificial intelligence (AI) paired with emerging human augmentation technologies significantly improving the bandwidth, speed, and optimality of diplomacy.",
+    "abstractSource": "openalex"
+  },
   "buch2022hierarchically": {
     "abstract": "We introduce an unsupervised learning approach that combines the truncated singular value decomposition with convex clustering to estimate within-cluster directions of maximum variance/covariance (in the variables) while simultaneously hierarchically clustering (on observations). In contrast to previous work on joint clustering and embedding, our approach has a straightforward formulation, is readily scalable via distributed optimization, and admits a direct interpretation as hierarchically clustered principal component analysis (PCA) or hierarchically clustered canonical correlation analysis (CCA). Through numerical experiments and real-world examples relevant to precision medicine, we show that our approach outperforms traditional and contemporary clustering methods on underdetermined problems ($p \\gg N$ with tens of observations) and scales to large datasets (e.g., $N=100,000$; $p=1,000$) while yielding interpretable dendrograms of hierarchical per-cluster principal components or canonical variates.",
     "abstractSource": "arxiv",
@@ -404,6 +423,116 @@
       }
     ],
     "authorsSource": "arxiv"
+  },
+  "burns2013open": {
+    "authors": [
+      {
+        "given": "Randal",
+        "family": "Burns"
+      },
+      {
+        "given": "Kunal",
+        "family": "Lillaney"
+      },
+      {
+        "given": "Daniel R.",
+        "family": "Berger"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Karl",
+        "family": "Deisseroth"
+      },
+      {
+        "given": "R. Clay",
+        "family": "Reid"
+      },
+      {
+        "given": "William Gray",
+        "family": "Roncal"
+      },
+      {
+        "given": "Priya",
+        "family": "Manavalan"
+      },
+      {
+        "given": "Davi D.",
+        "family": "Bock"
+      },
+      {
+        "given": "Narayanan",
+        "family": "Kasthuri"
+      },
+      {
+        "given": "Michael",
+        "family": "Kazhdan"
+      },
+      {
+        "given": "Stephen J.",
+        "family": "Smith"
+      },
+      {
+        "given": "Dean",
+        "family": "Kleissas"
+      },
+      {
+        "given": "Eric",
+        "family": "Perlman"
+      },
+      {
+        "given": "Kwanghun",
+        "family": "Chung"
+      },
+      {
+        "given": "Nicholas C.",
+        "family": "Weiler"
+      },
+      {
+        "given": "Jeff",
+        "family": "Lichtman"
+      },
+      {
+        "given": "Alexander S.",
+        "family": "Szalay"
+      },
+      {
+        "given": "Joshua T.",
+        "family": "Vogelstein"
+      },
+      {
+        "given": "R. Jacob",
+        "family": "Vogelstein"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "We describe a scalable database cluster for the spatial analysis and annotation of high-throughput brain imaging data, initially for 3-d electron microscopy image stacks, but for time-series and multi-channel data as well. The system was designed primarily for workloads that build connectomes---neural connectivity maps of the brain---using the parallel execution of computer vision algorithms on high-performance compute clusters. These services and open-science data sets are publicly available at http://openconnecto.me. The system design inherits much from NoSQL scale-out and data-intensive computing architectures. We distribute data to cluster nodes by partitioning a spatial index. We direct I/O to different systems---reads to parallel disk arrays and writes to solid-state storage---to avoid I/O interference and maximize throughput. All programming interfaces are RESTful Web services, which are simple and stateless, improving scalability and usability. We include a performance evaluation of the production system, highlighting the effectiveness of spatial data organization.",
+    "abstractSource": "arxiv"
+  },
+  "carvalhaes2009eeg": {
+    "authors": [
+      {
+        "given": "Claudio G.",
+        "family": "Carvalhaes"
+      },
+      {
+        "given": "Marcos",
+        "family": "Perreau-Guimaraes"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Patrick",
+        "family": "Suppes"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "We studied the performance of a double-spatial filtering method for classification of single-trial electroencephalog-raphy (EEG) data that couples the spherical surface Lapla-cian (SL) and independent component analysis (ICA). This method was evaluated in the context of a binary classifica-tion experiment with brain states driven by mental imagery of auditory and visual stimuli. A statistically significant im-provement was achieved with respect to the rates provided by raw data and by data filtered by either SL or ICA. Index Terms — EEG classification, surface Laplacian, ICA, BCI.",
+    "abstractSource": "openalex"
   },
   "chung2013clarity": {
     "authors": [
@@ -988,6 +1117,44 @@
     "abstract": "Transitive inference (TI) involves using known relationships to deduce unknown ones (for example, using A > B and B > C to infer A > C), and is thus essential to logical reasoning. First described as a developmental milestone in children, TI has since been reported in nonhuman primates, rats and birds. Still, how animals acquire and represent transitive relationships and why such abilities might have evolved remain open problems. Here we show that male fish (Astatotilapia burtoni) can successfully make inferences on a hierarchy implied by pairwise fights between rival males. These fish learned the implied hierarchy vicariously (as 'bystanders'), by watching fights between rivals arranged around them in separate tank units. Our findings show that fish use TI when trained on socially relevant stimuli, and that they can make such inferences by using indirect information alone. Further, these bystanders seem to have both spatial and featural representations related to rival abilities, which they can use to make correct inferences depending on what kind of information is available to them. Beyond extending TI to fish and experimentally demonstrating indirect TI learning in animals, these results indicate that a universal mechanism underlying TI is unlikely. Rather, animals probably use multiple domain-specific representations adapted to different social and ecological pressures that they encounter during the course of their natural lives.",
     "abstractSource": "europepmc"
   },
+  "grosenick2008interpretable": {
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Stephanie",
+        "family": "Greer"
+      },
+      {
+        "given": "Brian",
+        "family": "Knutson"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Despite growing interest in applying machine learning to neuroimaging analyses, few studies have gone beyond classifying sensory input to directly predicting behavioral output. With spatial resolution on the order of millimeters and temporal resolution on the order of seconds, functional magnetic resonance imaging (fMRI) is a promising technology for such applications. However, fMRI data's low signal-to-noise ratio, high dimensionality, and extensive spatiotemporal correlations present formidable analytic challenges. Here, we apply different machine-learning algorithms to previously acquired data to examine the ability of fMRI activation in three regions-the nucleus accumbens (NAcc), medial prefrontal cortex (MPFC), and insula-to predict purchasing. Our goal was to improve spatiotemporal interpretability as well as classification accuracy. To this end, sparse penalized discriminant analysis (SPDA) enabled automatic selection of correlated variables, yielding interpretable models that generalized well to new data. Relative to logistic regression, linear discriminant analysis, and linear support vector machines, SPDA not only increased interpretability but also improved classification accuracy. SPDA promises to allow more precise inferences about when specific brain regions contribute to purchasing decisions. More broadly, this approach provides a general framework for using neuroimaging data to build interpretable models, including those that predict choice.",
+    "abstractSource": "europepmc"
+  },
+  "grosenick2009elastic": {
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Todd",
+        "family": "Anderson"
+      },
+      {
+        "given": "Stephen J.",
+        "family": "Smith"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "Advances in microscopy and biochemistry now allow investigators to image the calcium dynamics of hundreds to thousands of neurons in awake behaving animals. However, as speed and resolution of such techniques rapidly increase, so do the dimension and complexity of the data collected. ICA has been widely employed to reveal independent non-Gaussian sources underlying large data sets consisting of mixed sources. We apply a recently developed sparse regression method, the Elastic Net (ENET), to the columns of the mixing matrix of a independent component analysis (ICA) procedure. This regression method automatically selects only those columns of the mixing matrix relevant to a dependent variable of interest. Further, because ICA is a linear operator, we can easily project the ldquorelevance filteredrdquo data back into the native data space for interpretation. We demonstrate the utility of this method on 3D calcium imaging data collected from the optic tectum of an awake behaving larval zebrafish watching a prey-like stimulus.",
+    "abstractSource": "openalex"
+  },
   "grosenick2013graphnet": {
     "authors": [
       {
@@ -1133,6 +1300,20 @@
     "authorsSource": "crossref",
     "abstract": "Background Previously, we identified four depression subtypes defined by distinct functional connectivity alterations in depression-related brain networks, which in turn predicted clinical symptoms and treatment response. Optogenetic functional magnetic resonance imaging offers a promising approach for testing how dysfunction in specific circuits gives rise to subtype-specific, depression-related behaviors. However, this approach assumes that there are robust, reproducible correlations between functional connectivity and depressive symptoms-an assumption that was not extensively tested in previous work. Methods First, we comprehensively reevaluated the stability of canonical correlations between functional connectivity and symptoms (N = 220 subjects) using optimized approaches for large-scale statistical hypothesis testing, and we validated methods for improving estimation of latent variables driving brain-behavior correlations. Having confirmed this necessary condition, we reviewed recent advances in optogenetic functional magnetic resonance imaging and illustrated one approach to formulating hypotheses regarding latent subtype-specific circuit mechanisms and testing them in animal models. Results Correlations between connectivity features and clinical symptoms were robustly significant, and canonical correlation analysis solutions tested repeatedly on held-out data generalized. However, they were sensitive to data quality, preprocessing, and clinical heterogeneity, which can reduce effect sizes. Generalization could be markedly improved by adding L2 regularization, which decreased estimator variance, increased canonical correlations in left-out data, and stabilized feature selection. These improvements were useful for identifying candidate circuits for optogenetic interrogation in animal models. Conclusions Multiview, latent-variable approaches such as canonical correlation analysis offer a conceptually useful framework for discovering stable patient subtypes by synthesizing multiple clinical and functional measures. Optogenetic functional magnetic resonance imaging holds promise for testing hypotheses regarding latent, subtype-specific mechanisms driving depressive symptoms and behaviors.",
     "abstractSource": "europepmc"
+  },
+  "grosenick2020closer": {
+    "authors": [
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Conor",
+        "family": "Liston",
+        "orcid": "https://orcid.org/0000-0002-1639-5401"
+      }
+    ],
+    "authorsSource": "crossref"
   },
   "grosenick2026multimodal": {
     "authors": [
@@ -2146,6 +2327,33 @@
     "abstract": "To enable sophisticated optogenetic manipulation of neural circuits throughout the nervous system with limited disruption of animal behavior, light-delivery systems beyond fiber optic tethering and large, head-mounted wireless receivers are desirable. We report the development of an easy-to-construct, implantable wireless optogenetic device. Our smallest version (20 mg, 10 mm(3)) is two orders of magnitude smaller than previously reported wireless optogenetic systems, allowing the entire device to be implanted subcutaneously. With a radio-frequency (RF) power source and controller, this implant produces sufficient light power for optogenetic stimulation with minimal tissue heating (<1 °C). We show how three adaptations of the implant allow for untethered optogenetic control throughout the nervous system (brain, spinal cord and peripheral nerve endings) of behaving mice. This technology opens the door for optogenetic experiments in which animals are able to behave naturally with optogenetic manipulation of both central and peripheral targets.",
     "abstractSource": "europepmc"
   },
+  "perreauguimaraes2007single": {
+    "authors": [
+      {
+        "given": "Marcos",
+        "family": "Perreau Guimaraes"
+      },
+      {
+        "given": "Dik Kin",
+        "family": "Wong"
+      },
+      {
+        "given": "E. Timothy",
+        "family": "Uy"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Patrick",
+        "family": "Suppes"
+      }
+    ],
+    "authorsSource": "crossref",
+    "abstract": "While magnetoencephalography (MEG) is widely used to identify spatial locations of brain activations associated with various tasks, classification of single trials in stimulus-locked experiments remains an open subject. Very significant single-trial classification results have been published using electroencephalogram (EEG) data, but in the MEG case, the weakness of the magnetic fields originating from the relevant sources relative to external noise, and the high dimensionality of the data are difficult obstacles to overcome. We present here very significant MEG single-trial mean classification rates of words. The number of words classified varied from seven to nine and both visual and auditory modalities were studied. These results were obtained by using a variety of blind sources separation methods: spatial principal components analysis (PCA), Infomax independent components analysis (Infomax ICA) and second-order blind identification (SOBI). The sources obtained were classified using two methods, linear discriminant classification (LDC) and v-support vector machine (v-SVM). The data used here, auditory and visual presentations of words, presented nontrivial classification problems, but with Infomax ICA associated with LDC we obtained high classification rates. Our best single-trial mean classification rate was 60.1% for classification of 900 single trials of nine auditory words. On two-class problems rates were as high as 97.5%.",
+    "abstractSource": "europepmc"
+  },
   "reed2018accumbens": {
     "authors": [
       {
@@ -2495,6 +2703,31 @@
         "given": "Michael G.",
         "family": "Kaplitt",
         "orcid": "https://orcid.org/0000-0002-8979-2459"
+      }
+    ],
+    "authorsSource": "crossref"
+  },
+  "wong2006multichannel": {
+    "authors": [
+      {
+        "given": "Dik Kin",
+        "family": "Wong"
+      },
+      {
+        "given": "Marcos Perreau",
+        "family": "Guimaraes"
+      },
+      {
+        "given": "E. Timothy",
+        "family": "Uy"
+      },
+      {
+        "given": "Logan",
+        "family": "Grosenick"
+      },
+      {
+        "given": "Patrick",
+        "family": "Suppes"
       }
     ],
     "authorsSource": "crossref"

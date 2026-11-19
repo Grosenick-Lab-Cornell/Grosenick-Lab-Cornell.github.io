@@ -8,6 +8,8 @@ const research = defineCollection({
     order: z.number(),
     figure: z.string().optional(),
     figureCaption: z.string().optional(),
+    // BibTeX keys from papers.bib, listed under the theme as "Key papers".
+    papers: z.array(z.string()).optional(),
   }),
 });
 

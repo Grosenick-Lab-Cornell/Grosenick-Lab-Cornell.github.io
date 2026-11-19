@@ -1,0 +1,100 @@
+# One- or two-sentence plain-language summaries, keyed by papers.bib key.
+# Shown on each paper's page above the abstract, and used in llms.txt and the
+# paper's structured data. Written from each paper's abstract; PI to review.
+
+drysdale2017biotypes: >-
+  Using brain scans from 1,188 people, this study showed that depression can be
+  divided into four biological subtypes ("biotypes") based on patterns of brain
+  connectivity, and that these subtypes differ in symptoms and in who responds
+  to transcranial magnetic stimulation (TMS).
+
+lynch2024salience: >-
+  Repeated, individual-level brain mapping showed that the frontostriatal salience
+  network occupies nearly twice as much of the cortex in most people with
+  depression. The expansion was stable over time, unaffected by mood, and already
+  detectable in children before depression began.
+
+dunlop2024depression: >-
+  Tests whether data-driven brain-behavior dimensions and categorical subtypes of
+  depression are stable and generalizable in a large single-site sample, addressing
+  overfitting and scanner artifacts that limited earlier subtyping studies.
+
+buch2023autism: >-
+  Identified four reproducible subgroups of autism defined by brain connectivity
+  and symptom profiles, and linked each subgroup's brain differences to distinct
+  patterns of gene expression and molecular pathways.
+
+buch2024cluster: >-
+  A simple, scalable machine-learning method that finds patient clusters and a
+  low-dimensional representation of the data at the same time, built for the
+  small-sample, high-dimensional data typical of precision medicine.
+
+grosenick2019subtype: >-
+  Re-examines how stable the brain-symptom relationships behind depression
+  subtypes are, and lays out how functional imaging and optogenetics in animal
+  models can be combined to find circuit mechanisms specific to each subtype.
+
+sandilya2026contrastive: >-
+  ConDA adds a lightweight contrastive layer on top of a pretrained diffusion
+  model so that its latent space lines up with meaningful variables such as time
+  or stimulation settings, making the model's outputs easier to interpret, steer,
+  and edit counterfactually.
+
+sandilya2026identifiable: >-
+  Shows that a frozen, pretrained diffusion model can be given latent coordinates
+  that provably recover the underlying states of a dynamical system, by training
+  only a small alignment map (ConDA) rather than the generative model itself.
+
+ajirak2025routing: >-
+  A multimodal, multitask model that decides for each patient which data to rely
+  on (for example clinician notes or structured assessments) and how to share
+  information across outcomes, motivated by predicting outcomes in psychotherapy.
+
+hargrave2024epicare: >-
+  EpiCare is a benchmark for testing reinforcement learning on longitudinal
+  treatment decisions. It finds that current offline RL methods and standard
+  evaluation techniques struggle in the low-data settings typical of healthcare.
+
+nkansah2024quantnets: >-
+  Quantized Graph Convolution Networks (QGCNs) extend convolutional neural networks
+  directly to graph-structured data, such as brain networks, while reducing exactly
+  to a standard CNN layer on image-like data.
+
+grosenick2013graphnet: >-
+  GraphNet is a family of interpretable machine-learning models for whole-brain
+  fMRI that produce sparse, spatially structured predictions, avoiding the
+  instability and dense, hard-to-read solutions of off-the-shelf methods.
+
+gunaydin2014projection: >-
+  Introduced fiber photometry, a method for optically recording the natural
+  activity of specific neural pathways in behaving animals, and used it to show
+  how a dopamine projection encodes social interaction.
+
+broxton2013waveoptics: >-
+  A wave-optics model and 3-D deconvolution method for light-field microscopy,
+  allowing whole volumes to be reconstructed at higher resolution from a single
+  camera exposure.
+
+grosenick2017lightfield: >-
+  SWIFT combines light-field microscopy with statistical modeling to record the
+  activity of individual neurons throughout volumes of intact mammalian brain
+  tissue at camera frame rates, without scanning.
+
+kauvar2025emotion: >-
+  A cross-species study in humans and mice that found conserved brain-wide activity
+  patterns linking sensory experience to emotional responses.
+
+lynch2025quality: >-
+  Introduces the network similarity index, an objective measure of whether
+  individual fMRI data are of sufficient quality and quantity for reliable
+  person-specific brain network mapping.
+
+grosenick2007fish: >-
+  Showed that fish can deduce the dominance hierarchy among rivals just by watching
+  their fights. This extended transitive inference (deducing A > C from A > B and
+  B > C) to fish and experimentally demonstrated it being learned indirectly, by
+  observation alone.
+
+grosenick2008interpretable: >-
+  An early demonstration that interpretable machine-learning classifiers applied to
+  fMRI can predict a person's purchasing decisions from brain activity.

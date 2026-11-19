@@ -2,6 +2,14 @@
 title: Biological subtyping & biomarkers
 order: 1
 figure: /images/research/subtyping.jpg
+papers:
+  - drysdale2017biotypes
+  - lynch2024salience
+  - dunlop2024depression
+  - buch2023autism
+  - buch2024cluster
+  - grosenick2019subtype
+  - grosenick2026multimodal
 ---
 Psychiatric diagnoses group together patients whose brains and treatment responses
 differ enormously, which is part of why finding an effective therapy is so often

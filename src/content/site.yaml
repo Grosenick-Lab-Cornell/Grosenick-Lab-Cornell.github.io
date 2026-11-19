@@ -44,5 +44,8 @@ analytics:
 
 # Search engine verification. Google Search Console → Add property →
 # grosenicklab.org → HTML tag method; paste the content="..." value here.
+# Bing Webmaster Tools → HTML meta tag method → the msvalidate.01 content value
+# (or skip it and use Bing's "Import from Google Search Console").
 verification:
   google: ""
+  bing: ""

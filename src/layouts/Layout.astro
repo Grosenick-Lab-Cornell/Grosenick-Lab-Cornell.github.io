@@ -61,6 +61,11 @@ const orgJsonLd = {
         <meta name="google-site-verification" content={siteConfig.verification.google} />
       )
     }
+    {
+      siteConfig.verification?.bing && (
+        <meta name="msvalidate.01" content={siteConfig.verification.bing} />
+      )
+    }
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="/favicon.ico" />
